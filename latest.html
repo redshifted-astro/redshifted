@@ -3,56 +3,234 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Last Entries | Redshifted Journal</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    body {
+    html, body {
       margin: 0;
-      padding: 40px 20px;
-      background: #101522;
-      color: #f2f4f8;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
+      min-height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #444444;
+      color: #fff;
     }
+
+    body {
+      position: relative;
+      padding-bottom: 70px;
+      box-sizing: border-box;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('logo.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header, main, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background: #1e1e1e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      position: relative;
+      height: 80px;
+      width: 100%;
+      max-width: 400px;
+      padding-left: 80px;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-star {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ff6f3f80;
+      overflow: hidden;
+    }
+
+    .icon-star img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .title-image {
+      position: absolute;
+      left: 80px;
+      top: 0;
+      height: 100%;
+      width: 300px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #cb2414;
+      border-radius: 8px;
+      transition: background 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    nav a:hover {
+      background: #e53935;
+    }
+
     main {
-      max-width: 850px;
-      margin: auto;
+      text-align: center;
+      padding: 3rem 1.5rem 4rem;
+      min-height: 300px;
     }
-    a { color: #8bd3ff; }
-    .back { display: inline-block; margin-bottom: 25px; }
-    article {
-      margin-top: 24px;
-      padding: 20px;
-      border: 1px solid #39445c;
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      background: linear-gradient(to right, #FFD700, #ff6600, #FF0000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: #f0f0f0;
+    }
+
+    .empty-state {
+      max-width: 650px;
+      margin: 3rem auto 0;
+      padding: 2rem;
+      background: #2e2e2e;
       border-radius: 10px;
-      background: #191f30;
+      border: 1px solid #555;
     }
-    h1, h2 { color: #8bd3ff; }
+
+    .empty-state i {
+      font-size: 2.5rem;
+      color: #ff7f50;
+    }
+
+    .empty-state h2 {
+      color: #fba500;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      background: #cb2414;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      background: #e53935;
+    }
+
+    footer {
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer i {
+      color: #ff7f50;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .logo {
+        max-width: 400px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="logo">
+      <div class="icon-star">
+        <img src="logo.jpg" alt="Redshifted logo">
+      </div>
+      <img src="titolo.jpg" alt="Redshifted" class="title-image">
+    </div>
+
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="journal.html"><i class="fas fa-book"></i> Journal</a>
+      <a href="observations.html"><i class="fas fa-eye"></i> Observations</a>
+      <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+    </nav>
+  </header>
+
   <main>
-    <a class="back" href="index.html">← Back to Home</a>
     <h1>Last Entries</h1>
-    <p>Latest articles and updates from Redshifted Journal.</p>
+    <p class="intro">The latest publications from Redshifted Journal.</p>
 
-    <article>
-      <h2>Observations</h2>
-      <p>Explore astronomical observations and discoveries.</p>
-      <a href="observations.html">Read Observations</a>
-    </article>
-
-    <article>
-      <h2>Research</h2>
-      <p>Discover research topics in astrophysics and cosmology.</p>
-      <a href="research.html">Explore Research</a>
-    </article>
-
-    <article>
-      <h2>Journal</h2>
-      <p>Visit the journal for articles about the cosmos.</p>
-      <a href="journal.html">Open Journal</a>
-    </article>
+    <section class="empty-state">
+      <i class="fas fa-satellite"></i>
+      <h2>New entries coming soon</h2>
+      <p>No articles have been published here yet.</p>
+      <p>New entries will appear on this page when they are ready.</p>
+      <a class="back" href="index.html">
+        <i class="fas fa-home"></i> Back to Home
+      </a>
+    </section>
   </main>
+
+  <footer>
+    © 2025 REDSHIFTED - Personal Astronomy Journal |
+    Where Science Meets the Dark Cosmos
+    <i class="fas fa-satellite" aria-hidden="true"></i>
+  </footer>
+
 </body>
 </html>
