@@ -1,261 +1,374 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Browse Topics | Redshifted Journal</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Topics | REDSHIFTED</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    html, body {
+    * {
       margin: 0;
-      min-height: 100%;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #444444;
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #444444;
+      color: #eeeeee;
+      min-height: 100vh;
       position: relative;
-      padding-bottom: 70px;
-      box-sizing: border-box;
+      line-height: 1.6;
     }
 
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background-image: url('logo.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      opacity: 0.2;
+      background: url("logo.jpg") center center / 520px no-repeat;
+      opacity: 0.08;
       pointer-events: none;
-      z-index: 0;
-    }
-
-    header, main, footer {
-      position: relative;
-      z-index: 1;
+      z-index: -1;
     }
 
     header {
       background: #1e1e1e;
-      padding: 1rem 2rem;
+      padding: 22px 20px 18px;
+      text-align: center;
+      border-bottom: 2px solid #a52323;
+    }
+
+    .brand {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 20px;
     }
 
     .logo {
-      position: relative;
-      height: 80px;
-      width: 100%;
-      max-width: 400px;
-      padding-left: 80px;
-      box-sizing: border-box;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
-
-    .icon-star {
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #ff6f3f80;
-      overflow: hidden;
-    }
-
-    .icon-star img {
-      width: 60px;
-      height: 60px;
+      width: 76px;
+      height: 76px;
       object-fit: cover;
       border-radius: 50%;
-      display: block;
     }
 
     .title-image {
-      position: absolute;
-      left: 80px;
-      top: 0;
-      height: 100%;
-      width: 300px;
+      display: block;
+      width: min(420px, 65vw);
+      max-height: 100px;
       object-fit: contain;
-      object-position: left center;
     }
 
     nav {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 12px;
     }
 
     nav a {
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
-      padding: 0.5rem 1rem;
-      background: #cb2414;
-      border-radius: 8px;
-      transition: background 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
+      background: #922222;
+      padding: 9px 17px;
+      border-radius: 3px;
+      font-size: 0.82rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background 0.2s ease;
     }
 
-    nav a:hover {
-      background: #e53935;
+    nav a:hover,
+    nav a:focus-visible {
+      background: #c43a3a;
     }
 
     main {
-      text-align: center;
-      padding: 3rem 1.5rem 4rem;
-      min-height: 300px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      background: linear-gradient(to right, #FFD700, #ff6600, #FF0000);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 52px 24px 70px;
     }
 
     .intro {
-      font-size: 1.05rem;
-      color: #f0f0f0;
+      text-align: center;
+      margin-bottom: 38px;
     }
 
-    .topics {
-      max-width: 900px;
-      margin: 2.5rem auto 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      text-align: left;
-    }
-
-    .topic {
-      background: #2e2e2e;
-      border: 1px solid #555;
-      border-radius: 10px;
-      padding: 1.5rem;
-    }
-
-    .topic i {
-      font-size: 2rem;
-      color: #ff7f50;
-    }
-
-    .topic h2 {
-      color: #fba500;
-      margin-bottom: 0.5rem;
-    }
-
-    .topic p {
-      color: #f0f0f0;
-    }
-
-    .back {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      background: #cb2414;
-      color: #fff;
-      text-decoration: none;
+    .eyebrow {
+      color: #df7777;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.75rem;
       font-weight: bold;
+      margin-bottom: 8px;
     }
 
-    .back:hover {
-      background: #e53935;
+    h1 {
+      color: #ffffff;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .intro p {
+      color: #d0d0d0;
+      font-size: 1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .topic-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 225px;
+      padding: 25px 23px;
+      background: rgba(28, 28, 28, 0.94);
+      border: 1px solid #555555;
+      border-top: 3px solid #922222;
+      color: inherit;
+      text-decoration: none;
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .topic-card:hover,
+    .topic-card:focus-visible {
+      transform: translateY(-5px);
+      border-color: #b83a3a;
+      background: rgba(35, 35, 35, 0.98);
+      outline: none;
+    }
+
+    .topic-number {
+      color: #d45b5b;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .topic-icon {
+      color: #d45b5b;
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+
+    .topic-card h2 {
+      color: #ffffff;
+      font-size: 1.08rem;
+      line-height: 1.4;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .topic-card p {
+      color: #c5c5c5;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      flex-grow: 1;
+    }
+
+    .explore {
+      display: inline-block;
+      margin-top: 20px;
+      color: #df7777;
+      font-size: 0.76rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .explore i {
+      margin-left: 5px;
+      transition: transform 0.2s ease;
+    }
+
+    .topic-card:hover .explore i {
+      transform: translateX(4px);
     }
 
     footer {
       background: #1e1e1e;
-      color: #fff;
+      border-top: 1px solid #702020;
+      color: #aaaaaa;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 22px 16px;
+      font-size: 0.82rem;
     }
 
-    footer i {
-      color: #ff7f50;
-      margin-left: 0.5rem;
+    footer span {
+      color: #d45b5b;
+      letter-spacing: 1px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
+      .topic-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
       header {
-        justify-content: center;
-        padding: 1rem;
+        padding: 18px 12px;
+      }
+
+      .brand {
+        gap: 12px;
+      }
+
+      .logo {
+        width: 58px;
+        height: 58px;
       }
 
       nav {
-        justify-content: center;
+        gap: 8px;
+      }
+
+      nav a {
+        padding: 8px 11px;
+        font-size: 0.72rem;
+      }
+
+      main {
+        padding: 38px 16px 48px;
+      }
+
+      .topic-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .topic-card {
+        min-height: 195px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div class="logo">
-      <div class="icon-star">
-        <img src="logo.jpg" alt="Redshifted logo">
-      </div>
-      <img src="titolo.jpg" alt="Redshifted" class="title-image">
+    <div class="brand">
+      <img src="logo.jpg" alt="REDSHIFTED logo" class="logo">
+      <img src="titolo.jpg" alt="REDSHIFTED — The Dark Side of the Cosmos"
+           class="title-image">
     </div>
 
-    <nav>
-      <a href="index.html"><i class="fas fa-home"></i> Home</a>
-      <a href="journal.html"><i class="fas fa-book"></i> Journal</a>
-      <a href="observations.html"><i class="fas fa-eye"></i> Observations</a>
-      <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="journal.html">JOURNAL</a>
+      <a href="observations.html">OBSERVATIONS</a>
+      <a href="research.html">RESEARCH</a>
     </nav>
   </header>
 
   <main>
-    <h1>Browse Topics</h1>
-    <p class="intro">Explore the fields of astronomy and astrophysics.</p>
-
-    <section class="topics">
-      <article class="topic">
-        <i class="fas fa-star"></i>
-        <h2>Stellar Astronomy</h2>
-        <p>Explore the study of stars and their evolution.</p>
-        <a href="observations.html">Go to Observations</a>
-      </article>
-
-      <article class="topic">
-        <i class="fas fa-meteor"></i>
-        <h2>Cosmic Phenomena</h2>
-        <p>Discover supernovae and other energetic events in the universe.</p>
-        <a href="research.html">Go to Research</a>
-      </article>
-
-      <article class="topic">
-        <i class="fas fa-book-open"></i>
-        <h2>Journal</h2>
-        <p>Browse the journal's available sections.</p>
-        <a href="journal.html">Open Journal</a>
-      </article>
+    <section class="intro">
+      <div class="eyebrow">Explore the Universe</div>
+      <h1>Browse Topics</h1>
+      <p>
+        Explore the major fields of astronomy and astrophysics,
+        from planetary systems to the large-scale structure of the universe.
+      </p>
     </section>
 
-    <a class="back" href="index.html">
-      <i class="fas fa-home"></i> Back to Home
-    </a>
+    <section class="topic-grid" aria-label="Astronomy and astrophysics topics">
+
+      <a class="topic-card" href="observations.html">
+        <div class="topic-number">01 / PLANETARY SYSTEMS</div>
+        <div class="topic-icon"><i class="fa-solid fa-earth-europe"></i></div>
+        <h2>Solar System Science</h2>
+        <p>
+          Planetary science, planetary atmospheres, natural satellites,
+          small Solar System bodies and orbital dynamics.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a class="topic-card" href="research.html">
+        <div class="topic-number">02 / EXTRASOLAR PLANETS</div>
+        <div class="topic-icon"><i class="fa-solid fa-satellite"></i></div>
+        <h2>Exoplanetary Science</h2>
+        <p>
+          Exoplanet detection and characterization, planetary atmospheres,
+          orbital architectures and planetary habitability.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a class="topic-card" href="observations.html">
+        <div class="topic-number">03 / THE MILKY WAY</div>
+        <div class="topic-icon"><i class="fa-solid fa-star"></i></div>
+        <h2>Galactic Astronomy</h2>
+        <p>
+          Galactic structure, stellar populations, the interstellar medium,
+          star formation and the dynamics of the Milky Way.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a class="topic-card" href="research.html">
+        <div class="topic-number">04 / BEYOND THE MILKY WAY</div>
+        <div class="topic-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+        <h2>Extragalactic Astrophysics</h2>
+        <p>
+          Galaxy formation and evolution, active galactic nuclei, quasars,
+          galaxy clusters and large-scale cosmic structure.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a class="topic-card" href="research.html">
+        <div class="topic-number">05 / THE UNIVERSE</div>
+        <div class="topic-icon"><i class="fa-solid fa-infinity"></i></div>
+        <h2>Cosmology</h2>
+        <p>
+          The early universe, cosmic expansion, dark matter, dark energy,
+          the cosmic microwave background and the evolution of the universe.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a class="topic-card" href="journal.html">
+        <div class="topic-number">06 / SPECIAL EDITIONS</div>
+        <div class="topic-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h2>Special Features</h2>
+        <p>
+          In-depth articles, thematic collections, landmark discoveries,
+          historical perspectives and special investigations.
+        </p>
+        <span class="explore">Explore topic <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+    </section>
   </main>
 
   <footer>
-    © 2025 REDSHIFTED - Personal Astronomy Journal |
-    Where Science Meets the Dark Cosmos
-    <i class="fas fa-satellite" aria-hidden="true"></i>
+    <p><span>REDSHIFTED</span> — The Dark Side of the Cosmos</p>
   </footer>
 
 </body>
 </html>
+```
