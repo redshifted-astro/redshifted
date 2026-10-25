@@ -1,0 +1,76 @@
+# Gli argomenti del sito. Per ogni argomento:
+#   id          = nome breve usato nell'indirizzo e nel campo "topic:" degli articoli
+#   icon        = icona Font Awesome (https://fontawesome.com/icons)
+#   label/name/description = testi in italiano (it) e in inglese (en)
+
+- id: solar-system
+  icon: fa-globe
+  label:
+    it: "01 / SCIENZE PLANETARIE"
+    en: "01 / PLANETARY SCIENCE"
+  name:
+    it: "Sistema Solare"
+    en: "Solar System"
+  description:
+    it: "Pianeti, satelliti naturali, pianeti nani, asteroidi, comete, atmosfere planetarie e dinamica orbitale."
+    en: "Planets, natural satellites, dwarf planets, asteroids, comets, planetary atmospheres and orbital dynamics."
+
+- id: exoplanetary-science
+  icon: fa-satellite
+  label:
+    it: "02 / PIANETI EXTRASOLARI"
+    en: "02 / EXTRASOLAR PLANETS"
+  name:
+    it: "Esopianeti"
+    en: "Exoplanetary Science"
+  description:
+    it: "Rivelazione e caratterizzazione degli esopianeti, atmosfere planetarie, architetture orbitali e abitabilità."
+    en: "Exoplanet detection and characterization, planetary atmospheres, orbital architectures and habitability."
+
+- id: milky-way
+  icon: fa-star
+  label:
+    it: "03 / LA NOSTRA GALASSIA"
+    en: "03 / OUR GALAXY"
+  name:
+    it: "Via Lattea"
+    en: "Milky Way"
+  description:
+    it: "Struttura galattica, popolazioni stellari, formazione stellare, mezzo interstellare e dinamica della Galassia."
+    en: "Galactic structure, stellar populations, star formation, the interstellar medium and Galactic dynamics."
+
+- id: extragalactic-astrophysics
+  icon: fa-circle-nodes
+  label:
+    it: "04 / OLTRE LA VIA LATTEA"
+    en: "04 / BEYOND THE MILKY WAY"
+  name:
+    it: "Astrofisica extragalattica"
+    en: "Extragalactic Astrophysics"
+  description:
+    it: "Formazione ed evoluzione delle galassie, nuclei galattici attivi, quasar, ammassi di galassie e struttura a grande scala."
+    en: "Galaxy formation and evolution, active galactic nuclei, quasars, galaxy clusters and large-scale structure."
+
+- id: cosmology
+  icon: fa-infinity
+  label:
+    it: "05 / L'UNIVERSO IN EVOLUZIONE"
+    en: "05 / THE EVOLVING UNIVERSE"
+  name:
+    it: "Cosmologia"
+    en: "Cosmology"
+  description:
+    it: "Espansione cosmica, universo primordiale, materia oscura, energia oscura, fondo cosmico di microonde ed evoluzione della struttura a grande scala."
+    en: "Cosmic expansion, the early universe, dark matter, dark energy, the cosmic microwave background and the evolution of large-scale cosmic structure."
+
+- id: special-features
+  icon: fa-book-open
+  label:
+    it: "06 / RACCOLTE EDITORIALI"
+    en: "06 / EDITORIAL COLLECTIONS"
+  name:
+    it: "Approfondimenti"
+    en: "Special Features"
+  description:
+    it: "Articoli di approfondimento, raccolte tematiche, scoperte fondamentali, prospettive storiche e inchieste speciali."
+    en: "In-depth articles, thematic collections, landmark discoveries, historical perspectives and special investigations."

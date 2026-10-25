@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------
+# Configurazione di Redshifted (Jekyll su GitHub Pages)
+# Dopo aver modificato questo file il sito si aggiorna da solo.
+# ---------------------------------------------------------------
+
+title: Redshifted
+description: Personal Astronomy & Astrophysics Journal
+
+# Indirizzo del sito.
+# Se un giorno userai un dominio tuo (es. redshifted.it), metti
+#   url: "https://redshifted.it"
+#   baseurl: ""
+url: "https://redshifted-astro.github.io"
+baseurl: "/redshifted"
+
+# Un articolo con la data di oggi viene pubblicato subito (ora italiana).
+timezone: Europe/Rome
+
+markdown: kramdown
+
+# Indirizzo degli articoli: /it/journal/nome-articolo/  oppure  /en/journal/nome-articolo/
+permalink: /:categories/journal/:title/
+
+defaults:
+  # Tutto quello che sta nella cartella "it" è in italiano...
+  - scope:
+      path: "it"
+    values:
+      lang: it
+  # ...e tutto quello che sta nella cartella "en" è in inglese.
+  - scope:
+      path: "en"
+    values:
+      lang: en
+  # Ogni articolo usa automaticamente il layout "post".
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+# File che NON devono diventare pagine del sito
+exclude:
+  - GUIDA.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock

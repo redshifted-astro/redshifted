@@ -1,0 +1,28 @@
+{%- assign p = include.post -%}
+{%- assign cl = include.lang -%}
+{%- assign ct = site.data.i18n[cl] -%}
+{%- assign topic_obj = site.data.topics | where: 'id', p.topic | first -%}
+{%- assign words = p.content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: 200 | plus: 1 -%}
+<article class="card">
+  <a class="card-media" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
+    {%- if p.image %}
+    <img src="{% if p.image contains '://' %}{{ p.image }}{% else %}{{ p.image | relative_url }}{% endif %}" alt="" loading="lazy">
+    {%- else %}
+    <span class="card-placeholder"><i class="fas fa-meteor" aria-hidden="true"></i></span>
+    {%- endif %}
+  </a>
+  <div class="card-content">
+    <p class="card-meta">
+      {%- if topic_obj %}<span class="card-topic">{{ topic_obj.name[cl] }}</span> &middot; {% endif -%}
+      <time datetime="{{ p.date | date: '%Y-%m-%d' }}">{% include date.html date=p.date lang=cl %}</time> &middot; {{ mins }} {{ ct.min_read }}
+    </p>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a></h3>
+    <p class="card-excerpt">{% if p.description %}{{ p.description | escape }}{% else %}{{ p.excerpt | strip_html | strip_newlines | replace: '$$', '' | truncate: 180 }}{% endif %}</p>
+    {%- if p.tags.size > 0 %}
+    <div class="tags">
+      {%- for tag in p.tags %}<a class="tag" data-tag="{{ tag | escape }}" href="{{ '/' | append: cl | append: '/journal/' | relative_url }}?q={{ tag | url_encode }}">{{ tag }}</a>{% endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</article>

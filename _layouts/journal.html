@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: 'lang', lang -%}
+{%- if page.section -%}
+  {%- assign posts = posts | where: 'section', page.section -%}
+{%- endif -%}
+
+<main class="container">
+  <h1>{{ page.heading }}</h1>
+  {%- if page.intro %}
+  <p class="intro">{{ page.intro }}</p>
+  {%- endif %}
+
+  {%- if posts.size > 0 %}
+  <div class="search-bar" role="search">
+    <input type="search" id="search" placeholder="{{ t.search_placeholder }}" aria-label="{{ t.search_button }}" autocomplete="off">
+    <button type="button" id="search-btn"><i class="fas fa-search" aria-hidden="true"></i> {{ t.search_button }}</button>
+  </div>
+
+  <div class="cards" id="cards">
+    {%- for p in posts %}
+    {% include card.html post=p lang=lang %}
+    {%- endfor %}
+  </div>
+  <p class="no-results" id="no-results" hidden>{{ t.no_results }}</p>
+  {%- else %}
+  <div class="empty-state">
+    <i class="fas fa-satellite" aria-hidden="true"></i>
+    <h2>{% if page.empty_title %}{{ page.empty_title }}{% else %}{{ t.empty_title }}{% endif %}</h2>
+    <p>{% if page.empty_text %}{{ page.empty_text }}{% else %}{{ t.empty_text }}{% endif %}</p>
+    <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}"><i class="fas fa-home" aria-hidden="true"></i> {{ t.back_home }}</a>
+  </div>
+  {%- endif %}
+</main>

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: 'lang', lang -%}
+
+<section class="hero">
+  <h1>{{ page.heading }}</h1>
+  {%- if page.subtitle %}
+  <p class="hero-sub">{{ page.subtitle }}</p>
+  {%- endif %}
+  <div class="buttons">
+    <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}">{{ t.btn_latest }}</a>
+    <a class="btn btn-outline" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.btn_topics }}</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">{{ t.recent }}</h2>
+  {%- if posts.size > 0 %}
+  <div class="cards">
+    {%- for p in posts limit: 3 %}
+    {% include card.html post=p lang=lang %}
+    {%- endfor %}
+  </div>
+  {%- if posts.size > 3 %}
+  <p class="center"><a class="btn btn-outline" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}">{{ t.all_articles }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+  {%- endif %}
+  {%- else %}
+  <div class="empty-state">
+    <i class="fas fa-satellite" aria-hidden="true"></i>
+    <h3>{{ t.empty_title }}</h3>
+    <p>{{ t.empty_text }}</p>
+  </div>
+  {%- endif %}
+</section>

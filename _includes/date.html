@@ -1,0 +1,4 @@
+{%- assign d = include.date -%}
+{%- assign dt = site.data.i18n[include.lang] -%}
+{%- assign m = d | date: '%-m' | minus: 1 -%}
+{{- d | date: '%-d' }} {{ dt.months[m] }} {{ d | date: '%Y' -}}

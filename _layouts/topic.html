@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign topic = site.data.topics | where: 'id', page.topic | first -%}
+{%- assign posts = site.posts | where: 'lang', lang | where: 'topic', page.topic -%}
+
+<main class="container">
+  <span class="eyebrow">{{ topic.label[lang] }}</span>
+  <h1>{{ topic.name[lang] }}</h1>
+  <p class="intro">{{ topic.description[lang] }}</p>
+
+  {%- if posts.size > 0 %}
+  <div class="cards">
+    {%- for p in posts %}
+    {% include card.html post=p lang=lang %}
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <div class="empty-state">
+    <i class="fas {{ topic.icon }}" aria-hidden="true"></i>
+    <h2>{{ t.empty_title }}</h2>
+    <p>{{ t.empty_text }}</p>
+  </div>
+  {%- endif %}
+
+  <p class="center"><a class="btn btn-primary" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}"><i class="fas fa-layer-group" aria-hidden="true"></i> {{ t.all_topics }}</a></p>
+</main>

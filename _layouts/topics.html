@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign lang_posts = site.posts | where: 'lang', lang -%}
+
+<main class="container">
+  <h1>{{ page.heading }}</h1>
+  {%- if page.intro %}
+  <p class="intro">{{ page.intro }}</p>
+  {%- endif %}
+
+  <section class="topics">
+    {%- for topic in site.data.topics %}
+    {%- assign n = lang_posts | where: 'topic', topic.id | size %}
+    <article class="topic">
+      <i class="fas {{ topic.icon }}" aria-hidden="true"></i>
+      <span class="category-number">{{ topic.label[lang] }}</span>
+      <h2>{{ topic.name[lang] }}</h2>
+      <p>{{ topic.description[lang] }}</p>
+      <span class="topic-count">{{ n }} {% if n == 1 %}{{ t.article_one }}{% else %}{{ t.article_many }}{% endif %}</span>
+      <a class="topic-link" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}">{{ t.explore }}: {{ topic.name[lang] }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </article>
+    {%- endfor %}
+  </section>
+
+  <p class="center"><a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}"><i class="fas fa-home" aria-hidden="true"></i> {{ t.back_home }}</a></p>
+</main>

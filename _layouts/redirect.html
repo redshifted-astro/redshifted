@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Redshifted</title>
+  <noscript><meta http-equiv="refresh" content="0; url={{ '/it/' | append: page.target | relative_url }}"></noscript>
+  <script>
+    (function () {
+      var lang = null;
+      try { lang = localStorage.getItem('redshifted-lang'); } catch (e) {}
+      if (lang !== 'it' && lang !== 'en') {
+        lang = ((navigator.language || 'it').toLowerCase().indexOf('it') === 0) ? 'it' : 'en';
+      }
+      location.replace('{{ '/' | relative_url }}' + lang + '/{{ page.target }}' + location.search + location.hash);
+    })();
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+           background: #1e1e1e; color: #fff; font-family: 'Segoe UI', system-ui, sans-serif; text-align: center; }
+    a { color: #fba500; font-weight: bold; margin: 0 .6rem; }
+  </style>
+</head>
+<body>
+  <p>Redshifted<br><br>
+    <a href="{{ '/it/' | append: page.target | relative_url }}">Italiano</a>
+    <a href="{{ '/en/' | append: page.target | relative_url }}">English</a>
+  </p>
+</body>
+</html>

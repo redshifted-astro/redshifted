@@ -1,0 +1,1 @@
+Cartella degli articoli. Per aggiungerne uno, crea qui un file con nome AAAA-MM-GG-titolo.md (vedi GUIDA.md).

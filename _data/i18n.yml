@@ -1,0 +1,64 @@
+# Le piccole scritte del sito (menu, pulsanti, messaggi) in italiano e in inglese.
+# I testi delle singole pagine si modificano invece nei file dentro le cartelle it/ e en/.
+
+it:
+  tagline: "Astronomia e astrofisica raccontate da chi le studia."
+  footer: "Diario personale di astronomia | Dove la scienza incontra il cosmo oscuro"
+  og_locale: it_IT
+  nav:
+    home: "Home"
+    journal: "Journal"
+    observations: "Osservazioni"
+    research: "Ricerca"
+    topics: "Argomenti"
+  btn_latest: "Ultimi articoli"
+  btn_topics: "Esplora gli argomenti"
+  recent: "Articoli recenti"
+  all_articles: "Tutti gli articoli"
+  search_placeholder: "Cerca per parola chiave o tag..."
+  search_button: "Cerca"
+  no_results: "Nessun articolo corrisponde alla ricerca."
+  empty_title: "Nuovi articoli in arrivo"
+  empty_text: "Gli articoli appariranno qui non appena saranno pubblicati."
+  back_home: "Torna alla Home"
+  back_journal: "Torna al Journal"
+  all_topics: "Tutti gli argomenti"
+  explore: "Esplora"
+  min_read: "min di lettura"
+  article_one: "articolo"
+  article_many: "articoli"
+  scroll_top: "Torna su"
+  not_found_title: "Pagina non trovata"
+  not_found_text: "La pagina che cerchi non esiste o è stata spostata."
+  months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
+
+en:
+  tagline: "Astronomy and astrophysics, written by someone who studies them."
+  footer: "Personal Astronomy Journal | Where Science Meets the Dark Cosmos"
+  og_locale: en_US
+  nav:
+    home: "Home"
+    journal: "Journal"
+    observations: "Observations"
+    research: "Research"
+    topics: "Topics"
+  btn_latest: "Latest Entries"
+  btn_topics: "Browse Topics"
+  recent: "Recent articles"
+  all_articles: "All articles"
+  search_placeholder: "Search by keyword or tag..."
+  search_button: "Search"
+  no_results: "No article matches your search."
+  empty_title: "New entries coming soon"
+  empty_text: "Articles will appear here as soon as they are published."
+  back_home: "Back to Home"
+  back_journal: "Back to Journal"
+  all_topics: "All topics"
+  explore: "Explore"
+  min_read: "min read"
+  article_one: "article"
+  article_many: "articles"
+  scroll_top: "Back to top"
+  not_found_title: "Page not found"
+  not_found_text: "The page you are looking for does not exist or has moved."
+  months: [January, February, March, April, May, June, July, August, September, October, November, December]

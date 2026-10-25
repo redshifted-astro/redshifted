@@ -1,0 +1,2 @@
+Cartella delle immagini degli articoli. Carica qui le foto e poi usale con:
+image: /assets/img/posts/nome-file.jpg

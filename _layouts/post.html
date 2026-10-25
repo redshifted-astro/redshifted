@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign topic_obj = site.data.topics | where: 'id', page.topic | first -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: 200 | plus: 1 -%}
+
+<main class="container">
+  <article class="post">
+    <header class="post-header">
+      {%- if topic_obj %}
+      <a class="eyebrow" href="{{ '/' | append: lang | append: '/topics/' | append: topic_obj.id | append: '/' | relative_url }}">{{ topic_obj.name[lang] }}</a>
+      {%- endif %}
+      <h1>{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date.html date=page.date lang=lang %}</time> &middot; {{ mins }} {{ t.min_read }}
+      </p>
+    </header>
+
+    {%- if page.image %}
+    <figure class="post-figure">
+      <img src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ page.image | relative_url }}{% endif %}" alt="{{ page.image_alt | escape }}">
+      {%- if page.image_caption %}
+      <figcaption>{{ page.image_caption }}</figcaption>
+      {%- endif %}
+    </figure>
+    {%- endif %}
+
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    {%- if page.tags.size > 0 %}
+    <div class="tags post-tags">
+      {%- for tag in page.tags %}<a class="tag" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}?q={{ tag | url_encode }}">{{ tag }}</a>{% endfor %}
+    </div>
+    {%- endif %}
+  </article>
+
+  <p class="center"><a class="btn btn-primary" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}"><i class="fas fa-book" aria-hidden="true"></i> {{ t.back_journal }}</a></p>
+</main>
+
+{%- if page.math %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script defer src="{{ '/assets/js/math.js' | relative_url }}"></script>
+{%- endif %}

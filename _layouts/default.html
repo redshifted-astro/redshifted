@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{%- assign lang = page.lang | default: 'it' -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign other = 'en' -%}
+{%- if lang == 'en' -%}{%- assign other = 'it' -%}{%- endif -%}
+
+{%- comment -%} Indirizzo della versione nell'altra lingua (serve al pulsante IT / EN) {%- endcomment -%}
+{%- assign alt_url = '' -%}
+{%- assign has_translation = false -%}
+{%- if page.lang -%}
+  {%- if page.layout == 'post' -%}
+    {%- if page.ref -%}
+      {%- assign candidates = site.posts | where: 'lang', other -%}
+      {%- for c in candidates -%}
+        {%- if c.ref == page.ref -%}
+          {%- assign alt_url = c.url -%}
+          {%- assign has_translation = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if alt_url == '' -%}
+      {%- assign alt_url = '/' | append: other | append: '/journal/' -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign from = '/' | append: lang | append: '/' -%}
+    {%- assign to = '/' | append: other | append: '/' -%}
+    {%- assign alt_url = page.url | replace_first: from, to -%}
+    {%- assign has_translation = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Titolo, descrizione e immagine per Google e per le anteprime sui social {%- endcomment -%}
+{%- if page.description -%}
+  {%- assign meta_desc = page.description -%}
+{%- elsif page.layout == 'post' -%}
+  {%- assign meta_desc = page.excerpt | strip_html | strip_newlines | replace: '$$', '' | truncate: 160 -%}
+{%- elsif page.subtitle -%}
+  {%- assign meta_desc = page.subtitle -%}
+{%- else -%}
+  {%- assign meta_desc = t.tagline -%}
+{%- endif -%}
+{%- assign og_image = '/assets/img/logo.jpg' | absolute_url -%}
+{%- if page.image -%}
+  {%- if page.image contains '://' -%}
+    {%- assign og_image = page.image -%}
+  {%- else -%}
+    {%- assign og_image = page.image | absolute_url -%}
+  {%- endif -%}
+{%- endif -%}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | strip_html | escape }} | {% endif %}Redshifted</title>
+  <meta name="description" content="{{ meta_desc | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if has_translation %}
+  <link rel="alternate" hreflang="{{ other }}" href="{{ alt_url | absolute_url }}">
+  {%- endif %}
+
+  <meta property="og:site_name" content="Redshifted">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | escape }}{% else %}Redshifted{% endif %}">
+  <meta property="og:description" content="{{ meta_desc | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:locale" content="{{ t.og_locale }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</head>
+<body>
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  <button type="button" class="scroll-up" id="scroll-up" aria-label="{{ t.scroll_top }}">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+</body>
+</html>
