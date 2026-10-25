@@ -11,6 +11,8 @@
     <a href="{{ '/' | append: lang | append: '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><i class="fas fa-flask" aria-hidden="true"></i> {{ t.nav.research }}</a>
     <a href="{{ '/' | append: lang | append: '/topics/' | relative_url }}"{% if page.url contains '/topics/' %} class="active"{% endif %}><i class="fas fa-layer-group" aria-hidden="true"></i> {{ t.nav.topics }}</a>
 
+    <a href="{{ '/' | append: lang | append: '/about/' | relative_url }}"{% if page.url contains '/about/' %} class="active" aria-current="page"{% endif %}><i class="fas fa-user" aria-hidden="true"></i> {{ t.nav.about }}</a>
+
     {%- if alt_url != '' %}
     <span class="lang-switch" role="group" aria-label="Language / Lingua">
       {%- if lang == 'it' %}

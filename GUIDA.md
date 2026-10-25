@@ -96,6 +96,10 @@ Se un articolo esiste in una sola lingua, il pulsante porta all'elenco degli art
 
 Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spazi né accenti. Per le immagini molto pesanti conviene ridurle prima con un programma o un sito di compressione.
 
+**Foto di copertina e carosello.** Nella Home il carosello mostra gli **ultimi 5 articoli**, ognuno con la sua foto di copertina, e si può cliccare per aprirli. Un articolo senza `image` compare comunque, ma con uno sfondo scuro al posto della foto: per il carosello conviene sempre metterla. Le foto più larghe che alte (circa 16:9) rendono meglio.
+
+**Crediti e didascalie.** Se la foto o l'immagine l'hai creata tu (anche con un programma di intelligenza artificiale), non serve un credito, ma in un sito scientifico conviene scrivere nella didascalia (`image_caption`) che è un'illustrazione, per esempio «Illustrazione generata con IA», così nessuno la scambia per una vera osservazione. Per le immagini prese da altri (NASA, ESA, osservatori...) scrivi sempre la fonte, per esempio «Credit: NASA/ESA», e verifica la licenza.
+
 ---
 
 ## 6. Modificare, nascondere o eliminare un articolo
@@ -110,11 +114,12 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 
 | Cosa | Dove |
 |---|---|
-| Titolo e sottotitolo della Home | `it/index.html` e `en/index.html` (tra i `---` in alto) |
+| Titolo e sottotitolo della Home (il carosello e la fascia degli argomenti sono automatici) | `it/index.html` e `en/index.html` (tra i `---` in alto) |
 | Titoli e introduzioni di Journal, Osservazioni, Ricerca, Argomenti | i file `index.html` nelle cartelle `it/...` e `en/...` |
 | Nomi e descrizioni degli argomenti | `_data/topics.yml` |
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |
+| Pagina «Chi sono» / «About» | `it/about/index.md` e `en/about/index.md` (il testo sotto i `---` è Markdown, come negli articoli) |
 | Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/titolo.jpg` |
 
 L'immagine del titolo contiene la scritta in inglese «Personal Astronomy & Astrophysics Journal».

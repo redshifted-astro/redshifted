@@ -5,28 +5,44 @@ layout: default
 {%- assign t = site.data.i18n[lang] -%}
 {%- assign posts = site.posts | where: 'lang', lang -%}
 
-<section class="hero">
+<section class="hero hero-compact">
   <h1>{{ page.heading }}</h1>
   {%- if page.subtitle %}
   <p class="hero-sub">{{ page.subtitle }}</p>
   {%- endif %}
-  <div class="buttons">
-    <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}">{{ t.btn_latest }}</a>
-    <a class="btn btn-outline" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.btn_topics }}</a>
-  </div>
 </section>
 
-<section class="section">
+<section class="section featured" aria-label="{{ t.recent }}">
   <h2 class="section-title">{{ t.recent }}</h2>
   {%- if posts.size > 0 %}
-  <div class="cards">
-    {%- for p in posts limit: 3 %}
-    {% include card.html post=p lang=lang %}
-    {%- endfor %}
+  <div class="carousel" id="carousel" data-autoplay="6500" role="region" aria-roledescription="carousel" aria-label="{{ t.recent }}"
+       data-label-prev="{{ t.prev }}" data-label-next="{{ t.next }}" data-label-pause="{{ t.pause }}" data-label-play="{{ t.play }}" data-label-item="{{ t.slide_label }}">
+    <div class="carousel-track" id="carousel-track">
+      {%- for p in posts limit: 5 %}
+      {%- assign topic_obj = site.data.topics | where: 'id', p.topic | first %}
+      <article class="slide" role="group" aria-roledescription="slide">
+        <a class="slide-link" href="{{ p.url | relative_url }}">
+          <span class="slide-media">
+            {%- if p.image %}
+            <img src="{% if p.image contains '://' %}{{ p.image }}{% else %}{{ p.image | relative_url }}{% endif %}" alt="" {% unless forloop.first %}loading="lazy"{% endunless %}>
+            {%- else %}
+            <span class="slide-placeholder"><i class="fas fa-meteor" aria-hidden="true"></i></span>
+            {%- endif %}
+          </span>
+          <span class="slide-caption">
+            <span class="slide-meta">
+              {%- if topic_obj %}<span class="slide-topic">{{ topic_obj.name[lang] }}</span> &middot; {% endif -%}
+              {% include date.html date=p.date lang=lang %}
+            </span>
+            <span class="slide-title">{{ p.title | escape }}</span>
+            <span class="slide-text">{% if p.description %}{{ p.description | escape }}{% else %}{{ p.excerpt | strip_html | strip_newlines | replace: '$$', '' | truncate: 160 }}{% endif %}</span>
+          </span>
+        </a>
+      </article>
+      {%- endfor %}
+    </div>
   </div>
-  {%- if posts.size > 3 %}
-  <p class="center"><a class="btn btn-outline" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}">{{ t.all_articles }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
-  {%- endif %}
+  <p class="center center-tight"><a class="btn btn-outline" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}">{{ t.all_articles }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
   {%- else %}
   <div class="empty-state">
     <i class="fas fa-satellite" aria-hidden="true"></i>
@@ -34,4 +50,14 @@ layout: default
     <p>{{ t.empty_text }}</p>
   </div>
   {%- endif %}
+</section>
+
+<section class="section topic-strip" aria-label="{{ t.btn_topics }}">
+  <h2 class="section-title">{{ t.btn_topics }}</h2>
+  <div class="chips">
+    {%- for topic in site.data.topics %}
+    <a class="chip" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}"><i class="fas {{ topic.icon }}" aria-hidden="true"></i> {{ topic.name[lang] }}</a>
+    {%- endfor %}
+  </div>
+  <p class="center center-tight"><a class="more-link" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.all_topics }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 </section>
