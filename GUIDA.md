@@ -140,6 +140,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |
 | Pagina «Chi sono» / «About» (si apre dal link in fondo a ogni pagina) | `it/about/index.md` e `en/about/index.md` (il testo sotto i `---` è Markdown, come negli articoli) |
+| Pagina «Contatti» / «Contact» (indirizzo email incluso) | `it/contact/index.md` e `en/contact/index.md` |
 | Elenco dei file della pagina Download | `_data/downloads.yml` (vedi punto 7) |
 | Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/titolo.jpg` |
 
