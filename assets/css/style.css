@@ -76,17 +76,17 @@ a:hover { color: #ffc14d; }
 }
 
 .icon-star {
-  width: 60px;
-  height: 60px;
+  width: 68px;
+  height: 68px;
   flex: none;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px #ff6f3f80;
 }
 
-.icon-star img { width: 60px; height: 60px; object-fit: cover; display: block; }
+.icon-star img { width: 68px; height: 68px; object-fit: cover; display: block; }
 
-.title-image { height: 64px; width: auto; display: block; mix-blend-mode: lighten; }
+.title-image { height: 72px; width: 250px; max-width: 100%; object-fit: fill; display: block; mix-blend-mode: lighten; }
 
 .main-nav {
   display: flex;
@@ -595,7 +595,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .title-image { height: 52px; }
+  .title-image { height: 56px; width: 190px; }
   .hero { padding-top: 2.5rem; }
   .btn { width: 100%; justify-content: center; }
 }
