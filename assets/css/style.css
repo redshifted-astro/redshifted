@@ -695,3 +695,15 @@ h1 {
 /* intestazione su due righe: logo e bottoni centrati, stessa distanza da destra e da sinistra */
 .site-header.wrapped { justify-content: center; }
 .site-header.wrapped .main-nav { justify-content: center; }
+
+/* Icone astrofisiche disegnate per il sito: prendono il colore del testo che le circonda */
+.ico { display: inline-block; width: 1.2em; height: 1.2em; vertical-align: -0.2em; background-color: currentColor; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
+.ico-orbite { -webkit-mask-image: url('../icons/orbite.svg'); mask-image: url('../icons/orbite.svg'); }
+.ico-transito { -webkit-mask-image: url('../icons/transito.svg'); mask-image: url('../icons/transito.svg'); }
+.ico-spirale { -webkit-mask-image: url('../icons/spirale.svg'); mask-image: url('../icons/spirale.svg'); }
+.ico-galassie-interagenti { -webkit-mask-image: url('../icons/galassie-interagenti.svg'); mask-image: url('../icons/galassie-interagenti.svg'); }
+.ico-universo-in-espansione { -webkit-mask-image: url('../icons/universo-in-espansione.svg'); mask-image: url('../icons/universo-in-espansione.svg'); }
+.ico-libro-stella { -webkit-mask-image: url('../icons/libro-stella.svg'); mask-image: url('../icons/libro-stella.svg'); }
+.topic > .ico { display: block; width: 2.6rem; height: 2.6rem; color: var(--coral); margin-bottom: 0.4rem; }
+.empty-state > .ico { display: block; width: 3.4rem; height: 3.4rem; color: var(--coral); margin: 0 auto 0.8rem; }
+.chip .ico { color: var(--coral); width: 1.3em; height: 1.3em; vertical-align: -0.28em; }

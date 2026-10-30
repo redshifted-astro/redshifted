@@ -56,7 +56,7 @@ layout: default
   <h2 class="section-title">{{ t.btn_topics }}</h2>
   <div class="chips">
     {%- for topic in site.data.topics %}
-    <a class="chip" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}"><i class="fas {{ topic.icon }}" aria-hidden="true"></i> {{ topic.name[lang] }}</a>
+    <a class="chip" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}"><span class="ico ico-{{ topic.icon }}" aria-hidden="true"></span> {{ topic.name[lang] }}</a>
     {%- endfor %}
   </div>
   <p class="center center-tight"><a class="more-link" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.all_topics }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>

@@ -15,7 +15,7 @@ layout: default
     {%- for topic in site.data.topics %}
     {%- assign n = lang_posts | where: 'topic', topic.id | size %}
     <article class="topic">
-      <i class="fas {{ topic.icon }}" aria-hidden="true"></i>
+      <span class="ico ico-{{ topic.icon }}" aria-hidden="true"></span>
       <span class="category-number">{{ topic.label[lang] }}</span>
       <h2>{{ topic.name[lang] }}</h2>
       <p>{{ topic.description[lang] }}</p>
