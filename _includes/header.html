@@ -12,7 +12,6 @@
     <a href="{{ '/' | append: lang | append: '/downloads/' | relative_url }}"{% if page.url contains '/downloads/' %} class="active" aria-current="page"{% endif %}><i class="fas fa-download" aria-hidden="true"></i> {{ t.nav.downloads }}</a>
 
     <form class="site-search" role="search" action="{{ '/' | append: lang | append: '/journal/' | relative_url }}" method="get" data-index="{{ '/search.json' | relative_url }}" data-lang="{{ lang }}" data-none="{{ t.search_none | escape }}" data-error="{{ t.search_error | escape }}">
-      <button type="button" class="ss-toggle" aria-label="{{ t.search_button }}" aria-expanded="false"><i class="fas fa-search" aria-hidden="true"></i></button>
       <div class="ss-box">
         <input type="search" name="q" class="ss-input" placeholder="{{ t.search_global | escape }}" aria-label="{{ t.search_global | escape }}" autocomplete="off" spellcheck="false">
         <div class="ss-results" role="listbox" hidden></div>

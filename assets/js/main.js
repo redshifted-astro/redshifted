@@ -154,7 +154,6 @@
   'use strict';
   var form = document.querySelector('.site-search');
   if (!form) return;
-  var toggle = form.querySelector('.ss-toggle');
   var input = form.querySelector('.ss-input');
   var box = form.querySelector('.ss-results');
   var lang = form.getAttribute('data-lang');
@@ -280,24 +279,15 @@
     box.hidden = false;
   }
 
-  function openBox() {
-    form.classList.add('open'); toggle.setAttribute('aria-expanded', 'true');
-    input.focus();
-    load(render);
-  }
-  function closeBox() {
-    form.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
-    box.hidden = true; active = -1;
-  }
+  function closeBox() { box.hidden = true; active = -1; }
 
-  toggle.addEventListener('click', function () { if (form.classList.contains('open')) closeBox(); else openBox(); });
-  input.addEventListener('focus', function () { form.classList.add('open'); load(render); });
+  input.addEventListener('focus', function () { load(render); });
   input.addEventListener('input', function () { load(render); });
   form.addEventListener('submit', function (e) {
     if (index) { e.preventDefault(); var t = items[active > -1 ? active : 0]; if (t) window.location.href = t.href; }
   });
   form.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { closeBox(); toggle.focus(); return; }
+    if (e.key === 'Escape') { closeBox(); input.blur(); return; }
     if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && items.length) {
       e.preventDefault();
       active = (active + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
