@@ -297,3 +297,19 @@
   });
   document.addEventListener('click', function (e) { if (!form.contains(e.target)) closeBox(); });
 })();
+
+/* Se i bottoni vanno a capo sotto il logo, il tutto si centra: stessa distanza dai due bordi */
+(function () {
+  'use strict';
+  var header = document.querySelector('.site-header');
+  var brand = header && header.querySelector('.brand');
+  var nav = header && header.querySelector('.main-nav');
+  if (!brand || !nav) return;
+  function check() {
+    header.classList.remove('wrapped');
+    if (nav.getBoundingClientRect().top >= brand.getBoundingClientRect().bottom - 2) header.classList.add('wrapped');
+  }
+  window.addEventListener('resize', check);
+  window.addEventListener('load', check);
+  check();
+})();
