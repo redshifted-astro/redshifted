@@ -148,3 +148,162 @@
     filter();
   }
 })();
+
+/* Ricerca nel testo degli articoli (casella nel menu in alto) */
+(function () {
+  'use strict';
+  var form = document.querySelector('.site-search');
+  if (!form) return;
+  var toggle = form.querySelector('.ss-toggle');
+  var input = form.querySelector('.ss-input');
+  var box = form.querySelector('.ss-results');
+  var lang = form.getAttribute('data-lang');
+  var index = null, loading = false, failed = false, items = [], active = -1;
+
+  // minuscolo e senza accenti, mantenendo la stessa lunghezza del testo originale
+  function norm(s) {
+    var out = '';
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charAt(i).toLowerCase();
+      var d = c.normalize ? c.normalize('NFD').replace(/[̀-ͯ]/g, '') : c;
+      out += d.length === 1 ? d : c.charAt(0);
+    }
+    return out;
+  }
+
+  function load(cb) {
+    if (index) return cb();
+    if (loading) return;
+    loading = true;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', form.getAttribute('data-index'));
+    xhr.onload = function () {
+      loading = false;
+      try {
+        var data = JSON.parse(xhr.responseText), list = [];
+        for (var i = 0; i < data.length; i++) {
+          var d = data[i];
+          if (d.lang !== lang) continue;
+          var text = (d.text || '').replace(/\s+/g, ' ');
+          list.push({
+            title: d.title || '', url: d.url, text: text,
+            nt: norm(d.title || ''), ng: norm((d.tags || []).join(' ')),
+            nd: norm(d.description || ''), nx: norm(text)
+          });
+        }
+        index = list; failed = false;
+      } catch (e) { failed = true; index = []; }
+      cb();
+    };
+    xhr.onerror = function () { loading = false; failed = true; index = []; cb(); };
+    xhr.send();
+  }
+
+  function count(h, w) {
+    var n = 0, p = h.indexOf(w);
+    while (p > -1 && n < 50) { n++; p = h.indexOf(w, p + w.length); }
+    return n;
+  }
+
+  function search(q) {
+    var terms = norm(q).split(/\s+/).filter(function (t) { return t.length > 0; });
+    if (!terms.length) return [];
+    var res = [];
+    for (var i = 0; i < index.length; i++) {
+      var it = index[i], score = 0, ok = true;
+      for (var k = 0; k < terms.length; k++) {
+        var t = terms[k];
+        var s = count(it.nt, t) * 8 + count(it.ng, t) * 5 + count(it.nd, t) * 3 + count(it.nx, t);
+        if (!s) { ok = false; break; }
+        score += s;
+      }
+      if (ok) res.push({ it: it, score: score, terms: terms });
+    }
+    res.sort(function (a, b) { return b.score - a.score; });
+    return res.slice(0, 8);
+  }
+
+  function snippet(r) {
+    var text = r.it.text, nx = r.it.nx, pos = -1;
+    for (var k = 0; k < r.terms.length && pos < 0; k++) pos = nx.indexOf(r.terms[k]);
+    var from = pos < 0 ? 0 : Math.max(0, pos - 60);
+    var to = Math.min(text.length, from + 170);
+    if (from > 0) { var sp = text.indexOf(' ', from); if (sp > -1 && sp < pos) from = sp + 1; }
+    return { s: text.substring(from, to), n: nx.substring(from, to), pre: from > 0, post: to < text.length };
+  }
+
+  // scrive il testo in sicurezza evidenziando le parole cercate
+  function highlight(el, str, nstr, terms) {
+    var marks = [];
+    for (var k = 0; k < terms.length; k++) {
+      var p = nstr.indexOf(terms[k]);
+      while (p > -1) { marks.push([p, p + terms[k].length]); p = nstr.indexOf(terms[k], p + terms[k].length); }
+    }
+    marks.sort(function (a, b) { return a[0] - b[0]; });
+    var pos = 0;
+    for (var m = 0; m < marks.length; m++) {
+      if (marks[m][0] < pos) continue;
+      el.appendChild(document.createTextNode(str.substring(pos, marks[m][0])));
+      var mk = document.createElement('mark');
+      mk.textContent = str.substring(marks[m][0], marks[m][1]);
+      el.appendChild(mk);
+      pos = marks[m][1];
+    }
+    el.appendChild(document.createTextNode(str.substring(pos)));
+  }
+
+  function clear() { while (box.firstChild) box.removeChild(box.firstChild); items = []; active = -1; }
+
+  function msg(text) {
+    clear();
+    var p = document.createElement('p'); p.className = 'ss-msg'; p.textContent = text;
+    box.appendChild(p); box.hidden = false;
+  }
+
+  function render() {
+    var q = input.value.replace(/^\s+|\s+$/g, '');
+    if (!q) { clear(); box.hidden = true; return; }
+    if (failed) return msg(form.getAttribute('data-error'));
+    var res = search(q);
+    if (!res.length) return msg(form.getAttribute('data-none'));
+    clear();
+    for (var i = 0; i < res.length; i++) {
+      var r = res[i], a = document.createElement('a');
+      a.className = 'ss-item'; a.href = r.it.url; a.setAttribute('role', 'option');
+      var h = document.createElement('strong'); highlight(h, r.it.title, r.it.nt, r.terms);
+      var sn = snippet(r), d = document.createElement('span');
+      if (sn.pre) d.appendChild(document.createTextNode('… '));
+      highlight(d, sn.s, sn.n, r.terms);
+      if (sn.post) d.appendChild(document.createTextNode(' …'));
+      a.appendChild(h); a.appendChild(d); box.appendChild(a); items.push(a);
+    }
+    box.hidden = false;
+  }
+
+  function openBox() {
+    form.classList.add('open'); toggle.setAttribute('aria-expanded', 'true');
+    input.focus();
+    load(render);
+  }
+  function closeBox() {
+    form.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
+    box.hidden = true; active = -1;
+  }
+
+  toggle.addEventListener('click', function () { if (form.classList.contains('open')) closeBox(); else openBox(); });
+  input.addEventListener('focus', function () { form.classList.add('open'); load(render); });
+  input.addEventListener('input', function () { load(render); });
+  form.addEventListener('submit', function (e) {
+    if (index) { e.preventDefault(); var t = items[active > -1 ? active : 0]; if (t) window.location.href = t.href; }
+  });
+  form.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeBox(); toggle.focus(); return; }
+    if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && items.length) {
+      e.preventDefault();
+      active = (active + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+      for (var i = 0; i < items.length; i++) items[i].classList.toggle('active', i === active);
+      items[active].scrollIntoView({ block: 'nearest' });
+    }
+  });
+  document.addEventListener('click', function (e) { if (!form.contains(e.target)) closeBox(); });
+})();
