@@ -86,7 +86,7 @@ a:hover { color: #ffc14d; }
 
 .icon-star img { width: 60px; height: 60px; object-fit: cover; display: block; }
 
-.title-image { height: 64px; width: auto; display: block; }
+.title-image { height: 64px; width: auto; display: block; mix-blend-mode: lighten; }
 
 .main-nav {
   display: flex;
