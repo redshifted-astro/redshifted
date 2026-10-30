@@ -1,0 +1,2 @@
+Cartella dei file scaricabili (PDF, presentazioni, immagini...).
+Dopo averli caricati qui, aggiungili all'elenco nel file _data/downloads.yml (vedi GUIDA.md).

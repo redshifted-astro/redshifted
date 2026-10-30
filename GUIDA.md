@@ -7,8 +7,8 @@ Questa guida spiega come pubblicare articoli e come modificare il sito **senza u
 ## 1. Pubblicare un nuovo articolo
 
 1. Clicca il link giusto (devi aver fatto l'accesso a GitHub):
-   - **Articolo in italiano:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=it/_posts/2026-10-25-titolo-articolo.md&value=---%0Atitle%3A%20%22Titolo%20dell%27articolo%22%0Adescription%3A%20%22Una%20o%20due%20frasi%20che%20riassumono%20l%27articolo%3A%20compaiono%20nella%20scheda%20e%20su%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmologia%2C%20materia%20oscura%5D%0Aref%3A%20nome-breve-dell-articolo%0A%23%20Per%20togliere%20il%20simbolo%20%23%20e%20attivare%20una%20riga%2C%20cancellalo%20%28e%20anche%20lo%20spazio%20dopo%29.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fnome-immagine.jpg%0A%23%20image_alt%3A%20%22Descrizione%20dell%27immagine%22%0A%23%20image_caption%3A%20%22Didascalia%20%28facoltativa%29%22%0A%23%20section%3A%20observations%0A%23%20math%3A%20true%0A---%0A%0AScrivi%20qui%20il%20testo%20dell%27articolo.%0A%0A%23%23%20Un%20titolo%20di%20sezione%0A%0ATesto%20con%20%2A%2Agrassetto%2A%2A%2C%20%2Acorsivo%2A%20e%20%5Bun%20link%5D%28https%3A%2F%2Fesempio.org%29.%0A)
-   - **Articolo in inglese:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=en/_posts/2026-10-25-article-title.md&value=---%0Atitle%3A%20%22Article%20title%22%0Adescription%3A%20%22One%20or%20two%20sentences%20summarising%20the%20article%3A%20they%20appear%20on%20the%20card%20and%20on%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmology%2C%20dark%20matter%5D%0Aref%3A%20short-name-of-the-article%0A%23%20To%20switch%20a%20line%20on%2C%20delete%20the%20%23%20and%20the%20space%20after%20it.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fimage-name.jpg%0A%23%20image_alt%3A%20%22Description%20of%20the%20image%22%0A%23%20image_caption%3A%20%22Caption%20%28optional%29%22%0A%23%20section%3A%20observations%0A%23%20math%3A%20true%0A---%0A%0AWrite%20the%20text%20of%20the%20article%20here.%0A%0A%23%23%20A%20section%20heading%0A%0AText%20with%20%2A%2Abold%2A%2A%2C%20%2Aitalic%2A%20and%20%5Ba%20link%5D%28https%3A%2F%2Fexample.org%29.%0A)
+   - **Articolo in italiano:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=it/_posts/2026-10-25-titolo-articolo.md&value=---%0Atitle%3A%20%22Titolo%20dell%27articolo%22%0Adescription%3A%20%22Una%20o%20due%20frasi%20che%20riassumono%20l%27articolo%3A%20compaiono%20nella%20scheda%20e%20su%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmologia%2C%20materia%20oscura%5D%0Aref%3A%20nome-breve-dell-articolo%0A%23%20Per%20togliere%20il%20simbolo%20%23%20e%20attivare%20una%20riga%2C%20cancellalo%20%28e%20anche%20lo%20spazio%20dopo%29.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fnome-immagine.jpg%0A%23%20image_alt%3A%20%22Descrizione%20dell%27immagine%22%0A%23%20image_caption%3A%20%22Didascalia%20%28facoltativa%29%22%0A%23%20section%3A%20observations%20%20%20%28oppure%3A%20missions%29%0A%23%20math%3A%20true%0A---%0A%0AScrivi%20qui%20il%20testo%20dell%27articolo.%0A%0A%23%23%20Un%20titolo%20di%20sezione%0A%0ATesto%20con%20%2A%2Agrassetto%2A%2A%2C%20%2Acorsivo%2A%20e%20%5Bun%20link%5D%28https%3A%2F%2Fesempio.org%29.%0A)
+   - **Articolo in inglese:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=en/_posts/2026-10-25-article-title.md&value=---%0Atitle%3A%20%22Article%20title%22%0Adescription%3A%20%22One%20or%20two%20sentences%20summarising%20the%20article%3A%20they%20appear%20on%20the%20card%20and%20on%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmology%2C%20dark%20matter%5D%0Aref%3A%20short-name-of-the-article%0A%23%20To%20switch%20a%20line%20on%2C%20delete%20the%20%23%20and%20the%20space%20after%20it.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fimage-name.jpg%0A%23%20image_alt%3A%20%22Description%20of%20the%20image%22%0A%23%20image_caption%3A%20%22Caption%20%28optional%29%22%0A%23%20section%3A%20observations%20%20%20%28or%3A%20missions%29%0A%23%20math%3A%20true%0A---%0A%0AWrite%20the%20text%20of%20the%20article%20here.%0A%0A%23%23%20A%20section%20heading%0A%0AText%20with%20%2A%2Abold%2A%2A%2C%20%2Aitalic%2A%20and%20%5Ba%20link%5D%28https%3A%2F%2Fexample.org%29.%0A)
 2. In alto, nella casella del nome del file, cambia la parte dopo la data: per esempio `2026-10-25-titolo-articolo.md` diventa `2026-11-03-buchi-neri-supermassicci.md`.
    - La data è quella di pubblicazione, nel formato **anno-mese-giorno**.
    - Usa solo lettere minuscole, numeri e trattini, **senza spazi né accenti**. Quel nome diventa l'indirizzo dell'articolo.
@@ -32,7 +32,7 @@ Questa guida spiega come pubblicare articoli e come modificare il sito **senza u
 | `image` | Immagine di copertina, per esempio `/assets/img/posts/orione.jpg` | no |
 | `image_alt` | Descrizione dell'immagine (per chi non la vede) | no |
 | `image_caption` | Didascalia sotto l'immagine | no |
-| `section` | `observations` per farlo comparire anche in *Osservazioni*, `research` per *Ricerca* | no |
+| `section` | `observations` per farlo comparire anche in *Osservazioni*, `missions` per *Missioni spaziali* (resta comunque nel Journal) | no |
 | `math` | `true` per attivare le formule | no |
 | `published` | `false` per tenerlo nascosto (bozza) | no |
 
@@ -110,23 +110,44 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 
 ---
 
-## 7. Cambiare i testi del sito
+## 7. Aggiungere un file alla pagina Download
+
+1. Apri su GitHub la cartella `assets/downloads`, premi **Add file → Upload files**, trascina il file (PDF, presentazione, immagine...) e conferma con **Commit changes**. Nome del file senza spazi né accenti.
+2. Apri il file `_data/downloads.yml`, premi la matita e aggiungi in fondo un blocco come questo. I rientri (gli spazi all'inizio delle righe) devono essere identici:
+
+```
+- file: /assets/downloads/dispensa-buchi-neri.pdf
+  size: "2 MB"
+  title:
+    it: "Dispensa sui buchi neri"
+    en: "Black holes handout"
+  description:
+    it: "Una breve introduzione agli orizzonti degli eventi."
+    en: "A short introduction to event horizons."
+```
+
+3. Premi **Commit changes**. Dopo 1-2 minuti il file compare nella pagina *Download*, in italiano e in inglese. Il blocco più in alto compare per primo. Per togliere un file basta cancellare il suo blocco.
+
+---
+
+## 8. Cambiare i testi del sito
 
 | Cosa | Dove |
 |---|---|
 | Titolo e sottotitolo della Home (il carosello e la fascia degli argomenti sono automatici) | `it/index.html` e `en/index.html` (tra i `---` in alto) |
-| Titoli e introduzioni di Journal, Osservazioni, Ricerca, Argomenti | i file `index.html` nelle cartelle `it/...` e `en/...` |
+| Titoli e introduzioni di Journal, Osservazioni, Missioni spaziali, Download, Argomenti | i file `index.html` nelle cartelle `it/...` e `en/...` |
 | Nomi e descrizioni degli argomenti | `_data/topics.yml` |
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |
-| Pagina «Chi sono» / «About» | `it/about/index.md` e `en/about/index.md` (il testo sotto i `---` è Markdown, come negli articoli) |
+| Pagina «Chi sono» / «About» (si apre dal link in fondo a ogni pagina) | `it/about/index.md` e `en/about/index.md` (il testo sotto i `---` è Markdown, come negli articoli) |
+| Elenco dei file della pagina Download | `_data/downloads.yml` (vedi punto 7) |
 | Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/titolo.jpg` |
 
 L'immagine del titolo contiene la scritta in inglese «Personal Astronomy & Astrophysics Journal».
 
 ---
 
-## 8. Prima installazione (una volta sola)
+## 9. Prima installazione (una volta sola)
 
 1. Scompatta lo ZIP sul computer.
 2. Apri il tuo repository su GitHub: `https://github.com/redshifted-astro/redshifted`.
@@ -140,7 +161,7 @@ I vecchi file `journal.html`, `observations.html` ecc. vengono sostituiti da pag
 
 ---
 
-## 9. Se qualcosa non va
+## 10. Se qualcosa non va
 
 - **L'articolo non compare:** controlla che il file sia in `it/_posts/` o `en/_posts/`, che il nome inizi con la data nel formato `AAAA-MM-GG-` e finisca con `.md`, e che la data non sia nel futuro.
 - **Compare una pagina di errore:** probabilmente c'è un errore tra i due `---` (virgolette mancanti, spazi sbagliati). Su GitHub apri la scheda **Actions**: l'ultima esecuzione, se rossa, indica il file e la riga.

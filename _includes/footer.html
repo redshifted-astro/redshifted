@@ -1,4 +1,7 @@
 <footer class="site-footer">
-  &copy; {{ 'now' | date: '%Y' }} REDSHIFTED &ndash; {{ t.footer }}
-  <i class="fas fa-satellite" aria-hidden="true"></i>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="{{ '/' | append: lang | append: '/about/' | relative_url }}"><i class="fas fa-user" aria-hidden="true"></i> {{ t.nav.about }}</a>
+  </nav>
+  <p class="footer-text">&copy; {{ 'now' | date: '%Y' }} REDSHIFTED &ndash; {{ t.footer }}
+  <i class="fas fa-satellite" aria-hidden="true"></i></p>
 </footer>

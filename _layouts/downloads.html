@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+
+<main class="container">
+  <h1>{{ page.heading }}</h1>
+  {%- if page.intro %}
+  <p class="intro">{{ page.intro }}</p>
+  {%- endif %}
+
+  {%- if site.data.downloads.size > 0 %}
+  <div class="downloads">
+    {%- for d in site.data.downloads %}
+    {%- assign ext = d.file | split: '.' | last | downcase %}
+    {%- assign icon = 'fa-file' %}
+    {%- if ext == 'pdf' %}{% assign icon = 'fa-file-pdf' %}
+    {%- elsif ext == 'ppt' or ext == 'pptx' %}{% assign icon = 'fa-file-powerpoint' %}
+    {%- elsif ext == 'doc' or ext == 'docx' %}{% assign icon = 'fa-file-word' %}
+    {%- elsif ext == 'xls' or ext == 'xlsx' or ext == 'csv' %}{% assign icon = 'fa-file-excel' %}
+    {%- elsif ext == 'zip' %}{% assign icon = 'fa-file-zipper' %}
+    {%- elsif ext == 'jpg' or ext == 'jpeg' or ext == 'png' or ext == 'webp' or ext == 'gif' %}{% assign icon = 'fa-file-image' %}
+    {%- endif %}
+    {%- assign dtitle = d.title[lang] %}
+    {%- unless dtitle %}{% assign dtitle = d.title.it %}{% endunless %}
+    {%- unless dtitle %}{% assign dtitle = d.title.en %}{% endunless %}
+    {%- unless dtitle %}{% assign dtitle = d.title %}{% endunless %}
+    {%- assign ddesc = d.description[lang] %}
+    {%- unless ddesc %}{% assign ddesc = d.description.it %}{% endunless %}
+    {%- unless ddesc %}{% assign ddesc = d.description.en %}{% endunless %}
+    {%- unless ddesc %}{% assign ddesc = d.description %}{% endunless %}
+    <article class="download">
+      <i class="fas {{ icon }}" aria-hidden="true"></i>
+      <div class="download-body">
+        <h2>{{ dtitle }}</h2>
+        {%- if ddesc %}
+        <p>{{ ddesc }}</p>
+        {%- endif %}
+        <p class="download-meta">{{ ext | upcase }}{% if d.size %} &middot; {{ d.size }}{% endif %}</p>
+      </div>
+      <a class="btn btn-primary" href="{% if d.file contains '://' %}{{ d.file }}{% else %}{{ d.file | relative_url }}{% endif %}" download><i class="fas fa-download" aria-hidden="true"></i> {{ t.download_btn }}</a>
+    </article>
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <div class="empty-state">
+    <i class="fas fa-download" aria-hidden="true"></i>
+    <h2>{% if page.empty_title %}{{ page.empty_title }}{% else %}{{ t.empty_title }}{% endif %}</h2>
+    <p>{% if page.empty_text %}{{ page.empty_text }}{% else %}{{ t.empty_text }}{% endif %}</p>
+    <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}"><i class="fas fa-home" aria-hidden="true"></i> {{ t.back_home }}</a>
+  </div>
+  {%- endif %}
+</main>

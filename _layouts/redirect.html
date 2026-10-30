@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Redshifted</title>
-  <noscript><meta http-equiv="refresh" content="0; url={{ '/it/' | append: page.target | relative_url }}"></noscript>
+  {%- assign rl = page.lang | default: 'it' %}
+  <noscript><meta http-equiv="refresh" content="0; url={{ '/' | append: rl | append: '/' | append: page.target | relative_url }}"></noscript>
   <script>
     (function () {
-      var lang = null;
-      try { lang = localStorage.getItem('redshifted-lang'); } catch (e) {}
+      var fixed = '{{ page.lang }}';
+      var lang = (fixed === 'it' || fixed === 'en') ? fixed : null;
+      if (!lang) { try { lang = localStorage.getItem('redshifted-lang'); } catch (e) {} }
       if (lang !== 'it' && lang !== 'en') {
         lang = ((navigator.language || 'it').toLowerCase().indexOf('it') === 0) ? 'it' : 'en';
       }

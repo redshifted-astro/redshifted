@@ -1,0 +1,15 @@
+# Elenco dei file scaricabili nella pagina Download.
+# Per aggiungerne uno:
+#   1. carica il file nella cartella assets/downloads (Add file > Upload files);
+#   2. aggiungi qui sotto un blocco come quello di esempio, cancellando i "# " davanti.
+# Attenzione: i rientri (gli spazi all'inizio delle righe) devono restare identici.
+# Il file più in alto nell'elenco compare per primo.
+#
+# - file: /assets/downloads/dispensa-buchi-neri.pdf
+#   size: "2 MB"
+#   title:
+#     it: "Dispensa sui buchi neri"
+#     en: "Black holes handout"
+#   description:
+#     it: "Una breve introduzione agli orizzonti degli eventi."
+#     en: "A short introduction to event horizons."

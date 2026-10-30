@@ -1,13 +1,15 @@
 ---
 layout: page
 title: "About"
-heading: "Who is behind Redshifted"
+heading: "Who is behind Redshifted?"
 permalink: /en/about/
 ---
-Redshifted is an astronomy and astrophysics journal, in Italian and English: observations, research notes and outreach, written by someone who studies these things for a living.
+My name is Anna Elisabetta Borea. I hold a master's degree in Astrophysics and Cosmology, and I have a deep passion for the study of the Universe and its mysteries.
 
-## Background
+Redshifted was born to tell the story of the cosmos through astrophysical and scientific outreach, guiding readers beyond the boundaries of the known.
 
-- Master's degree in Astrophysics and Cosmology, University of Bologna.
-- Research in astrophysics, continuing the work of the master's thesis.
-- Teaching mathematics and physics at upper secondary school level.
+It is a descent into the darkest and most unsettling depths of the Universe: chasms in spacetime, gravitational monsters and cosmic abysses where the laws of reality falter and the imagination surrenders.
+
+The name comes from *redshift*, the shift toward the red of the light from distant galaxies: the imprint the Universe leaves in light as it expands. The red of everything that is moving away from us.
+
+**Beyond the event horizon, there is still everything left to discover. Are you ready to cross it?**
