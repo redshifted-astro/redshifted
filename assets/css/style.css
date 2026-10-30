@@ -680,3 +680,13 @@ h1 {
 
 /* l'intestazione sta sopra al resto della pagina, così i risultati della ricerca non finiscono sotto i titoli */
 .site-header { z-index: 20; }
+
+/* schermi medi (portatili): meno ingombro nel menu, così logo, bottoni e ricerca restano su una riga */
+@media (min-width: 801px) and (max-width: 1420px) {
+  .main-nav > a > i { display: none; }
+  .site-search { flex-basis: 130px; min-width: 110px; }
+}
+@media (min-width: 801px) and (max-width: 1240px) {
+  .title-image { width: 235px; height: 66px; }
+  .main-nav > a { padding: 0.5rem 0.55rem; }
+}
