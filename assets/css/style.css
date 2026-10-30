@@ -59,7 +59,8 @@ a:hover { color: #ffc14d; }
 
 .site-header {
   background: var(--dark);
-  padding: 1rem 1.5rem;
+  /* a sinistra aggiungo lo spessore dell'eventuale barra di scorrimento a destra: stessa distanza dai due bordi della finestra */
+  padding: 1rem 1.5rem 1rem calc(1.5rem + 100vw - 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
