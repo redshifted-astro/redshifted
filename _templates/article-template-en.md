@@ -8,7 +8,7 @@ ref: short-name-of-the-article
 # image: /assets/img/posts/image-name.jpg
 # image_alt: "Description of the image"
 # image_caption: "Caption (optional)"
-# section: observations   (or: missions)
+# section: missions
 # math: true
 ---
 

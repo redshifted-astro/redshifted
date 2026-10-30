@@ -8,7 +8,7 @@ ref: nome-breve-dell-articolo
 # image: /assets/img/posts/nome-immagine.jpg
 # image_alt: "Descrizione dell'immagine"
 # image_caption: "Didascalia (facoltativa)"
-# section: observations   (oppure: missions)
+# section: missions
 # math: true
 ---
 

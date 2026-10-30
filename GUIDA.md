@@ -7,14 +7,14 @@ Questa guida spiega come pubblicare articoli e come modificare il sito **senza u
 ## 1. Pubblicare un nuovo articolo
 
 1. Clicca il link giusto (devi aver fatto l'accesso a GitHub):
-   - **Articolo in italiano:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=it/_posts/2026-10-25-titolo-articolo.md&value=---%0Atitle%3A%20%22Titolo%20dell%27articolo%22%0Adescription%3A%20%22Una%20o%20due%20frasi%20che%20riassumono%20l%27articolo%3A%20compaiono%20nella%20scheda%20e%20su%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmologia%2C%20materia%20oscura%5D%0Aref%3A%20nome-breve-dell-articolo%0A%23%20Per%20togliere%20il%20simbolo%20%23%20e%20attivare%20una%20riga%2C%20cancellalo%20%28e%20anche%20lo%20spazio%20dopo%29.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fnome-immagine.jpg%0A%23%20image_alt%3A%20%22Descrizione%20dell%27immagine%22%0A%23%20image_caption%3A%20%22Didascalia%20%28facoltativa%29%22%0A%23%20section%3A%20observations%20%20%20%28oppure%3A%20missions%29%0A%23%20math%3A%20true%0A---%0A%0AScrivi%20qui%20il%20testo%20dell%27articolo.%0A%0A%23%23%20Un%20titolo%20di%20sezione%0A%0ATesto%20con%20%2A%2Agrassetto%2A%2A%2C%20%2Acorsivo%2A%20e%20%5Bun%20link%5D%28https%3A%2F%2Fesempio.org%29.%0A)
-   - **Articolo in inglese:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=en/_posts/2026-10-25-article-title.md&value=---%0Atitle%3A%20%22Article%20title%22%0Adescription%3A%20%22One%20or%20two%20sentences%20summarising%20the%20article%3A%20they%20appear%20on%20the%20card%20and%20on%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmology%2C%20dark%20matter%5D%0Aref%3A%20short-name-of-the-article%0A%23%20To%20switch%20a%20line%20on%2C%20delete%20the%20%23%20and%20the%20space%20after%20it.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fimage-name.jpg%0A%23%20image_alt%3A%20%22Description%20of%20the%20image%22%0A%23%20image_caption%3A%20%22Caption%20%28optional%29%22%0A%23%20section%3A%20observations%20%20%20%28or%3A%20missions%29%0A%23%20math%3A%20true%0A---%0A%0AWrite%20the%20text%20of%20the%20article%20here.%0A%0A%23%23%20A%20section%20heading%0A%0AText%20with%20%2A%2Abold%2A%2A%2C%20%2Aitalic%2A%20and%20%5Ba%20link%5D%28https%3A%2F%2Fexample.org%29.%0A)
+   - **Articolo in italiano:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=it/_posts/2026-10-25-titolo-articolo.md&value=---%0Atitle%3A%20%22Titolo%20dell%27articolo%22%0Adescription%3A%20%22Una%20o%20due%20frasi%20che%20riassumono%20l%27articolo%3A%20compaiono%20nella%20scheda%20e%20su%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmologia%2C%20materia%20oscura%5D%0Aref%3A%20nome-breve-dell-articolo%0A%23%20Per%20togliere%20il%20simbolo%20%23%20e%20attivare%20una%20riga%2C%20cancellalo%20%28e%20anche%20lo%20spazio%20dopo%29.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fnome-immagine.jpg%0A%23%20image_alt%3A%20%22Descrizione%20dell%27immagine%22%0A%23%20image_caption%3A%20%22Didascalia%20%28facoltativa%29%22%0A%23%20section%3A%20missions%0A%23%20math%3A%20true%0A---%0A%0AScrivi%20qui%20il%20testo%20dell%27articolo.%0A%0A%23%23%20Un%20titolo%20di%20sezione%0A%0ATesto%20con%20%2A%2Agrassetto%2A%2A%2C%20%2Acorsivo%2A%20e%20%5Bun%20link%5D%28https%3A%2F%2Fesempio.org%29.%0A)
+   - **Articolo in inglese:** [apri il modulo precompilato](https://github.com/redshifted-astro/redshifted/new/main?filename=en/_posts/2026-10-25-article-title.md&value=---%0Atitle%3A%20%22Article%20title%22%0Adescription%3A%20%22One%20or%20two%20sentences%20summarising%20the%20article%3A%20they%20appear%20on%20the%20card%20and%20on%20Google.%22%0Atopic%3A%20cosmology%0Atags%3A%20%5Bcosmology%2C%20dark%20matter%5D%0Aref%3A%20short-name-of-the-article%0A%23%20To%20switch%20a%20line%20on%2C%20delete%20the%20%23%20and%20the%20space%20after%20it.%0A%23%20image%3A%20%2Fassets%2Fimg%2Fposts%2Fimage-name.jpg%0A%23%20image_alt%3A%20%22Description%20of%20the%20image%22%0A%23%20image_caption%3A%20%22Caption%20%28optional%29%22%0A%23%20section%3A%20missions%0A%23%20math%3A%20true%0A---%0A%0AWrite%20the%20text%20of%20the%20article%20here.%0A%0A%23%23%20A%20section%20heading%0A%0AText%20with%20%2A%2Abold%2A%2A%2C%20%2Aitalic%2A%20and%20%5Ba%20link%5D%28https%3A%2F%2Fexample.org%29.%0A)
 2. In alto, nella casella del nome del file, cambia la parte dopo la data: per esempio `2026-10-25-titolo-articolo.md` diventa `2026-11-03-buchi-neri-supermassicci.md`.
    - La data è quella di pubblicazione, nel formato **anno-mese-giorno**.
    - Usa solo lettere minuscole, numeri e trattini, **senza spazi né accenti**. Quel nome diventa l'indirizzo dell'articolo.
 3. Sostituisci i campi tra i due `---` e scrivi il testo sotto.
 4. Premi il pulsante verde **Commit changes...** e poi di nuovo **Commit changes**.
-5. Dopo circa 1-2 minuti l'articolo è online, nel Journal, nella Home e nella pagina del suo argomento.
+5. Dopo circa 1-2 minuti l'articolo è online, nel Giornale, nella Home e nella pagina del suo argomento.
 
 > L'articolo italiano deve stare nella cartella `it/_posts/`, quello inglese in `en/_posts/`. I link qui sopra la scelgono già per te.
 
@@ -32,7 +32,7 @@ Questa guida spiega come pubblicare articoli e come modificare il sito **senza u
 | `image` | Immagine di copertina, per esempio `/assets/img/posts/orione.jpg` | no |
 | `image_alt` | Descrizione dell'immagine (per chi non la vede) | no |
 | `image_caption` | Didascalia sotto l'immagine | no |
-| `section` | `observations` per farlo comparire anche in *Osservazioni*, `missions` per *Missioni spaziali* (resta comunque nel Journal) | no |
+| `section` | `missions` per farlo comparire anche in *Missioni spaziali* (resta comunque nel Giornale) | no |
 | `math` | `true` per attivare le formule | no |
 | `published` | `false` per tenerlo nascosto (bozza) | no |
 
@@ -135,7 +135,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Cosa | Dove |
 |---|---|
 | Titolo e sottotitolo della Home (il carosello e la fascia degli argomenti sono automatici) | `it/index.html` e `en/index.html` (tra i `---` in alto) |
-| Titoli e introduzioni di Journal, Osservazioni, Missioni spaziali, Download, Argomenti | i file `index.html` nelle cartelle `it/...` e `en/...` |
+| Titoli e introduzioni di Giornale, Argomenti, Missioni spaziali, Download | i file `index.html` nelle cartelle `it/...` e `en/...` |
 | Nomi e descrizioni degli argomenti | `_data/topics.yml` |
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |

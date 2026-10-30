@@ -7,8 +7,7 @@ it:
   og_locale: it_IT
   nav:
     home: "Home"
-    journal: "Journal"
-    observations: "Osservazioni"
+    journal: "Giornale"
     missions: "Missioni spaziali"
     downloads: "Download"
     topics: "Argomenti"
@@ -25,7 +24,7 @@ it:
   empty_title: "Nuovi articoli in arrivo"
   empty_text: "Gli articoli appariranno qui non appena saranno pubblicati."
   back_home: "Torna alla Home"
-  back_journal: "Torna al Journal"
+  back_journal: "Torna al Giornale"
   all_topics: "Tutti gli argomenti"
   explore: "Esplora"
   min_read: "min di lettura"
@@ -48,7 +47,6 @@ en:
   nav:
     home: "Home"
     journal: "Journal"
-    observations: "Observations"
     missions: "Space Missions"
     downloads: "Downloads"
     topics: "Topics"
