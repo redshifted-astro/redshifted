@@ -707,3 +707,80 @@ h1 {
 .topic > .ico { display: block; width: 2.6rem; height: 2.6rem; color: var(--coral); margin-bottom: 0.4rem; }
 .empty-state > .ico { display: block; width: 3.4rem; height: 3.4rem; color: var(--coral); margin: 0 auto 0.8rem; }
 .chip .ico { color: var(--coral); width: 1.3em; height: 1.3em; vertical-align: -0.28em; }
+
+/* ---------- Grafica v2: linea di redshift, menu sobrio, titoli serif ---------- */
+
+:root {
+  --serif: 'Libre Baskerville', 'GFS Baskerville', Georgia, 'Times New Roman', serif;
+  /* la "linea di redshift": dall'ambra al rosso scuro */
+  --redshift: linear-gradient(90deg, #ffb02e 0%, #ff6a1a 45%, #8f1d14 100%);
+}
+
+/* Titoli: carattere serif, gradiente di arrossamento, linea sotto */
+h1, h2.section-title, .topic h2 { font-family: var(--serif); font-weight: 400; }
+h1 {
+  background: linear-gradient(to right, #FFD36B, #ff7a22, #d6281a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero h1::after,
+main.container > h1::after,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 3px;
+  margin: 0.7rem auto 0;
+  background: var(--redshift);
+  border-radius: 2px;
+}
+.section-title { color: #ffb560; }
+.hero-compact h1 { font-size: clamp(1.8rem, 4vw, 2.3rem); }
+
+/* Menu: bottoni scuri con bordo sottile, rosso pieno solo per la pagina corrente */
+.main-nav > a {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #4a2a26;
+  border-radius: 4px;
+  color: #e8d6c8;
+}
+.main-nav > a:hover { background: #2a1512; border-color: #8f1d14; color: #fff; }
+.main-nav > a.active, .main-nav > a[aria-current] { background: #a3200f; border-color: #cb2414; color: #fff; }
+.ss-input { border-radius: 4px; border-color: #4a2a26; }
+
+/* Argomenti: schede leggere con la linea di redshift in alto */
+.topic {
+  position: relative;
+  overflow: hidden;
+  background: rgba(18, 14, 14, 0.62);
+  border: 0;
+  border-radius: 3px;
+}
+.topic::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--redshift); }
+.category-number { color: #d4553a; letter-spacing: 0.14em; }
+.topic h2 { color: #ffb02e; }
+.topic-link { background: transparent; border: 1px solid #8f1d14; border-radius: 3px; color: #ffb560; }
+.topic-link:hover { background: #2a1512; color: #fff; }
+
+/* Argomenti nella Home: voci sottolineate dalla linea di redshift */
+.chip {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-image: var(--redshift) 1;
+  border-radius: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+}
+.chip:hover { background: transparent; transform: none; }
+
+/* Carosello più ampio: è il punto focale della Home */
+.featured .carousel, .carousel { max-width: 1180px; }
+
+/* barra di ricerca del Giornale in tinta con il resto */
+.search-bar input { background: #2a2a2a; color: #fff; border: 1px solid #4a2a26; border-right: 0; border-radius: 4px 0 0 4px; outline: none; }
+.search-bar input:focus { border-color: #ff8b5c; }
+.search-bar input::placeholder { color: #aaa; }
+.search-bar button { background: #a3200f; color: #fff; border: 1px solid #cb2414; border-radius: 0 4px 4px 0; }
+.search-bar button:hover { background: #cb2414; }
