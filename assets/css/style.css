@@ -694,14 +694,3 @@ h1 {
 /* intestazione su due righe: logo e bottoni centrati, stessa distanza da destra e da sinistra */
 .site-header.wrapped { justify-content: center; }
 .site-header.wrapped .main-nav { justify-content: center; }
-
-/* Computer: logo, bottoni e ricerca stanno sempre su una sola riga; se lo schermo si restringe, si rimpiccioliscono insieme */
-@media (min-width: 981px) {
-  .site-header { flex-wrap: nowrap; }
-  .brand { flex: 0 1 auto; min-width: 0; }
-  .title-image { width: clamp(170px, 21vw, 300px); height: auto; aspect-ratio: 300 / 80; }
-  .main-nav { flex-wrap: nowrap; flex: 0 1 auto; min-width: 0; }
-  .main-nav > a { padding: 0.5rem clamp(0.4rem, 0.75vw, 0.8rem); font-size: clamp(0.8rem, 1.08vw, 1rem); white-space: nowrap; flex: 0 0 auto; }
-  .site-search { flex: 0 1 clamp(100px, 10vw, 150px); min-width: 90px; }
-  .lang-switch { flex: 0 0 auto; margin-left: 0.2rem; }
-}
