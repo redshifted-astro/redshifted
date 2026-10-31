@@ -3,6 +3,8 @@ layout: page
 title: "About"
 heading: "Who is behind Redshifted?"
 permalink: /en/about/
+photo: /assets/img/anna.jpg
+photo_alt: "Anna Elisabetta Borea next to a radio telescope"
 ---
 My name is Anna Elisabetta Borea. I hold a master's degree in Astrophysics and Cosmology, and I have a deep passion for the study of the Universe and its mysteries.
 

@@ -3,6 +3,8 @@ layout: page
 title: "Chi sono"
 heading: "Chi c'è dietro Redshifted?"
 permalink: /it/about/
+photo: /assets/img/anna.jpg
+photo_alt: "Anna Elisabetta Borea accanto a un radiotelescopio"
 ---
 Mi chiamo Anna Elisabetta Borea, sono dottoressa magistrale in Astrofisica e Cosmologia e nutro una profonda passione per lo studio dell'Universo e dei suoi misteri.
 

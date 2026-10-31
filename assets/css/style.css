@@ -784,3 +784,20 @@ main.container > h1::after,
 .search-bar input::placeholder { color: #aaa; }
 .search-bar button { background: #a3200f; color: #fff; border: 1px solid #cb2414; border-radius: 0 4px 4px 0; }
 .search-bar button:hover { background: #cb2414; }
+
+/* Foto nella pagina Chi sono: tonda, con il bordo della linea di redshift, accanto al testo */
+.post .about-photo, .about-photo {
+  float: right;
+  width: 220px;
+  height: 220px;
+  margin: 0.3rem 0 1rem 1.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  background: linear-gradient(#1e1e1e, #1e1e1e) padding-box, var(--redshift) border-box;
+  shape-outside: circle(50%);
+  box-shadow: 0 0 22px rgba(203, 36, 20, 0.35);
+}
+@media (max-width: 700px) {
+  .post .about-photo, .about-photo { float: none; display: block; margin: 0 auto 1.4rem; width: 180px; height: 180px; }
+}
