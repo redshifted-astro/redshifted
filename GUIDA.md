@@ -143,7 +143,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Pagina «Contatti» / «Contact» (indirizzo email incluso) | `it/contact/index.md` e `en/contact/index.md` |
 | Elenco dei file della pagina Download | `_data/downloads.yml` (vedi punto 7) |
 | Ricerca nel menu in alto | si aggiorna da sola: legge il testo di tutti gli articoli pubblicati (non devi fare niente) |
-| Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/logo-titolo-v4.png` |
+| Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/logo-titolo-v5.png` |
 
 L'immagine del titolo contiene la scritta in inglese «Personal Astronomy & Astrophysics Journal».
 
