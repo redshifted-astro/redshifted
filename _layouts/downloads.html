@@ -31,7 +31,11 @@ layout: default
     {%- unless ddesc %}{% assign ddesc = d.description.en %}{% endunless %}
     {%- unless ddesc %}{% assign ddesc = d.description %}{% endunless %}
     <article class="download">
+      {%- if d.thumb %}
+      <img class="download-thumb" src="{{ d.thumb | relative_url }}" alt="" loading="lazy">
+      {%- else %}
       <i class="fas {{ icon }}" aria-hidden="true"></i>
+      {%- endif %}
       <div class="download-body">
         <h2>{{ dtitle }}</h2>
         {%- if ddesc %}
@@ -51,4 +55,10 @@ layout: default
     <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}"><i class="fas fa-home" aria-hidden="true"></i> {{ t.back_home }}</a>
   </div>
   {%- endif %}
+
+  <div class="empty-state games-soon">
+    <i class="fas fa-gamepad" aria-hidden="true"></i>
+    <h2>{{ t.games_title }}</h2>
+    <p>{{ t.games_text }}</p>
+  </div>
 </main>

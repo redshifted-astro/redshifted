@@ -683,11 +683,11 @@ h1 {
 .site-header { z-index: 20; }
 
 /* schermi medi (portatili): meno ingombro nel menu, così logo, bottoni e ricerca restano su una riga */
-@media (min-width: 801px) and (max-width: 1420px) {
+@media (min-width: 801px) and (max-width: 1560px) {
   .main-nav > a > i { display: none; }
   .site-search { flex-basis: 130px; min-width: 110px; }
 }
-@media (min-width: 801px) and (max-width: 1240px) {
+@media (min-width: 801px) and (max-width: 1340px) {
   .title-image { width: 235px; height: 66px; }
   .main-nav > a { padding: 0.5rem 0.55rem; }
 }
@@ -800,4 +800,19 @@ main.container > h1::after,
 }
 @media (max-width: 700px) {
   .post .about-photo, .about-photo { float: none; display: block; margin: 0 auto 1.4rem; width: 180px; height: 180px; }
+}
+
+/* ---------- Giochi & Download: anteprime e riquadro "giochi in arrivo" ---------- */
+.download .download-thumb { flex: none; width: 96px; height: 96px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+.games-soon { margin-top: 2rem; }
+@media (max-width: 600px) {
+  .download .download-thumb { width: 72px; height: 72px; }
+  .download .download-body { flex-basis: calc(100% - 72px - 1.2rem); }
+}
+
+/* menu con "Giochi & Download": un po' meno spazio tra i bottoni e nella ricerca sui portatili, per restare su una riga */
+@media (min-width: 801px) and (max-width: 1560px) {
+  .main-nav > a { padding-left: 0.55rem; padding-right: 0.55rem; }
+  .main-nav { gap: 0.3rem; }
+  .site-search { flex-basis: 105px; min-width: 95px; }
 }

@@ -110,7 +110,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 
 ---
 
-## 7. Aggiungere un file alla pagina Download
+## 7. Aggiungere un file alla pagina Giochi & Download
 
 1. Apri su GitHub la cartella `assets/downloads`, premi **Add file → Upload files**, trascina il file (PDF, presentazione, immagine...) e conferma con **Commit changes**. Nome del file senza spazi né accenti.
 2. Apri il file `_data/downloads.yml`, premi la matita e aggiungi in fondo un blocco come questo. I rientri (gli spazi all'inizio delle righe) devono essere identici:
@@ -126,7 +126,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
     en: "A short introduction to event horizons."
 ```
 
-3. Premi **Commit changes**. Dopo 1-2 minuti il file compare nella pagina *Download*, in italiano e in inglese. Il blocco più in alto compare per primo. Per togliere un file basta cancellare il suo blocco.
+3. Premi **Commit changes**. Dopo 1-2 minuti il file compare nella pagina *Giochi & Download*, in italiano e in inglese. Il blocco più in alto compare per primo. Per togliere un file basta cancellare il suo blocco.
 
 ---
 
@@ -135,13 +135,13 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Cosa | Dove |
 |---|---|
 | Titolo e sottotitolo della Home (il carosello e la fascia degli argomenti sono automatici) | `it/index.html` e `en/index.html` (tra i `---` in alto) |
-| Titoli e introduzioni di Giornale, Argomenti, Missioni spaziali & Telescopi, Download | i file `index.html` nelle cartelle `it/...` e `en/...` |
+| Titoli e introduzioni di Giornale, Argomenti, Missioni spaziali & Telescopi, Giochi & Download | i file `index.html` nelle cartelle `it/...` e `en/...` |
 | Nomi e descrizioni degli argomenti | `_data/topics.yml` |
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |
 | Pagina «Chi sono» / «About» (si apre dal link in fondo a ogni pagina) | `it/about/index.md` e `en/about/index.md` (il testo sotto i `---` è Markdown, come negli articoli) |
 | Pagina «Contatti» / «Contact» (indirizzo email incluso) | `it/contact/index.md` e `en/contact/index.md` |
-| Elenco dei file della pagina Download | `_data/downloads.yml` (vedi punto 7) |
+| Elenco dei file della pagina Giochi & Download | `_data/downloads.yml` (vedi punto 7) |
 | Ricerca nel menu in alto | si aggiorna da sola: legge il testo di tutti gli articoli pubblicati (non devi fare niente) |
 | Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/logo-titolo-v5.png` |
 

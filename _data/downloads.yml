@@ -1,9 +1,10 @@
-# Elenco dei file scaricabili nella pagina Download.
+# Elenco dei file scaricabili nella pagina Giochi & Download.
 # Per aggiungerne uno:
 #   1. carica il file nella cartella assets/downloads (Add file > Upload files);
 #   2. aggiungi qui sotto un blocco come quello di esempio, cancellando i "# " davanti.
 # Attenzione: i rientri (gli spazi all'inizio delle righe) devono restare identici.
 # Il file più in alto nell'elenco compare per primo.
+# "thumb" (facoltativo) è l'anteprima che compare al posto dell'icona.
 #
 # - file: /assets/downloads/dispensa-buchi-neri.pdf
 #   size: "2 MB"
@@ -13,3 +14,33 @@
 #   description:
 #     it: "Una breve introduzione agli orizzonti degli eventi."
 #     en: "A short introduction to event horizons."
+
+- file: /assets/downloads/redshifted-sfondo-desktop-2560x1440.jpg
+  thumb: /assets/downloads/anteprima-sfondo-desktop.jpg
+  size: "1,2 MB"
+  title:
+    it: "Sfondo per computer"
+    en: "Desktop wallpaper"
+  description:
+    it: "2560 × 1440 px. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
+    en: "2560 × 1440 px. For personal use only: do not resell or republish as your own. © Redshifted."
+
+- file: /assets/downloads/redshifted-sfondo-telefono-1290x2796.jpg
+  thumb: /assets/downloads/anteprima-sfondo-telefono.jpg
+  size: "1,1 MB"
+  title:
+    it: "Sfondo per telefono"
+    en: "Phone wallpaper"
+  description:
+    it: "1290 × 2796 px. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
+    en: "1290 × 2796 px. For personal use only: do not resell or republish as your own. © Redshifted."
+
+- file: /assets/downloads/redshifted-poster-50x70cm-3937x5512.jpg
+  thumb: /assets/downloads/anteprima-poster.jpg
+  size: "5,2 MB"
+  title:
+    it: "Poster 50 × 70 cm"
+    en: "Poster 50 × 70 cm"
+  description:
+    it: "3937 × 5512 px, pronto per la stampa. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
+    en: "3937 × 5512 px, print-ready. For personal use only: do not resell or republish as your own. © Redshifted."
