@@ -8,7 +8,7 @@ it:
   nav:
     home: "Home"
     journal: "Giornale"
-    missions: "Missioni spaziali"
+    missions: "Missioni & Telescopi"
     downloads: "Download"
     topics: "Argomenti"
     about: "Chi sono"
@@ -50,7 +50,7 @@ en:
   nav:
     home: "Home"
     journal: "Journal"
-    missions: "Space Missions"
+    missions: "Missions & Telescopes"
     downloads: "Downloads"
     topics: "Topics"
     about: "About"

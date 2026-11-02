@@ -32,7 +32,7 @@ Questa guida spiega come pubblicare articoli e come modificare il sito **senza u
 | `image` | Immagine di copertina, per esempio `/assets/img/posts/orione.jpg` | no |
 | `image_alt` | Descrizione dell'immagine (per chi non la vede) | no |
 | `image_caption` | Didascalia sotto l'immagine | no |
-| `section` | `missions` per farlo comparire anche in *Missioni spaziali* (resta comunque nel Giornale) | no |
+| `section` | `missions` per farlo comparire anche in *Missioni spaziali & Telescopi* (resta comunque nel Giornale) | no |
 | `math` | `true` per attivare le formule | no |
 | `published` | `false` per tenerlo nascosto (bozza) | no |
 
@@ -135,7 +135,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Cosa | Dove |
 |---|---|
 | Titolo e sottotitolo della Home (il carosello e la fascia degli argomenti sono automatici) | `it/index.html` e `en/index.html` (tra i `---` in alto) |
-| Titoli e introduzioni di Giornale, Argomenti, Missioni spaziali, Download | i file `index.html` nelle cartelle `it/...` e `en/...` |
+| Titoli e introduzioni di Giornale, Argomenti, Missioni spaziali & Telescopi, Download | i file `index.html` nelle cartelle `it/...` e `en/...` |
 | Nomi e descrizioni degli argomenti | `_data/topics.yml` |
 | Scritte del menu, dei pulsanti, del piè di pagina | `_data/i18n.yml` |
 | Colori e aspetto | `assets/css/style.css` (variabili all'inizio del file) |
