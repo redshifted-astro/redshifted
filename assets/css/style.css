@@ -87,7 +87,7 @@ a:hover { color: #ffc14d; }
 
 .icon-star img { width: 68px; height: 68px; object-fit: cover; display: block; }
 
-.title-image { height: 80px; width: 300px; max-width: 100%; object-fit: fill; display: block; mix-blend-mode: lighten; }
+.title-image { height: 80px; width: 232px; max-width: 100%; object-fit: fill; display: block; mix-blend-mode: lighten; }
 
 .main-nav {
   display: flex;
@@ -596,7 +596,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .title-image { height: 60px; width: 215px; }
+  .title-image { height: 60px; width: 174px; }
   .hero { padding-top: 2.5rem; }
   .btn { width: 100%; justify-content: center; }
 }
@@ -688,7 +688,7 @@ h1 {
   .site-search { flex-basis: 130px; min-width: 110px; }
 }
 @media (min-width: 801px) and (max-width: 1240px) {
-  .title-image { width: 235px; height: 66px; }
+  .title-image { width: 191px; height: 66px; }
   .main-nav > a { padding: 0.5rem 0.55rem; }
 }
 
