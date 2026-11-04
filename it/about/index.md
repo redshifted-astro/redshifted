@@ -6,12 +6,12 @@ permalink: /it/about/
 photo: /assets/img/anna.jpg
 photo_alt: "Anna Elisabetta Borea accanto a un radiotelescopio"
 ---
-Mi chiamo Anna Elisabetta Borea, sono dottoressa magistrale in Astrofisica e Cosmologia e nutro una profonda passione per lo studio dell'Universo e dei suoi misteri.
+Mi chiamo Anna Elisabetta Borea, sono laureata magistrale in Astrofisica e Cosmologia e ho un profondo legame con l'Universo.
 
-Redshifted nasce per raccontare il cosmo attraverso la divulgazione astrofisica e scientifica, accompagnando chi legge oltre i confini del conosciuto.
+Redshifted nasce dal desiderio di condividere lo studio del cosmo e dei suoi misteri, accompagnando chi legge oltre i confini della fantasia.
 
-È una discesa nelle profondità più oscure e inquietanti dell'Universo: voragini nello spaziotempo, mostri gravitazionali e abissi cosmici dove le leggi della realtà vacillano e l'immaginazione si arrende.
+Il nome deriva dal redshift cosmologico, che tinge di rosso la luce delle galassie lontane mentre lo spazio si dilata, come il riverbero spettrale di un passato che non smette di svanire.
 
-Il nome viene dal *redshift*, lo spostamento verso il rosso della luce delle galassie lontane: l'impronta che l'Universo, espandendosi, lascia nella luce. Il rosso di tutto ciò che si allontana da noi.
+Preparatevi a un viaggio nelle profondità più oscure dell'Universo: tra fantasmi stellari, fossili cosmici e squarci nello spaziotempo dove le leggi della fisica sembrano vacillare, ma la curiosità non si arrende.
 
-**Oltre l'orizzonte degli eventi c'è ancora tutto da scoprire. Sei pronto a varcarlo?**
+Eppure, «*custodite* la speranza, o voi che entrate!». Perché persino nel suo gelido cuore, l'Universo cela una sua forma di amore ancestrale. E forse Dante aveva ragione più di quanto immaginasse: «è l'amor che move il sole e l'altre stelle». Quell'amore senza volto che la fisica chiama gravità.
