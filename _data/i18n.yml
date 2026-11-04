@@ -3,7 +3,7 @@
 
 it:
   tagline: "Astronomia e astrofisica raccontate da chi le studia."
-  footer: "Diario personale di astronomia | Dove la scienza incontra il cosmo oscuro"
+  footer: "Dove la scienza incontra il cosmo oscuro"
   og_locale: it_IT
   nav:
     home: "Home"
@@ -48,7 +48,7 @@ it:
 
 en:
   tagline: "Astronomy and astrophysics, written by someone who studies them."
-  footer: "Personal Astronomy Journal | Where Science Meets the Dark Cosmos"
+  footer: "Where science meets the dark cosmos"
   og_locale: en_US
   nav:
     home: "Home"
