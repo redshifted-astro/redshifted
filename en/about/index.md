@@ -14,4 +14,4 @@ The name comes from cosmological redshift, which tinges the light of distant gal
 
 Get ready for a journey into the darkest depths of the Universe: among stellar ghosts, cosmic fossils and rifts in spacetime where the laws of physics seem to waver, but curiosity does not surrender.
 
-And yet, “*keep* hope, all ye who enter here!” For even in its icy heart, the Universe hides a form of ancestral love of its own. And perhaps Dante was more right than he imagined: è “l'amor che move il sole e l'altre stelle” (“the love that moves the sun and the other stars”). That faceless love that physics calls gravity.
+And yet, “*custodite* ogne speranza, voi ch'intrate!” For even in its icy heart, the Universe hides a form of ancestral love of its own. And perhaps Dante was more right than he imagined: è “l'amor che move il sole e l'altre stelle” (“the love that moves the sun and the other stars”). That faceless love that physics calls gravity.
