@@ -13,4 +13,4 @@ Redshifted nasce dal desiderio di condividere lo studio del cosmo e dei suoi mis
 
 Preparatevi a un viaggio nelle profondità più oscure dell'Universo: tra fantasmi stellari, fossili cosmici e squarci nello spaziotempo dove le leggi della fisica sembrano vacillare, ma la curiosità non si arrende.
 
-Dunque, «*custodite* ogne speranza, voi ch'intrate»! Perché persino nel suo gelido cuore, l'Universo cela una sua forma di amore ancestrale. E forse Dante aveva ragione più di quanto immaginasse: è «l'amor che move il sole e l'altre stelle». Quell'amore senza volto che la fisica chiama gravità.
+Dunque, «*custodite* ogne speranza, voi ch'intrate»! Perché persino nel suo gelido cuore, l'Universo cela una forma di amore ancestrale che raccoglie ciò che lo spazio disperde e lo trasforma in stelle e mondi. E forse Dante aveva ragione più di quanto immaginasse: è «l'amor che move il sole e l'altre stelle». Quell'amore senza volto che la fisica chiama gravità.
