@@ -9,7 +9,7 @@ photo_alt: "Anna Elisabetta Borea accanto a un radiotelescopio"
 ---
 Mi chiamo Anna Elisabetta Borea, sono un'astrofisica e un'insegnante. Ho conseguito la laurea magistrale in Astrofisica e Cosmologia all'Università di Bologna e oggi studio il mezzo interstellare dei quasar alla fine dell'Epoca della Reionizzazione, quando le prime luci stavano finendo di rischiarare l'Universo oscuro.
 
-Redshifted nasce dal desiderio di condividere lo studio del cosmo e dei suoi misteri, accompagnando chi legge là dove lo sguardo non arriva. Il nome deriva dal redshift cosmologico, che tinge di rosso la luce delle galassie lontane mentre lo spazio si dilata.
+Redshifted nasce dal desiderio di condividere lo studio del cosmo e dei suoi misteri, accompagnando chi legge in luoghi dove la realtà comincia a farsi terribilmente strana. Il nome deriva dal redshift cosmologico, che tinge di rosso la luce delle galassie lontane mentre lo spazio si dilata.
 
 Preparatevi a un viaggio nelle profondità più oscure dell'Universo: tra fantasmi stellari, fossili cosmici e squarci nello spaziotempo dove le leggi della fisica sembrano vacillare, ma la curiosità non si arrende.
 
