@@ -6,12 +6,11 @@
 title: Redshifted
 description: Astrophysics told by those who study it
 
-# Indirizzo del sito.
-# Se un giorno userai un dominio tuo (es. redshifted.it), metti
-#   url: "https://redshifted.it"
-#   baseurl: ""
-url: "https://redshifted-astro.github.io"
-baseurl: "/redshifted"
+# Indirizzo del sito (dominio personale, collegato a GitHub Pages).
+# Il vecchio indirizzo https://redshifted-astro.github.io/redshifted/
+# viene inoltrato automaticamente al nuovo.
+url: "https://redshifted.it"
+baseurl: ""
 
 # Un articolo con la data di oggi viene pubblicato subito (ora italiana).
 timezone: Europe/Rome

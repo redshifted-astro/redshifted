@@ -60,10 +60,10 @@ Testo normale con **grassetto** e *corsivo*.
 
 [testo del link](https://indirizzo.it)
 
-![descrizione dell'immagine](/redshifted/assets/img/posts/foto.jpg)
+![descrizione dell'immagine](/assets/img/posts/foto.jpg)
 ```
 
-Per le immagini dentro il testo ricorda di scrivere `/redshifted/` all'inizio dell'indirizzo, come nell'esempio.
+Per le immagini dentro il testo scrivi l'indirizzo che inizia con `/assets/...`, come nell'esempio.
 
 ### Formule
 
@@ -157,7 +157,7 @@ L'immagine del titolo contiene la scritta «REDSHIFTED – The Dark Side of the 
 4. Trascina **il contenuto** della cartella scompattata (non lo ZIP): tutte le cartelle e tutti i file. Usa Chrome, Edge o Firefox.
 5. Attendi che finisca il caricamento e premi **Commit changes**.
 6. Vai in **Settings → Pages** e controlla che *Source* sia **Deploy from a branch**, con branch **main** e cartella **/ (root)**.
-7. Dopo 1-2 minuti il sito è online su `https://redshifted-astro.github.io/redshifted/`.
+7. Dopo 1-2 minuti il sito è online su `https://redshifted.it`.
 
 I vecchi file `journal.html`, `observations.html` ecc. vengono sostituiti da pagine che portano alla nuova versione, così i vecchi link continuano a funzionare. I vecchi `logo.jpg` e `titolo.jpg` nella cartella principale non servono più e puoi eliminarli.
 
