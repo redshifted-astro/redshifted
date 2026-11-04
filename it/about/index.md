@@ -6,7 +6,7 @@ permalink: /it/about/
 photo: /assets/img/anna.jpg
 photo_alt: "Anna Elisabetta Borea accanto a un radiotelescopio"
 ---
-Mi chiamo Anna Elisabetta Borea, sono laureata magistrale in Astrofisica e Cosmologia e ho un profondo legame con l'Universo.
+Mi chiamo Anna Elisabetta Borea, sono un'astrofisica e un'insegnante. Ho conseguito la laurea magistrale in Astrofisica e Cosmologia all'Università di Bologna e oggi studio il mezzo interstellare dei quasar alla fine dell'Epoca della Reionizzazione, quando le prime luci stavano finendo di rischiarare l'Universo oscuro.
 
 Redshifted nasce dal desiderio di condividere lo studio del cosmo e dei suoi misteri, accompagnando chi legge oltre i confini della fantasia.
 

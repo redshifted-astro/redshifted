@@ -6,7 +6,7 @@ permalink: /en/about/
 photo: /assets/img/anna.jpg
 photo_alt: "Anna Elisabetta Borea next to a radio telescope"
 ---
-My name is Anna Elisabetta Borea. I hold a master's degree in Astrophysics and Cosmology, and I have a deep bond with the Universe.
+My name is Anna Elisabetta Borea, and I am an astrophysicist and a teacher. I earned my master's degree in Astrophysics and Cosmology at the University of Bologna, and I currently study the interstellar medium of quasars at the end of the Epoch of Reionization, when the first lights were finishing lighting up the dark Universe.
 
 Redshifted was born from the desire to share the study of the cosmos and its mysteries, guiding readers beyond the boundaries of imagination.
 
