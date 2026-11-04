@@ -3,6 +3,7 @@ layout: page
 title: "About"
 heading: "Who is behind Redshifted?"
 permalink: /en/about/
+cta: true
 photo: /assets/img/anna.jpg
 photo_alt: "Anna Elisabetta Borea next to a radio telescope"
 ---

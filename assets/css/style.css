@@ -816,3 +816,7 @@ main.container > h1::after,
   .main-nav { gap: 0.3rem; }
   .site-search { flex-basis: 105px; min-width: 95px; }
 }
+
+/* pulsante di invito in fondo alla pagina "Chi sono" */
+.page-cta { text-align: center; margin: 2rem 0 0.4rem; clear: both; }
+.post-body .page-cta a.btn { color: #fff; text-decoration: none; }

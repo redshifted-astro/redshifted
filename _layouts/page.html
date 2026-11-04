@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{%- assign lang = page.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
 <main class="container">
   <h1>{{ page.heading | default: page.title }}</h1>
   <div class="post page-text">
@@ -9,6 +11,9 @@ layout: default
       <img class="about-photo" src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | escape }}" width="220" height="220">
       {%- endif %}
       {{ content }}
+      {%- if page.cta %}
+      <p class="page-cta"><a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ t.cta_about }}</a></p>
+      {%- endif %}
     </div>
   </div>
 </main>
