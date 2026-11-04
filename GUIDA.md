@@ -145,7 +145,7 @@ Consigli: JPEG, larghezza circa 1200 px, meno di 500 KB. Nome del file senza spa
 | Ricerca nel menu in alto | si aggiorna da sola: legge il testo di tutti gli articoli pubblicati (non devi fare niente) |
 | Logo e immagine del titolo | `assets/img/logo.jpg` e `assets/img/logo-titolo-v5.png` |
 
-L'immagine del titolo contiene la scritta in inglese «Personal Astronomy & Astrophysics Journal».
+L'immagine del titolo contiene la scritta «REDSHIFTED – The Dark Side of the Cosmos».
 
 ---
 

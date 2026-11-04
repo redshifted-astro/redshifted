@@ -2,7 +2,7 @@
 # I testi delle singole pagine si modificano invece nei file dentro le cartelle it/ e en/.
 
 it:
-  tagline: "Astronomia e astrofisica raccontate da chi le studia."
+  tagline: "L'astrofisica raccontata da chi la studia."
   footer: "Dove la scienza incontra il cosmo oscuro"
   og_locale: it_IT
   nav:
@@ -47,7 +47,7 @@ it:
   months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
 
 en:
-  tagline: "Astronomy and astrophysics, written by someone who studies them."
+  tagline: "Astrophysics told by those who study it."
   footer: "Where science meets the dark cosmos"
   og_locale: en_US
   nav:
