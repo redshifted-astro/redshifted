@@ -1,0 +1,8 @@
+/* Libre Baskerville (licenza SIL OFL, vedi OFL.txt) - ospitato sul sito, senza collegamenti a Google */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('LibreBaskerville-var.woff') format('woff');
+}
