@@ -647,7 +647,7 @@ h1 {
 
 /* ---------- Ricerca nel menu ---------- */
 
-.site-search { position: relative; flex: 0 1 150px; min-width: 120px; }
+.site-search { position: relative; flex: 0 1 150px; min-width: 120px; width: 150px; }
 .ss-toggle { display: none; }
 
 .ss-box { position: relative; }
@@ -814,7 +814,7 @@ main.container > h1::after,
 @media (min-width: 801px) and (max-width: 1560px) {
   .main-nav > a { padding-left: 0.55rem; padding-right: 0.55rem; }
   .main-nav { gap: 0.3rem; }
-  .site-search { flex-basis: 108px; min-width: 108px; }
+  .site-search { flex-basis: 124px; min-width: 124px; width: 124px; }
   /* meno spazio interno nel campo, così la scritta "Cerca..." / "Search..." entra tutta */
   .ss-input { padding: 0 0.45rem 0 1.9rem; background-position: 0.5rem center; }
 }
