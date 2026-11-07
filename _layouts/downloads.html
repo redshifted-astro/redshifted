@@ -10,6 +10,12 @@ layout: default
   <p class="intro">{{ page.intro }}</p>
   {%- endif %}
 
+  <div class="empty-state games-soon">
+    <i class="fas fa-gamepad" aria-hidden="true"></i>
+    <h2>{{ t.games_title }}</h2>
+    <p>{{ t.games_text }}</p>
+  </div>
+
   {%- if site.data.downloads.size > 0 %}
   <div class="downloads">
     {%- for d in site.data.downloads %}
@@ -55,10 +61,4 @@ layout: default
     <a class="btn btn-primary" href="{{ '/' | append: lang | append: '/' | relative_url }}"><i class="fas fa-home" aria-hidden="true"></i> {{ t.back_home }}</a>
   </div>
   {%- endif %}
-
-  <div class="empty-state games-soon">
-    <i class="fas fa-gamepad" aria-hidden="true"></i>
-    <h2>{{ t.games_title }}</h2>
-    <p>{{ t.games_text }}</p>
-  </div>
 </main>
