@@ -814,7 +814,9 @@ main.container > h1::after,
 @media (min-width: 801px) and (max-width: 1560px) {
   .main-nav > a { padding-left: 0.55rem; padding-right: 0.55rem; }
   .main-nav { gap: 0.3rem; }
-  .site-search { flex-basis: 105px; min-width: 95px; }
+  .site-search { flex-basis: 108px; min-width: 108px; }
+  /* meno spazio interno nel campo, così la scritta "Cerca..." / "Search..." entra tutta */
+  .ss-input { padding: 0 0.45rem 0 1.9rem; background-position: 0.5rem center; }
 }
 
 /* pulsante di invito in fondo alla pagina "Chi sono" */
