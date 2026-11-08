@@ -14,7 +14,7 @@ It is the telescope astronomers have been waiting for since 1989. Born from an i
 
 ## The story: from Hubble to Webb
 
-It is 1989. The **Hubble Space Telescope (HST)** is still on the ground, but astrophysicists and engineers are already plotting its successor: a telescope able to go where Hubble could never reach.
+It is 1989 and the **Hubble Space Telescope (HST)** is still on the ground, but astrophysicists and engineers are already plotting its successor: a telescope able to go where Hubble could never reach.
 
 Hubble is, in every sense, Webb's father, and more than 36 years after its launch it has never stopped offering us its treasures. It has changed our picture of the cosmos forever. By observing Type Ia supernovae, it measured the Hubble constant more precisely and helped discover that the expansion of the universe is not slowing down, but speeding up. It showed that at the heart of every large galaxy lurks a supermassive black hole, whose mass is closely tied to that of the galactic bulge. It explored the nebulae where stars are born and analysed the atmospheres of extrasolar planets. More than 22,000 scientific papers are based on its data, and every answer has opened new questions.
 

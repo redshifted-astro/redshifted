@@ -14,7 +14,7 @@ image_caption: "Illustrazione digitale realizzata a partire da un'immagine di ri
 
 ## La storia: da Hubble a Webb
 
-È il 1989. Il **Telescopio Spaziale Hubble (HST)** è ancora a terra, ma astrofisici e ingegneri stanno già confabulando sul suo successore: un telescopio capace di spingersi dove Hubble non sarebbe mai arrivato.
+È il 1989 e il **Telescopio Spaziale Hubble (HST)** è ancora a terra, ma astrofisici e ingegneri stanno già confabulando sul suo successore: un telescopio capace di spingersi dove Hubble non sarebbe mai arrivato.
 
 Hubble è, a tutti gli effetti, il padre di Webb e a più di 36 anni dal lancio, non ha mai smesso di donarci i suoi tesori. Ha cambiato per sempre la nostra immagine del cosmo. Osservando le supernove di tipo Ia ha misurato con più precisione la costante di Hubble e ha contribuito a scoprire che l'espansione dell'universo non rallenta, ma accelera. Ha mostrato che al centro di ogni grande galassia si nasconde un buco nero supermassiccio, la cui massa è in stretta correlazione con quella del bulge galattico. Ha esplorato le nebulose in cui nascono le stelle e ha analizzato le atmosfere di pianeti extrasolari. Sui suoi dati si basano oltre 22.000 articoli scientifici, e ogni risposta ha aperto nuove domande.
 
