@@ -50,8 +50,6 @@ And the hexagonal shape? It is not an aesthetic whim: hexagons fit together leav
 
 ### 2. The Integrated Science Instrument Module (ISIM)
 
-Webb's scientific “brain”.
-
 Webb sees mainly in the near and mid infrared, but it can also catch the red end of visible light: in total, wavelengths between 0.6 and 28.5 microns. To do this it uses four instruments, each with its own speciality.
 
 <figure class="post-fig">

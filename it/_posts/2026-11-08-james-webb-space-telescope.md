@@ -50,8 +50,6 @@ E la forma esagonale? Non è un vezzo estetico: gli esagoni si incastrano lascia
 
 ### 2. Il Modulo Integrato degli Strumenti Scientifici (Integrated Science Instrument Module, ISIM)
 
-Il “cervello” scientifico di Webb.
-
 Webb vede soprattutto nel vicino e nel medio infrarosso, ma riesce a cogliere anche il rosso della luce visibile: in tutto, le lunghezze d'onda tra 0,6 e 28,5 micron. Per farlo usa quattro strumenti, ognuno con una specialità.
 
 <figure class="post-fig">
