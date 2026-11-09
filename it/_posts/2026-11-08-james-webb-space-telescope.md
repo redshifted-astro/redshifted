@@ -31,9 +31,9 @@ Webb è partito il giorno di Natale del 2021, a bordo di un razzo Ariane 5 lanci
 
 ## Il telescopio
 
-Per vedere gli oggetti più deboli dell'universo serve uno specchio enorme. Ma lo specchio di Webb è più largo del razzo che doveva portarlo in orbita. La soluzione? Ispirarsi all'arte degli origami. Webb è partito piegato su sé stesso e si è dispiegato pezzo dopo pezzo durante il viaggio verso il punto L2. Un'impresa da brivido: gli ingegneri avevano contato 344 “punti critici”, meccanismi senza alcun ricambio, ciascuno dei quali, se si fosse bloccato, avrebbe potuto compromettere l'intera missione. Circa l'80% riguardava proprio il dispiegamento, e non è per fortuna che hanno funzionato tutti.
+Per vedere gli oggetti più deboli dell'universo serve uno specchio enorme. Ma lo specchio di Webb è più largo del razzo che doveva portarlo in orbita. La soluzione? Ispirarsi all'arte degli origami! Webb è partito piegato su sé stesso e si è dispiegato pezzo dopo pezzo durante il viaggio verso il punto L2. Un'impresa da brivido: gli ingegneri avevano contato 344 “punti critici”, meccanismi senza alcun ricambio, ciascuno dei quali, se si fosse bloccato, avrebbe potuto compromettere l'intera missione. Circa l'80% riguardava proprio il dispiegamento, e non è per fortuna che hanno funzionato tutti.
 
-Webb è composto da tre grandi parti.
+Webb è composto da tre grandi parti: l'Elemento del Telescopio Ottico (OTE), il Modulo Integrato degli Strumenti Scientifici (ISIM) e l'Elemento del Veicolo Spaziale (SCE).
 
 <figure class="post-fig">
 <img src="/assets/img/posts/jwst-componenti.jpg" alt="I tre costituenti di Webb: telescopio ottico (OTE), modulo degli strumenti (ISIM), scudo solare e bus del veicolo spaziale" loading="lazy">

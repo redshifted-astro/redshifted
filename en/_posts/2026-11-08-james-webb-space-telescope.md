@@ -31,9 +31,9 @@ Webb lifted off on Christmas Day 2021, aboard an Ariane 5 rocket launched from E
 
 ## The telescope
 
-To see the faintest objects in the universe you need an enormous mirror. But Webb's mirror is wider than the rocket that had to carry it into space. The solution? Take inspiration from the art of origami. Webb set off folded up on itself and unfolded piece by piece on its way to the L2 point. A nail-biting feat: engineers had counted 344 “single points of failure”, mechanisms with no backup, any one of which, had it jammed, could have jeopardised the entire mission. About 80% of them involved the unfolding itself, and it was not luck that every single one worked.
+To see the faintest objects in the universe you need an enormous mirror. But Webb's mirror is wider than the rocket that had to carry it into space. The solution? Take inspiration from the art of origami! Webb set off folded up on itself and unfolded piece by piece on its way to the L2 point. A nail-biting feat: engineers had counted 344 “single points of failure”, mechanisms with no backup, any one of which, had it jammed, could have jeopardised the entire mission. About 80% of them involved the unfolding itself, and it was not luck that every single one worked.
 
-Webb is made up of three main parts.
+Webb is made up of three main parts: the Optical Telescope Element (OTE), the Integrated Science Instrument Module (ISIM) and the Spacecraft Element (SCE).
 
 <figure class="post-fig">
 <img src="/assets/img/posts/jwst-componenti.jpg" alt="Webb&#x27;s three main parts: optical telescope element (OTE), instrument module (ISIM), sunshield and spacecraft bus" loading="lazy">
