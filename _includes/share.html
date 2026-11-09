@@ -1,0 +1,26 @@
+{%- assign mode = include.mode | default: 'bottom' -%}
+{%- assign share_url = page.url | absolute_url | url_encode | replace: '+', '%20' -%}
+{%- assign share_title = page.title | strip_html | url_encode | replace: '+', '%20' -%}
+{%- assign share_img = '/assets/img/logo.jpg' | absolute_url -%}
+{%- if page.image -%}{%- if page.image contains '://' -%}{%- assign share_img = page.image -%}{%- else -%}{%- assign share_img = page.image | absolute_url -%}{%- endif -%}{%- endif -%}
+{%- assign share_img = share_img | url_encode | replace: '+', '%20' -%}
+<section class="share share-{{ mode }}" aria-label="{{ t.share_title }}">
+  {%- if mode == 'bottom' %}
+  <h2 class="share-title">{{ t.share_title }}</h2>
+  {%- endif %}
+  <div class="share-buttons">
+    <a class="share-btn share-whatsapp" href="https://wa.me/?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="share-label">WhatsApp</span></a>
+    <a class="share-btn share-telegram" href="https://t.me/share/url?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i><span class="share-label">Telegram</span></a>
+    <a class="share-btn share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span class="share-label">Facebook</span></a>
+    <a class="share-btn share-x" href="https://x.com/intent/post?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="share-label">X</span></a>
+    <a class="share-btn share-bluesky" href="https://bsky.app/intent/compose?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" title="Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i><span class="share-label">Bluesky</span></a>
+    <a class="share-btn share-threads" href="https://www.threads.net/intent/post?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads" aria-hidden="true"></i><span class="share-label">Threads</span></a>
+    <a class="share-btn share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="share-label">LinkedIn</span></a>
+    <a class="share-btn share-reddit" href="https://www.reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" target="_blank" rel="noopener noreferrer" aria-label="Reddit" title="Reddit"><i class="fa-brands fa-reddit-alien" aria-hidden="true"></i><span class="share-label">Reddit</span></a>
+    <a class="share-btn share-pinterest" href="https://www.pinterest.com/pin/create/button/?url={{ share_url }}&amp;media={{ share_img }}&amp;description={{ share_title }}" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" title="Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i><span class="share-label">Pinterest</span></a>
+    <a class="share-btn share-email" href="mailto:?subject={{ share_title }}&amp;body={{ share_title }}%0A{{ share_url }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="share-label">Email</span></a>
+    <button type="button" class="share-btn share-copy" data-url="{{ page.url | absolute_url }}" data-copied="{{ t.share_copied }}" aria-label="{{ t.share_copy }}" title="{{ t.share_copy }}"><i class="fas fa-link" aria-hidden="true"></i><span class="share-label">{{ t.share_copy }}</span></button>
+    <button type="button" class="share-btn share-native" data-url="{{ page.url | absolute_url }}" data-title="{{ page.title | strip_html | escape }}" aria-label="{{ t.share_native }}" title="{{ t.share_native }}" hidden><i class="fas fa-share-nodes" aria-hidden="true"></i><span class="share-label">{{ t.share_native }}</span></button>
+  </div>
+  <p class="share-note" role="status" aria-live="polite" data-hint="{{ t.share_note | escape }}"></p>
+</section>

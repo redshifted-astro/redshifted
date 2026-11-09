@@ -402,21 +402,42 @@ h1 {
 
 .post-tags { margin-top: 1.5rem; justify-content: center; }
 
-/* Pulsanti di condivisione */
-.share { margin-top: 2rem; text-align: center; }
+/* Pulsanti di condivisione (con i colori dei social) */
+.share { text-align: center; }
+.share-bottom { margin-top: 1.8rem; }
+.share-top { margin: 1rem 0 0; }
 .share-title { font-size: 1.15rem; color: var(--orange); margin: 0 0 0.9rem; }
-.share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
+.share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.55rem; }
 .share-btn {
-  display: inline-flex; align-items: center; gap: 0.5rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   padding: 0.55rem 1rem; border-radius: 999px;
-  border: 1px solid var(--border); background: #1e1e1eb3; color: #fff;
+  border: 1px solid transparent; background: #555; color: #fff;
   font: inherit; font-size: 0.95rem; font-weight: bold; line-height: 1.2;
   text-decoration: none; white-space: nowrap; cursor: pointer;
-  transition: background 0.3s, border-color 0.3s;
+  transition: filter 0.2s, transform 0.2s;
 }
-.share-btn:hover, .share-btn:focus-visible { background: var(--red); border-color: var(--red); color: #fff; }
+.share-btn:hover, .share-btn:focus-visible { filter: brightness(1.18); color: #fff; transform: translateY(-1px); }
 .share-btn[hidden] { display: none; }
-.share-note { min-height: 1.4em; margin: 0.8rem 0 0; font-size: 0.88rem; color: #cfcfcf; }
+.share-whatsapp { background: #25d366; color: #0b2e17; }
+.share-whatsapp:hover, .share-whatsapp:focus-visible { color: #0b2e17; }
+.share-telegram { background: #26a5e4; }
+.share-facebook { background: #1877f2; }
+.share-x { background: #000; border-color: #666; }
+.share-bluesky { background: #0085ff; }
+.share-threads { background: #000; border-color: #666; }
+.share-linkedin { background: #0a66c2; }
+.share-reddit { background: #ff4500; }
+.share-pinterest { background: #e60023; }
+.share-email { background: #6b6b6b; }
+.share-copy, .share-native { background: var(--red); }
+/* Sotto la data: solo i loghi, in tondo, per occupare poco spazio */
+.share-top .share-btn { width: 2.4rem; height: 2.4rem; padding: 0; font-size: 1.05rem; }
+.share-top .share-label {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.share-note { min-height: 1.4em; margin: 0.6rem 0 0; font-size: 0.88rem; color: #cfcfcf; }
+.share-note:empty { display: none; }
 
 /* ---------- Piè di pagina e pulsante "torna su" ---------- */
 
