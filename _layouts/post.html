@@ -15,7 +15,11 @@ layout: default
       {%- endif %}
       <h1>{{ page.title | escape }}</h1>
       <p class="post-meta">
-        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date.html date=page.date lang=lang %}</time> &middot; {{ mins }} {{ t.min_read }}
+        {%- if page.author %}
+        <span class="meta-item"><i class="fas fa-user" aria-hidden="true"></i> <a href="{{ '/' | append: lang | append: '/about/' | relative_url }}">{{ page.author }}</a></span>
+        {%- endif %}
+        <span class="meta-item"><i class="fas fa-calendar-days" aria-hidden="true"></i> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date.html date=page.date lang=lang %}</time></span>
+        <span class="meta-item"><i class="fas fa-book-open" aria-hidden="true"></i> {{ mins }} {{ t.min_read }}</span>
       </p>
       {% include share.html mode="top" %}
     </header>

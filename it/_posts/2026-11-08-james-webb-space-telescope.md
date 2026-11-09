@@ -1,4 +1,5 @@
 ---
+author: "Anna Elisabetta Borea"
 title: "James Webb Space Telescope: il più grande telescopio che abbiamo portato nello spazio"
 description: "Dal sogno del 1989 alle prime immagini: la storia, la struttura e l'orbita del più grande telescopio mai portato nello spazio."
 topic: special-features
@@ -139,6 +140,5 @@ Non ha equivalenti nel Sistema Solare: ha meno della metà della massa di Giove 
 Dalle galassie bambine di SMACS 0723 al vapore acqueo di WASP-96 b, le prime immagini di Webb hanno mantenuto tutte le promesse fatte in trent'anni di progettazione. Se Hubble ci aveva aperto gli occhi sull'universo, Webb è pronto a riscriverne la storia.
 
 <div class="post-end">
-<p class="post-author">Articolo di <strong>Anna Elisabetta Borea</strong></p>
 <p class="post-credits"><strong>Fonti e crediti:</strong> informazioni e immagini tratte dal sito della missione Webb, <a href="https://science.nasa.gov/mission/webb/">NASA Science &ndash; Webb</a>, e dai materiali di NASA, ESA, CSA e STScI. Redshifted non è affiliato a queste organizzazioni e il loro uso non implica alcuna approvazione.</p>
 </div>

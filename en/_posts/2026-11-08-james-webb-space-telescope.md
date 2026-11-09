@@ -1,4 +1,5 @@
 ---
+author: "Anna Elisabetta Borea"
 title: "James Webb Space Telescope: the largest telescope we have ever sent into space"
 description: "From the 1989 dream to the first images: the story, the structure and the orbit of the largest telescope ever sent into space."
 topic: special-features
@@ -139,6 +140,5 @@ It has no counterpart in the Solar System: it has less than half the mass of Jup
 From the baby galaxies of SMACS 0723 to the water vapour of WASP-96 b, Webb's first images kept every promise made over thirty years of design. If Hubble had opened our eyes to the universe, Webb is ready to rewrite its story.
 
 <div class="post-end">
-<p class="post-author">Article by <strong>Anna Elisabetta Borea</strong></p>
 <p class="post-credits"><strong>Sources and credits:</strong> information and images taken from the Webb mission website, <a href="https://science.nasa.gov/mission/webb/">NASA Science &ndash; Webb</a>, and from materials by NASA, ESA, CSA and STScI. Redshifted is not affiliated with these organisations and their use does not imply any endorsement.</p>
 </div>
