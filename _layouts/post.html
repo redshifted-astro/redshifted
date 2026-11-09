@@ -37,6 +37,30 @@ layout: default
       {%- for tag in page.tags %}<a class="tag" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}?q={{ tag | url_encode }}">{{ tag }}</a>{% endfor %}
     </div>
     {%- endif %}
+
+    {%- assign share_url = page.url | absolute_url | url_encode | replace: '+', '%20' -%}
+    {%- assign share_title = page.title | strip_html | url_encode | replace: '+', '%20' -%}
+    {%- assign share_img = '/assets/img/logo.jpg' | absolute_url -%}
+    {%- if page.image -%}{%- if page.image contains '://' -%}{%- assign share_img = page.image -%}{%- else -%}{%- assign share_img = page.image | absolute_url -%}{%- endif -%}{%- endif -%}
+    {%- assign share_img = share_img | url_encode | replace: '+', '%20' %}
+    <section class="share" aria-labelledby="share-title">
+      <h2 class="share-title" id="share-title">{{ t.share_title }}</h2>
+      <div class="share-buttons">
+        <a class="share-btn" href="https://wa.me/?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+        <a class="share-btn" href="https://t.me/share/url?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram</a>
+        <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+        <a class="share-btn" href="https://x.com/intent/post?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X</a>
+        <a class="share-btn" href="https://bsky.app/intent/compose?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i> Bluesky</a>
+        <a class="share-btn" href="https://www.threads.net/intent/post?text={{ share_title }}%20{{ share_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads" aria-hidden="true"></i> Threads</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+        <a class="share-btn" href="https://www.reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-reddit-alien" aria-hidden="true"></i> Reddit</a>
+        <a class="share-btn" href="https://www.pinterest.com/pin/create/button/?url={{ share_url }}&amp;media={{ share_img }}&amp;description={{ share_title }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i> Pinterest</a>
+        <a class="share-btn" href="mailto:?subject={{ share_title }}&amp;body={{ share_title }}%0A{{ share_url }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+        <button type="button" class="share-btn" id="share-copy" data-url="{{ page.url | absolute_url }}" data-copied="{{ t.share_copied }}"><i class="fas fa-link" aria-hidden="true"></i> {{ t.share_copy }}</button>
+        <button type="button" class="share-btn share-native" id="share-native" data-url="{{ page.url | absolute_url }}" data-title="{{ page.title | strip_html | escape }}" hidden><i class="fas fa-share-nodes" aria-hidden="true"></i> {{ t.share_native }}</button>
+      </div>
+      <p class="share-note" id="share-note" role="status" aria-live="polite" data-hint="{{ t.share_note | escape }}"></p>
+    </section>
   </article>
 
   <p class="center"><a class="btn btn-primary" href="{{ '/' | append: lang | append: '/journal/' | relative_url }}"><i class="fas fa-book" aria-hidden="true"></i> {{ t.back_journal }}</a></p>
@@ -48,3 +72,4 @@ layout: default
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script defer src="{{ '/assets/js/math.js' | relative_url }}"></script>
 {%- endif %}
+<script defer src="{{ '/assets/js/share.js' | relative_url }}"></script>
