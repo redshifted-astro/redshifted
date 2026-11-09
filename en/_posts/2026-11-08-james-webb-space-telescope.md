@@ -73,7 +73,7 @@ Then there is the real giant: the sunshield. Webb observes infrared radiation, w
 
 ## Where Webb is
 
-Hubble circles the Earth at an altitude of about 500 km. Webb lives much farther away: about 1.5 million kilometres from us, four times the distance to the Moon, near the second Lagrange point (L2).
+While Hubble circles the Earth at an altitude of about 500 km, Webb, instead, lives much farther away: about 1.5 million kilometres from us, four times the distance to the Moon, near the second Lagrange point (L2).
 
 The Lagrange points are five special positions in the Sun-Earth system, studied in the 18th century by the mathematician Joseph-Louis Lagrange as part of the famous *three-body problem*. There, the gravitational pull of the Sun and the Earth and the orbital motion balance out, so a small object can move along with them, as if “hooked on”. At L4 and L5 the equilibrium is stable, while at L1, L2 and L3 it is unstable: a tiny nudge is enough to drift away.
 

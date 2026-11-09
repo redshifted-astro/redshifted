@@ -73,7 +73,7 @@ Poi c'è il vero gigante: lo scudo solare. Webb osserva la radiazione infrarossa
 
 ## Dove si trova Webb
 
-Hubble gira intorno alla Terra a circa 500 km di quota. Webb invece abita molto più lontano: a circa 1,5 milioni di chilometri da noi, quattro volte la distanza della Luna, vicino al secondo punto lagrangiano (L2).
+Mentre Hubble gira intorno alla Terra a circa 500 km di quota, Webb, invece, abita molto più lontano: a circa 1,5 milioni di chilometri da noi, quattro volte la distanza della Luna, vicino al secondo punto lagrangiano (L2).
 
 I punti lagrangiani sono cinque posizioni speciali del sistema Sole-Terra, studiate nel XVIII secolo dal matematico Joseph-Louis Lagrange nell'ambito del celebre *problema dei tre corpi*. Lì l'attrazione gravitazionale del Sole e della Terra e il moto orbitale si bilanciano, così un piccolo oggetto può muoversi insieme a loro, come se fosse “agganciato”. In L4 e L5 l'equilibrio è stabile, mentre in L1, L2 e L3 è instabile: basta una piccola spinta per allontanarsi.
 
