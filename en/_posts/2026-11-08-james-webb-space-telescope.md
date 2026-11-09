@@ -42,8 +42,6 @@ Webb is made up of three main parts: the Optical Telescope Element (OTE), the In
 
 ### 1. The Optical Telescope Element (OTE)
 
-The optics and their support structures.
-
 We all picture a single large golden mirror, 6.5 m across, made of 18 hexagonal segments arranged like a honeycomb. The truth is that there are four mirrors: the primary collects the light, while three others direct it towards the science instruments. Small motors, called actuators, adjust the position and orientation of each segment with extreme precision, so that the 18 segments work as one single giant mirror.
 
 Beneath the gold lies beryllium, a light, strong and stable metal that keeps its shape even at extremely low temperatures. The gold, spread in a layer just one ten-thousandth of a millimetre thick, makes the mirror as reflective as possible to infrared radiation. There are only 48 grams of it in total, roughly the weight of a golf ball. Protecting it from scratches and particles is a thin veil of glass, amorphous silicon dioxide.

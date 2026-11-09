@@ -42,8 +42,6 @@ Webb è composto da tre grandi parti: l'Elemento del Telescopio Ottico (OTE), il
 
 ### 1. Il Telescopio Ottico (Optical Telescope Element, OTE)
 
-Le ottiche e le loro strutture di supporto.
-
 Tutti abbiamo in mente un unico grande specchio dorato da 6,5 m di diametro, composto da 18 tasselli esagonali disposti a nido d'ape. La verità è che gli specchi sono quattro: il primario raccoglie la luce, mentre altri tre la indirizzano verso gli strumenti scientifici. Piccoli motori, detti attuatori, regolano posizione e orientamento di ogni tassello con precisione estrema, così che i 18 segmenti lavorino come un unico grande specchio.
 
 Sotto la doratura c'è il berillio, un metallo leggero, resistente e stabile, che mantiene la propria forma anche a temperature bassissime. L'oro, steso in uno strato di appena un decimillesimo di millimetro, serve a riflettere al meglio la radiazione infrarossa. In tutto ce ne sono solo 48 grammi, più o meno il peso di una pallina da golf. A proteggerlo da graffi e particelle c'è un sottile velo di vetro, cioè biossido di silicio amorfo.
