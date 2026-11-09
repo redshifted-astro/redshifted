@@ -67,8 +67,6 @@ Finally there is **FGS/NIRISS** (Fine Guidance Sensor / Near-Infrared Imager and
 
 ### 3. The Spacecraft Element (SCE)
 
-The Spacecraft Bus and the Sunshield.
-
 The Spacecraft Bus is Webb's “engine room”. It provides power through its solar panels, keeps the telescope stable and correctly pointed, handles communications with Earth, and processes and stores the data collected. It also houses the propulsion system, which periodically corrects the orbit.
 
 Then there is the real giant: the sunshield. Webb observes infrared radiation, which is, to a large extent, heat. The heat of the Sun, the Earth, the Moon and even the telescope itself could drown out the faintest cosmic signals. That is why Webb must stay ice-cold. Protecting it is an umbrella the size of a tennis court (21 × 14 m), always facing the Sun, made of five Kapton membranes as thin as a human hair. They are coated with aluminium and, on the first two layers, with doped silicon, which gives the shield its distinctive pinkish-purple colour. The layers are separated by gaps that radiate heat away into space, so each membrane is colder than the one before. The result is a sunscreen with a protection factor of one million: there is a difference of more than 300 degrees between the side facing the Sun and the side in shadow. The telescope thus stays below −223 °C, while NIRCam, NIRSpec and NIRISS work at about −234 °C. MIRI needs it even colder and, thanks to a special helium cryocooler, gets down to −266 °C: just 7 degrees above absolute zero.

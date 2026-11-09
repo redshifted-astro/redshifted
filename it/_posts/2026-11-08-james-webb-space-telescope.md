@@ -67,8 +67,6 @@ Infine c'è **FGS/NIRISS** (Fine Guidance Sensor / Near-Infrared Imager and Slit
 
 ### 3. L'Elemento del Veicolo Spaziale (Spacecraft Element, SCE)
 
-Il bus del veicolo spaziale (Spacecraft Bus) e lo scudo solare (Sunshield).
-
 Lo Spacecraft Bus è la “sala macchine” di Webb. Fornisce energia grazie ai pannelli solari, mantiene il telescopio stabile e orientato, gestisce le comunicazioni con la Terra ed elabora e archivia i dati raccolti. Ospita anche il sistema di propulsione, che corregge periodicamente l'orbita.
 
 Poi c'è il vero gigante: lo scudo solare. Webb osserva la radiazione infrarossa, cioè, in buona parte, il calore. Il calore del Sole, della Terra, della Luna e perfino quello del telescopio stesso rischierebbe di coprire i debolissimi segnali cosmici. Per questo Webb deve restare gelido. A proteggerlo è un ombrello grande quanto un campo da tennis (21 × 14 m), sempre rivolto verso il Sole, fatto di cinque membrane di Kapton sottili come un capello. Sono rivestite di alluminio e, nei primi due strati, di silicio drogato, che dà allo scudo il suo caratteristico colore rosa-violaceo. Gli strati sono separati da spazi vuoti che disperdono il calore nello spazio, così ogni membrana è più fredda della precedente. Il risultato è una crema solare con fattore di protezione un milione: tra il lato esposto al Sole e quello in ombra ci sono più di 300 gradi di differenza. Il telescopio resta così sotto i −223 °C, mentre NIRCam, NIRSpec e NIRISS lavorano a circa −234 °C. MIRI ha bisogno di ancora più freddo e, grazie a uno speciale refrigeratore a elio, scende a −266 °C: appena 7 gradi sopra lo zero assoluto.
