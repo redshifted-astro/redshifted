@@ -19,6 +19,37 @@ layout: default
   {%- if site.data.downloads.size > 0 %}
   <div class="downloads">
     {%- for d in site.data.downloads %}
+    {%- if d.files %}
+    {%- assign gtitle = d.title[lang] %}
+    {%- unless gtitle %}{% assign gtitle = d.title.it %}{% endunless %}
+    {%- assign gdesc = d.description[lang] %}
+    {%- unless gdesc %}{% assign gdesc = d.description.it %}{% endunless %}
+    <article class="download-set">
+      <h2>{{ gtitle }}</h2>
+      {%- if gdesc %}
+      <p class="download-set-desc">{{ gdesc }}</p>
+      {%- endif %}
+      <div class="download-items">
+        {%- for f in d.files %}
+        {%- assign kind_key = 'dl_' | append: f.kind %}
+        {%- assign kind_label = t[kind_key] %}
+        {%- assign fnote = f.note[lang] %}
+        <div class="download-item">
+          {%- if f.thumb %}
+          <img class="download-item-thumb" src="{{ f.thumb | relative_url }}" alt="" loading="lazy">
+          {%- endif %}
+          <div class="download-item-info">
+            <strong>{{ kind_label }}</strong>
+            <span class="download-meta">{{ f.dims }}</span>
+            {%- if fnote %}<span class="download-meta">{{ fnote }}</span>{% endif %}
+            <span class="download-meta">JPG{% if f.size %} &middot; {{ f.size }}{% endif %}</span>
+          </div>
+          <a class="btn btn-primary" href="{{ f.file | relative_url }}" download><i class="fas fa-download" aria-hidden="true"></i> {{ t.download_btn }}</a>
+        </div>
+        {%- endfor %}
+      </div>
+    </article>
+    {%- else %}
     {%- assign ext = d.file | split: '.' | last | downcase %}
     {%- assign icon = 'fa-file' %}
     {%- if ext == 'pdf' %}{% assign icon = 'fa-file-pdf' %}
@@ -51,6 +82,7 @@ layout: default
       </div>
       <a class="btn btn-primary" href="{% if d.file contains '://' %}{{ d.file }}{% else %}{{ d.file | relative_url }}{% endif %}" download><i class="fas fa-download" aria-hidden="true"></i> {{ t.download_btn }}</a>
     </article>
+    {%- endif %}
     {%- endfor %}
   </div>
   {%- else %}

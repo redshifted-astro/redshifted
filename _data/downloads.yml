@@ -1,7 +1,10 @@
 # Elenco dei file scaricabili nella pagina Giochi & Download.
-# Per aggiungerne uno:
+# Per aggiungere un file singolo (PDF, dispensa...):
 #   1. carica il file nella cartella assets/downloads (Add file > Upload files);
 #   2. aggiungi qui sotto un blocco come quello di esempio, cancellando i "# " davanti.
+# Per ogni articolo/serie di immagini si usa invece un GRUPPO (vedi quelli qui sotto):
+# un solo riquadro con tre file (poster, sfondo computer, sfondo telefono).
+# "kind" può essere: poster, desktop, phone. Il gruppo più in alto compare per primo.
 # Attenzione: i rientri (gli spazi all'inizio delle righe) devono restare identici.
 # Il file più in alto nell'elenco compare per primo.
 # "thumb" (facoltativo) è l'anteprima che compare al posto dell'icona.
@@ -15,62 +18,74 @@
 #     it: "Una breve introduzione agli orizzonti degli eventi."
 #     en: "A short introduction to event horizons."
 
-- file: /assets/downloads/redshifted-poster-james-webb-1254x1254.jpg
-  thumb: /assets/downloads/anteprima-poster-james-webb.jpg
-  size: "0,8 MB"
-  title:
-    it: "Poster James Webb Space Telescope"
-    en: "James Webb Space Telescope poster"
+- title:
+    it: "I compagni invisibili della Via Lattea"
+    en: "The Milky Way's invisible companions"
   description:
-    it: "Dall'articolo «James Webb Space Telescope: il più grande telescopio che abbiamo portato nello spazio». 1254 × 1254 px. Poster per uso personale e didattico, con credito a Redshifted. Immagine di riferimento del telescopio: NASA/ESA/CSA/STScI. Non affiliato alla NASA."
-    en: "From the article “James Webb Space Telescope: the largest telescope we have ever sent into space”. 1254 × 1254 px. Poster for personal and educational use, with credit to Redshifted. Telescope reference image: NASA/ESA/CSA/STScI. Not affiliated with NASA."
+    it: "Dall'articolo «I compagni invisibili della Via Lattea: Rubin scopre una galassia fantasma alla deriva nel buio e un ammasso sepolto nella polvere». Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Non affiliato all'Osservatorio Rubin."
+    en: "From the article “The Milky Way's invisible companions: Rubin discovers a ghost galaxy adrift in the dark and a star cluster buried in dust”. For personal and educational use, with credit to Redshifted. Reference image: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Not affiliated with the Rubin Observatory."
+  files:
+    - kind: poster
+      file: /assets/downloads/redshifted-rubin-poster-3000x4140.jpg
+      thumb: /assets/downloads/anteprima-rubin-poster.jpg
+      dims: "3000 × 4140 px"
+      size: "2,3 MB"
+    - kind: desktop
+      file: /assets/downloads/redshifted-rubin-sfondo-desktop-3840x2160.jpg
+      thumb: /assets/downloads/anteprima-rubin-desktop.jpg
+      dims: "3840 × 2160 px"
+      size: "1,4 MB"
+    - kind: phone
+      file: /assets/downloads/redshifted-rubin-sfondo-telefono-1440x2560.jpg
+      thumb: /assets/downloads/anteprima-rubin-telefono.jpg
+      dims: "1440 × 2560 px"
+      size: "0,7 MB"
 
-- file: /assets/downloads/redshifted-james-webb-sfondo-desktop-2560x1440.jpg
-  thumb: /assets/downloads/anteprima-james-webb-desktop.jpg
-  size: "1,3 MB"
-  title:
-    it: "Sfondo per computer: James Webb"
-    en: "Desktop wallpaper: James Webb"
+- title:
+    it: "James Webb Space Telescope"
+    en: "James Webb Space Telescope"
   description:
-    it: "Dall'articolo «James Webb Space Telescope: il più grande telescopio che abbiamo portato nello spazio». 2560 × 1440 px. Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento del telescopio: NASA/ESA/CSA/STScI. Non affiliato alla NASA."
-    en: "From the article “James Webb Space Telescope: the largest telescope we have ever sent into space”. 2560 × 1440 px. For personal and educational use, with credit to Redshifted. Telescope reference image: NASA/ESA/CSA/STScI. Not affiliated with NASA."
+    it: "Dall'articolo «James Webb Space Telescope: il più grande telescopio che abbiamo portato nello spazio». Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento del telescopio: NASA/ESA/CSA/STScI. Non affiliato alla NASA."
+    en: "From the article “James Webb Space Telescope: the largest telescope we have ever sent into space”. For personal and educational use, with credit to Redshifted. Telescope reference image: NASA/ESA/CSA/STScI. Not affiliated with NASA."
+  files:
+    - kind: poster
+      file: /assets/downloads/redshifted-poster-james-webb-1254x1254.jpg
+      thumb: /assets/downloads/anteprima-poster-james-webb.jpg
+      dims: "1254 × 1254 px"
+      size: "0,8 MB"
+    - kind: desktop
+      file: /assets/downloads/redshifted-james-webb-sfondo-desktop-2560x1440.jpg
+      thumb: /assets/downloads/anteprima-james-webb-desktop.jpg
+      dims: "2560 × 1440 px"
+      size: "1,3 MB"
+    - kind: phone
+      file: /assets/downloads/redshifted-james-webb-sfondo-telefono-1290x2796.jpg
+      thumb: /assets/downloads/anteprima-james-webb-telefono.jpg
+      dims: "1290 × 2796 px"
+      size: "1,2 MB"
 
-- file: /assets/downloads/redshifted-james-webb-sfondo-telefono-1290x2796.jpg
-  thumb: /assets/downloads/anteprima-james-webb-telefono.jpg
-  size: "1,2 MB"
-  title:
-    it: "Sfondo per telefono: James Webb"
-    en: "Phone wallpaper: James Webb"
+- title:
+    it: "Logo Redshifted"
+    en: "Redshifted logo"
   description:
-    it: "Dall'articolo «James Webb Space Telescope: il più grande telescopio che abbiamo portato nello spazio». 1290 × 2796 px. Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento del telescopio: NASA/ESA/CSA/STScI. Non affiliato alla NASA."
-    en: "From the article “James Webb Space Telescope: the largest telescope we have ever sent into space”. 1290 × 2796 px. For personal and educational use, with credit to Redshifted. Telescope reference image: NASA/ESA/CSA/STScI. Not affiliated with NASA."
-
-- file: /assets/downloads/redshifted-sfondo-desktop-2560x1440.jpg
-  thumb: /assets/downloads/anteprima-sfondo-desktop.jpg
-  size: "1,2 MB"
-  title:
-    it: "Sfondo per computer"
-    en: "Desktop wallpaper"
-  description:
-    it: "2560 × 1440 px. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
-    en: "2560 × 1440 px. For personal use only: do not resell or republish as your own. © Redshifted."
-
-- file: /assets/downloads/redshifted-sfondo-telefono-1290x2796.jpg
-  thumb: /assets/downloads/anteprima-sfondo-telefono.jpg
-  size: "1,1 MB"
-  title:
-    it: "Sfondo per telefono"
-    en: "Phone wallpaper"
-  description:
-    it: "1290 × 2796 px. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
-    en: "1290 × 2796 px. For personal use only: do not resell or republish as your own. © Redshifted."
-
-- file: /assets/downloads/redshifted-poster-50x70cm-3937x5512.jpg
-  thumb: /assets/downloads/anteprima-poster.jpg
-  size: "5,2 MB"
-  title:
-    it: "Poster 50 × 70 cm"
-    en: "Poster 50 × 70 cm"
-  description:
-    it: "3937 × 5512 px, pronto per la stampa. Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
-    en: "3937 × 5512 px, print-ready. For personal use only: do not resell or republish as your own. © Redshifted."
+    it: "Per uso personale: non rivendere né ripubblicare come tuo. © Redshifted."
+    en: "For personal use only: do not resell or republish as your own. © Redshifted."
+  files:
+    - kind: poster
+      file: /assets/downloads/redshifted-poster-50x70cm-3937x5512.jpg
+      thumb: /assets/downloads/anteprima-poster.jpg
+      dims: "3937 × 5512 px"
+      note:
+        it: "50 × 70 cm, per la stampa"
+        en: "50 × 70 cm, print-ready"
+      size: "5,2 MB"
+    - kind: desktop
+      file: /assets/downloads/redshifted-sfondo-desktop-2560x1440.jpg
+      thumb: /assets/downloads/anteprima-sfondo-desktop.jpg
+      dims: "2560 × 1440 px"
+      size: "1,2 MB"
+    - kind: phone
+      file: /assets/downloads/redshifted-sfondo-telefono-1290x2796.jpg
+      thumb: /assets/downloads/anteprima-sfondo-telefono.jpg
+      dims: "1290 × 2796 px"
+      size: "1,1 MB"
