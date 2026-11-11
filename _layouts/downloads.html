@@ -29,6 +29,12 @@ layout: default
       {%- if gdesc %}
       <p class="download-set-desc">{{ gdesc }}</p>
       {%- endif %}
+      {%- if d.ref %}
+      {%- assign art = site.posts | where: 'lang', lang | where: 'ref', d.ref | first %}
+      {%- if art %}
+      <p class="download-set-link"><a href="{{ art.url | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> {{ t.read_article }}</a></p>
+      {%- endif %}
+      {%- endif %}
       <div class="download-items">
         {%- for f in d.files %}
         {%- assign kind_key = 'dl_' | append: f.kind %}

@@ -4,6 +4,7 @@
 #   2. aggiungi qui sotto un blocco come quello di esempio, cancellando i "# " davanti.
 # Per ogni articolo/serie di immagini si usa invece un GRUPPO (vedi quelli qui sotto):
 # un solo riquadro con tre file (poster, sfondo computer, sfondo telefono).
+# "ref" (facoltativo) è lo stesso "ref" dell'articolo: se c'è, nel riquadro compare in automatico il link all'articolo (nella lingua giusta).
 # "kind" può essere: poster, desktop, phone. Il gruppo più in alto compare per primo.
 # Attenzione: i rientri (gli spazi all'inizio delle righe) devono restare identici.
 # Il file più in alto nell'elenco compare per primo.
@@ -18,7 +19,8 @@
 #     it: "Una breve introduzione agli orizzonti degli eventi."
 #     en: "A short introduction to event horizons."
 
-- title:
+- ref: rubin-satelliti-via-lattea
+  title:
     it: "I compagni invisibili della Via Lattea"
     en: "The Milky Way's invisible companions"
   description:
@@ -41,7 +43,8 @@
       dims: "1440 × 2560 px"
       size: "0,7 MB"
 
-- title:
+- ref: james-webb
+  title:
     it: "James Webb Space Telescope"
     en: "James Webb Space Telescope"
   description:
