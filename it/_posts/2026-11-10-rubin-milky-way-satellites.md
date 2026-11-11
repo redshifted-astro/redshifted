@@ -5,7 +5,7 @@ description: "Aquarius IV e Rubin-GC1: due satelliti della Via Lattea sfuggiti a
 topic: milky-way
 tags: ["Osservatorio Vera C. Rubin", "satelliti galattici", "alone galattico", "galassie nane ultradeboli", "UFD", "materia oscura", "ammassi globulari", "estinzione interstellare", "galassia nana sferoidale del Sagittario", "flusso mareale", "Aquarius IV", "Rubin-GC1"]
 ref: rubin-satelliti-via-lattea
-image: /assets/img/posts/rubin-poster2.jpg
+image: /assets/img/posts/rubin-copertina-titolo.jpg
 image_alt: "Illustrazione digitale della Via Lattea con i due nuovi satelliti scoperti dall'Osservatorio Rubin"
 image_caption: "Illustrazione digitale realizzata a partire da un'immagine di riferimento della Via Lattea e dei satelliti scoperti da Rubin (NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny). Ideazione e impaginazione: Redshifted."
 ---
