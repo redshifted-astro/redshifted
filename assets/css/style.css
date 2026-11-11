@@ -896,7 +896,14 @@ main.container > h1::after,
   .download-item-info .download-meta:first-of-type { white-space: nowrap; }
 }
 
-.download-set .download-set-link { margin: -0.5rem 0 1rem; font-size: 0.92rem; }
-.download-set .download-set-link a { color: var(--orange); text-decoration: underline dotted; text-underline-offset: 3px; white-space: nowrap; }
-.download-set .download-set-link a:hover { color: var(--coral); }
-.download-set .download-set-link i { margin-right: 0.35rem; }
+
+.download-set-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem 1rem; margin-bottom: 0.3rem; }
+.download-set-head h2 { margin: 0; }
+.download-set a.download-set-link { margin-left: auto; font-size: 0.92rem; color: var(--orange); text-decoration: underline dotted; text-underline-offset: 3px; white-space: nowrap; }
+.download-set a.download-set-link:hover { color: var(--coral); }
+.download-set a.download-set-link i { margin-right: 0.35rem; }
+/* anteprime più grandi */
+.download-item-thumb { height: 200px; }
+@media (max-width: 600px) {
+  .download-item-thumb { height: 84px; width: 84px; }
+}

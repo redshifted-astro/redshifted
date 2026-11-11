@@ -25,15 +25,17 @@ layout: default
     {%- assign gdesc = d.description[lang] %}
     {%- unless gdesc %}{% assign gdesc = d.description.it %}{% endunless %}
     <article class="download-set">
-      <h2>{{ gtitle }}</h2>
+      <div class="download-set-head">
+        <h2>{{ gtitle }}</h2>
+        {%- if d.ref %}
+        {%- assign art = site.posts | where: 'lang', lang | where: 'ref', d.ref | first %}
+        {%- if art %}
+        <a class="download-set-link" href="{{ art.url | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> {{ t.read_article }}</a>
+        {%- endif %}
+        {%- endif %}
+      </div>
       {%- if gdesc %}
       <p class="download-set-desc">{{ gdesc }}</p>
-      {%- endif %}
-      {%- if d.ref %}
-      {%- assign art = site.posts | where: 'lang', lang | where: 'ref', d.ref | first %}
-      {%- if art %}
-      <p class="download-set-link"><a href="{{ art.url | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> {{ t.read_article }}</a></p>
-      {%- endif %}
       {%- endif %}
       <div class="download-items">
         {%- for f in d.files %}
