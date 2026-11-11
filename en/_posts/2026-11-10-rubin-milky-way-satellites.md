@@ -5,7 +5,7 @@ description: "Aquarius IV and Rubin-GC1: two Milky Way satellites that escaped e
 topic: milky-way
 tags: ["Vera C. Rubin Observatory", "galactic satellites", "galactic halo", "ultra-faint dwarf galaxies", "UFD", "dark matter", "globular clusters", "interstellar extinction", "Sagittarius dwarf spheroidal galaxy", "tidal stream", "Aquarius IV", "Rubin-GC1"]
 ref: rubin-satelliti-via-lattea
-image: /assets/img/posts/rubin-copertina-titolo.jpg
+image: /assets/img/posts/rubin-poster2.jpg
 image_alt: "Digital illustration of the Milky Way with the two new satellites discovered by the Rubin Observatory"
 image_caption: "Digital illustration created from a reference image of the Milky Way and the satellites discovered by Rubin (NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny). Concept and layout: Redshifted."
 ---
