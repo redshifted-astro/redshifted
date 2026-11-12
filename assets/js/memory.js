@@ -69,8 +69,8 @@
       if (badge) {
         badge.innerHTML = open
           ? '<i class="fas fa-lock-open" aria-hidden="true"></i> ' + esc(T.lockOpen)
-          : '<i class="fas fa-lock" aria-hidden="true"></i> ' + esc(T.lockLabel.replace('{n}', need)) +
-            (best > 0 ? ' &middot; ' + esc(T.lockMissing.replace('{n}', need - best)) : '');
+          : '<i class="fas fa-lock" aria-hidden="true"></i> ' + esc(T.lockLabel.replace('NNN', need)) +
+            (best > 0 ? ' &middot; ' + esc(T.lockMissing.replace('NNN', need - best)) : '');
       }
     }
     elBest.textContent = best;

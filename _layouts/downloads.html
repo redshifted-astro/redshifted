@@ -65,7 +65,7 @@ layout: default
         {%- endif %}
         {%- endif %}
       </div>
-      <p class="lock-badge" data-lock-badge>{% if d.unlock %}<i class="fas fa-lock" aria-hidden="true"></i> {{ t.lock_label | replace: '{n}', d.unlock }}{% else %}<i class="fas fa-lock-open" aria-hidden="true"></i> {{ t.lock_free }}{% endif %}</p>
+      <p class="lock-badge" data-lock-badge>{% if d.unlock %}<i class="fas fa-lock" aria-hidden="true"></i> {{ t.lock_label | replace: 'NNN', d.unlock }}{% else %}<i class="fas fa-lock-open" aria-hidden="true"></i> {{ t.lock_free }}{% endif %}</p>
       {%- if gdesc %}
       <p class="download-set-desc">{{ gdesc }}</p>
       {%- endif %}
