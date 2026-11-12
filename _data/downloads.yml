@@ -5,6 +5,7 @@
 # Per ogni articolo/serie di immagini si usa invece un GRUPPO (vedi quelli qui sotto):
 # un solo riquadro con tre file (poster, sfondo computer, sfondo telefono).
 # "ref" (facoltativo) è lo stesso "ref" dell'articolo: se c'è, nel riquadro compare in automatico il link all'articolo (nella lingua giusta).
+# "unlock" (facoltativo) è il punteggio minimo nel gioco Memory per sbloccare il gruppo; se manca, il gruppo è libero.
 # "kind" può essere: poster, desktop, phone. Il gruppo più in alto compare per primo.
 # Attenzione: i rientri (gli spazi all'inizio delle righe) devono restare identici.
 # Il file più in alto nell'elenco compare per primo.
@@ -20,6 +21,7 @@
 #     en: "A short introduction to event horizons."
 
 - ref: napowawaenakaulua-quasar
+  unlock: 700
   title:
     it: "Nāpōwawāʻenakaulua"
     en: "Nāpōwawāʻenakaulua"
@@ -44,6 +46,7 @@
       size: "1,0 MB"
 
 - ref: rubin-satelliti-via-lattea
+  unlock: 500
   title:
     it: "I nani nascosti della Via Lattea"
     en: "The Milky Way's hidden dwarfs"
@@ -68,6 +71,7 @@
       size: "0,7 MB"
 
 - ref: james-webb
+  unlock: 300
   title:
     it: "James Webb Space Telescope"
     en: "James Webb Space Telescope"

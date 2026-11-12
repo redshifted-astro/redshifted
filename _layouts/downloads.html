@@ -10,21 +10,52 @@ layout: default
   <p class="intro">{{ page.intro }}</p>
   {%- endif %}
 
-  <div class="empty-state games-soon">
-    <i class="fas fa-gamepad" aria-hidden="true"></i>
-    <h2>{{ t.games_title }}</h2>
-    <p>{{ t.games_text }}</p>
-  </div>
+  {%- assign mem = site.data.memory %}
+  {%- if mem.cards.size > 1 %}
+  <section class="memory" id="memory">
+    <h2>{{ t.game_title }}</h2>
+    <p class="memory-intro">{{ t.game_intro }}</p>
+    <div class="memory-stats" aria-live="polite">
+      <span><small>{{ t.game_time }}</small><b id="mem-time">0:00</b></span>
+      <span><small>{{ t.game_errors }}</small><b id="mem-errors">0</b></span>
+      <span><small>{{ t.game_pairs }}</small><b id="mem-pairs">0/0</b></span>
+      <span><small>{{ t.game_best }}</small><b id="mem-best">0</b></span>
+    </div>
+    <div class="memory-board" id="mem-board" role="group" aria-label="{{ t.game_title }}"></div>
+    <div class="memory-result" id="mem-result" hidden></div>
+    <div class="memory-actions">
+      <button type="button" class="btn btn-primary" id="mem-start"><i class="fas fa-play" aria-hidden="true"></i> <span>{{ t.game_start }}</span></button>
+      <button type="button" class="memory-reset" id="mem-reset">{{ t.game_reset }}</button>
+    </div>
+    <p class="memory-rules">{{ t.game_rules }}</p>
+    <noscript><p class="memory-rules">{{ t.game_noscript }}</p></noscript>
+  </section>
+  <script type="application/json" id="memory-config">
+  {"pairs": {{ mem.pairs_per_game | default: 8 }},
+   "lang": {{ lang | jsonify }},
+   "cards": [{% for c in mem.cards %}{"id": {{ c.id | jsonify }}, "image": {{ c.image | relative_url | jsonify }}, "name": {{ c.name[lang] | default: c.name.it | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+   "rewards": [{% assign first = true %}{% for d in site.data.downloads %}{% if d.unlock %}{% unless first %},{% endunless %}{% assign first = false %}{% assign rt = d.title[lang] | default: d.title.it %}{"title": {{ rt | jsonify }}, "unlock": {{ d.unlock }}}{% endif %}{% endfor %}],
+   "texts": {
+     "start": {{ t.game_start | jsonify }}, "restart": {{ t.game_restart | jsonify }}, "score": {{ t.game_score | jsonify }},
+     "time": {{ t.game_time | jsonify }}, "errors": {{ t.game_errors | jsonify }}, "over": {{ t.game_over | jsonify }},
+     "newRecord": {{ t.game_new_record | jsonify }}, "unlocked": {{ t.game_unlocked | jsonify }}, "nothing": {{ t.game_nothing | jsonify }},
+     "allUnlocked": {{ t.game_all_unlocked | jsonify }}, "goto": {{ t.game_goto | jsonify }}, "best": {{ t.game_best | jsonify }},
+     "reset": {{ t.game_reset | jsonify }}, "resetSure": {{ t.game_reset_sure | jsonify }}, "card": {{ t.game_card | jsonify }},
+     "lockLabel": {{ t.lock_label | jsonify }}, "lockMissing": {{ t.lock_missing | jsonify }}, "lockOpen": {{ t.lock_open | jsonify }}, "lockFree": {{ t.lock_free | jsonify }}
+   }}
+  </script>
+  <script defer src="{{ '/assets/js/memory.js' | relative_url }}"></script>
+  {%- endif %}
 
   {%- if site.data.downloads.size > 0 %}
-  <div class="downloads">
+  <div class="downloads" id="downloads-list">
     {%- for d in site.data.downloads %}
     {%- if d.files %}
     {%- assign gtitle = d.title[lang] %}
     {%- unless gtitle %}{% assign gtitle = d.title.it %}{% endunless %}
     {%- assign gdesc = d.description[lang] %}
     {%- unless gdesc %}{% assign gdesc = d.description.it %}{% endunless %}
-    <article class="download-set">
+    <article class="download-set{% if d.unlock %} locked{% endif %}"{% if d.unlock %} data-unlock="{{ d.unlock }}"{% endif %}>
       <div class="download-set-head">
         <h2>{{ gtitle }}</h2>
         {%- if d.ref %}
@@ -34,6 +65,7 @@ layout: default
         {%- endif %}
         {%- endif %}
       </div>
+      <p class="lock-badge" data-lock-badge>{% if d.unlock %}<i class="fas fa-lock" aria-hidden="true"></i> {{ t.lock_label | replace: '{n}', d.unlock }}{% else %}<i class="fas fa-lock-open" aria-hidden="true"></i> {{ t.lock_free }}{% endif %}</p>
       {%- if gdesc %}
       <p class="download-set-desc">{{ gdesc }}</p>
       {%- endif %}
@@ -52,7 +84,11 @@ layout: default
             {%- if fnote %}<span class="download-meta">{{ fnote }}</span>{% endif %}
             <span class="download-meta">JPG{% if f.size %} &middot; {{ f.size }}{% endif %}</span>
           </div>
+          {%- if d.unlock %}
+          <a class="btn btn-primary btn-locked" data-href="{{ f.file | relative_url }}" aria-disabled="true"><i class="fas fa-download" aria-hidden="true"></i> {{ t.download_btn }}</a>
+          {%- else %}
           <a class="btn btn-primary" href="{{ f.file | relative_url }}" download><i class="fas fa-download" aria-hidden="true"></i> {{ t.download_btn }}</a>
+          {%- endif %}
         </div>
         {%- endfor %}
       </div>

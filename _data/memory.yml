@@ -1,0 +1,30 @@
+# Carte del gioco Memory (pagina Giochi & Download).
+# Ogni carta compare DUE volte sul tavolo (è una coppia).
+# Per aggiungere una carta:
+#   1. carica l'immagine quadrata (512 x 512 px, JPG) nella cartella assets/img/game (Add file > Upload files);
+#   2. aggiungi qui sotto un blocco come quelli già presenti (i rientri devono restare identici).
+# "pairs_per_game" è quante coppie compaiono in ogni partita: se le carte sono di più,
+# ogni partita ne pesca a caso questo numero. Se sono meno, si usano tutte.
+pairs_per_game: 8
+
+cards:
+  - id: redshifted
+    image: /assets/img/game/carta-redshifted.jpg
+    name:
+      it: "Redshifted"
+      en: "Redshifted"
+  - id: james-webb
+    image: /assets/img/game/carta-james-webb.jpg
+    name:
+      it: "James Webb Space Telescope"
+      en: "James Webb Space Telescope"
+  - id: rubin
+    image: /assets/img/game/carta-rubin.jpg
+    name:
+      it: "Rubin-GC1 e Aquarius IV"
+      en: "Rubin-GC1 and Aquarius IV"
+  - id: quasar
+    image: /assets/img/game/carta-quasar.jpg
+    name:
+      it: "Nāpōwawāʻenakaulua"
+      en: "Nāpōwawāʻenakaulua"
