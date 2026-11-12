@@ -1,6 +1,6 @@
 ---
 author: "Anna Elisabetta Borea"
-title: "The Milky Way's invisible companions: Rubin discovers a ghost galaxy adrift in the dark and a star cluster buried in dust"
+title: "The Milky Way's hidden dwarfs: Rubin discovers a ghost galaxy adrift in the dark and a star cluster buried in dust"
 description: "Aquarius IV and Rubin-GC1: two Milky Way satellites that escaped every earlier search, discovered by the Vera C. Rubin Observatory in its very first data."
 topic: milky-way
 tags: ["Vera C. Rubin Observatory", "galactic satellites", "galactic halo", "ultra-faint dwarf galaxies", "UFD", "dark matter", "globular clusters", "interstellar extinction", "Sagittarius dwarf spheroidal galaxy", "tidal stream", "Aquarius IV", "Rubin-GC1"]

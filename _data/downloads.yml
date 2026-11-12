@@ -21,11 +21,11 @@
 
 - ref: rubin-satelliti-via-lattea
   title:
-    it: "I compagni invisibili della Via Lattea"
-    en: "The Milky Way's invisible companions"
+    it: "I nani nascosti della Via Lattea"
+    en: "The Milky Way's hidden dwarfs"
   description:
-    it: "Dall'articolo «I compagni invisibili della Via Lattea: Rubin scopre una galassia fantasma alla deriva nel buio e un ammasso sepolto nella polvere». Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Non affiliato all'Osservatorio Rubin."
-    en: "From the article “The Milky Way's invisible companions: Rubin discovers a ghost galaxy adrift in the dark and a star cluster buried in dust”. For personal and educational use, with credit to Redshifted. Reference image: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Not affiliated with the Rubin Observatory."
+    it: "Dall'articolo «I nani nascosti della Via Lattea: Rubin scopre una galassia fantasma alla deriva nel buio e un ammasso sepolto nella polvere». Per uso personale e didattico, con credito a Redshifted. Immagine di riferimento: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Non affiliato all'Osservatorio Rubin."
+    en: "From the article “The Milky Way's hidden dwarfs: Rubin discovers a ghost galaxy adrift in the dark and a star cluster buried in dust”. For personal and educational use, with credit to Redshifted. Reference image: NSF–DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA, ESA/Gaia/DPAC, W. Cerny. Not affiliated with the Rubin Observatory."
   files:
     - kind: poster
       file: /assets/downloads/redshifted-rubin-poster-3000x4140.jpg

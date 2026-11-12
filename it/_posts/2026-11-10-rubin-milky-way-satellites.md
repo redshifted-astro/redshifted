@@ -1,6 +1,6 @@
 ---
 author: "Anna Elisabetta Borea"
-title: "I compagni invisibili della Via Lattea: Rubin scopre una galassia fantasma alla deriva nel buio e un ammasso sepolto nella polvere"
+title: "I nani nascosti della Via Lattea: Rubin scopre una galassia fantasma alla deriva nel buio e un ammasso sepolto nella polvere"
 description: "Aquarius IV e Rubin-GC1: due satelliti della Via Lattea sfuggiti a ogni ricerca precedente, scoperti dall'Osservatorio Vera C. Rubin nei suoi primi dati."
 topic: milky-way
 tags: ["Osservatorio Vera C. Rubin", "satelliti galattici", "alone galattico", "galassie nane ultradeboli", "UFD", "materia oscura", "ammassi globulari", "estinzione interstellare", "galassia nana sferoidale del Sagittario", "flusso mareale", "Aquarius IV", "Rubin-GC1"]
