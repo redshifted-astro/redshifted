@@ -73,15 +73,7 @@ And this is where the story grows darker. If the two host galaxies are drawing c
 
 ## What gazes at us from the dawn of time
 
-Nāpōwawāʻenakaulua shows us a universe very different from the one we imagine when we look at the night sky, so quiet and still.
-
-When the cosmos was just 900 million years old, two supermassive black holes had already reached masses of hundreds of millions and billions of Suns. They appeared separated by just 18,100 light-years and were both devouring matter relentlessly. Studying them is a rare opportunity to understand how the first great black holes were born and grew, and what role encounters between galaxies played in their evolution.
-
-But the questions remain suspended in the darkness. Are they truly two dark lords, or a single one reflected twice? Are their galaxies interacting? Did their closeness fuel their hunger, or is it merely the sign of an exceptionally dense cosmic kingdom?
-
-For now, the universe does not answer.
-
-What reaches our telescopes today is light that set out almost thirteen billion years ago: a message from the most remote past, showing us the two dark lords as they were then. What they have become, we cannot know. But the Hawaiian name chosen for them seems to capture exactly what we see: two unfathomable darknesses, wrapped in the incandescent glow of the matter that feeds them. And in the dark, perhaps, others like them are still waiting to be discovered.
+Nāpōwawāʻenakaulua shows us a universe very different from the one we imagine when we look at the night sky, so quiet and still. When the cosmos was just 900 million years old, two supermassive black holes had already reached masses of hundreds of millions and billions of Suns. They appeared separated by just 18,100 light-years and were both devouring matter relentlessly. Studying them is a rare opportunity to understand how the first great black holes were born and grew, and what role encounters between galaxies played in their evolution. But the questions remain suspended in the darkness. Are they truly two dark lords, or a single one reflected twice? Are their galaxies interacting? Did their closeness fuel their hunger, or is it merely the sign of an exceptionally dense cosmic kingdom? For now, the universe does not answer. What reaches our telescopes today is light that set out almost thirteen billion years ago: a message from the most remote past, showing us the two dark lords as they were then. What they have become, we cannot know. But the Hawaiian name chosen for them seems to capture exactly what we see: two unfathomable darknesses, wrapped in the incandescent glow of the matter that feeds them. And in the dark, perhaps, others like them are still waiting to be discovered.
 
 ## References
 

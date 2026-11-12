@@ -73,15 +73,7 @@ Ed è qui che la storia si fa più cupa. Se le due galassie ospiti si stanno avv
 
 ## Ciò che ci guarda dall'alba del tempo
 
-Nāpōwawāʻenakaulua ci mostra un universo molto diverso da quello che immaginiamo guardando il cielo notturno, così quieto e immobile.
-
-Quando il cosmo aveva appena 900 milioni di anni, due buchi neri supermassicci avevano già raggiunto masse di centinaia di milioni e di miliardi di Soli. Apparivano separati da appena 18.100 anni luce e stavano entrambi divorando materia senza sosta. Studiarli è un'occasione rara per capire come siano nati e cresciuti i primi grandi buchi neri, e quale ruolo abbiano avuto gli incontri tra galassie nella loro evoluzione.
-
-Ma le domande restano sospese nell'oscurità. Sono davvero due signori oscuri, o uno solo riflesso due volte? Le loro galassie stanno interagendo? La vicinanza ha alimentato la loro fame, o è soltanto il segno di un regno cosmico eccezionalmente denso?
-
-Per ora, l'universo non risponde.
-
-Quella che oggi raggiunge i nostri telescopi è luce partita quasi tredici miliardi di anni fa: un messaggio dal passato più remoto, che ci mostra i due signori oscuri come erano allora. Che cosa siano diventati, non possiamo saperlo. Ma il nome hawaiano scelto per loro sembra restituire esattamente ciò che vediamo: due oscurità insondabili, avvolte nel bagliore incandescente della materia che le nutre. E nel buio, forse, altri come loro stanno ancora aspettando di essere scoperti.
+Nāpōwawāʻenakaulua ci mostra un universo molto diverso da quello che immaginiamo guardando il cielo notturno, così quieto e immobile. Quando il cosmo aveva appena 900 milioni di anni, due buchi neri supermassicci avevano già raggiunto masse di centinaia di milioni e di miliardi di Soli. Apparivano separati da appena 18.100 anni luce e stavano entrambi divorando materia senza sosta. Studiarli è un'occasione rara per capire come siano nati e cresciuti i primi grandi buchi neri, e quale ruolo abbiano avuto gli incontri tra galassie nella loro evoluzione. Ma le domande restano sospese nell'oscurità. Sono davvero due signori oscuri, o uno solo riflesso due volte? Le loro galassie stanno interagendo? La vicinanza ha alimentato la loro fame, o è soltanto il segno di un regno cosmico eccezionalmente denso? Per ora, l'universo non risponde. Quella che oggi raggiunge i nostri telescopi è luce partita quasi tredici miliardi di anni fa: un messaggio dal passato più remoto, che ci mostra i due signori oscuri come erano allora. Che cosa siano diventati, non possiamo saperlo. Ma il nome hawaiano scelto per loro sembra restituire esattamente ciò che vediamo: due oscurità insondabili, avvolte nel bagliore incandescente della materia che le nutre. E nel buio, forse, altri come loro stanno ancora aspettando di essere scoperti.
 
 ## Riferimenti bibliografici
 
