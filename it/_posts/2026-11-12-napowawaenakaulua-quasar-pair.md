@@ -10,8 +10,6 @@ image_alt: "Illustrazione digitale dei due quasar di Nāpōwawāʻenakaulua, uno
 image_caption: "Illustrazione digitale realizzata a partire da Nāpōwawāʻenakaulua (J1602+4228AB). Ideazione e impaginazione: Redshifted."
 ---
 
-## Nel buio, qualcosa si nutriva
-
 C'è un'epoca, ai confini del tempo, in cui l'universo era ancora un luogo ostile e senza memoria. Aveva appena 900 milioni di anni. Le prime galassie si stavano formando tra nubi di gas e gusci di materia oscura, e le prime stelle accendevano fuochi isolati nella notte primordiale.
 Ma nel buio, qualcosa si nutriva già.
 Due **buchi neri supermassicci**, due signori oscuri senza volto, stavano trascinando a sé quantità sterminate di gas, come un tributo dovuto. Prima di sparire per sempre, quella materia si avvolgeva intorno a loro in un vortice incandescente, e nel suo ultimo spasmo bruciava fino a brillare quanto centinaia, perfino migliaia, di galassie come la nostra. Così, ai margini dell'universo bambino, si accesero due quasar: due fari cosmici alimentati dalla fame.
@@ -84,7 +82,7 @@ Per ora, dunque, gli autori propendono per una vera coppia di quasar, ma avverto
 Se i due signori oscuri sono reali, resta un'altra domanda, forse ancora più inquietante: perché due sovrani così rari si trovano così vicini?
 Nell'universo primordiale i quasar come questi erano rarissimi: in media, uno solo in un cubo di spazio largo circa un miliardo e mezzo di anni luce, misurato con le dimensioni attuali dell'universo. Trovarne due a 18.100 anni luce l'uno dall'altro è come scoprire, in un deserto sterminato, due sovrani rarissimi che regnano sullo stesso territorio.
 
-Gli astronomi misurano questa tendenza a stare vicini con il **clustering**: quanto spesso un quasar ha un compagno accanto, rispetto a quanto accadrebbe per puro caso. Attorno ai 199 quasar del programma Aether, a una distanza così piccola, di compagni ne è spuntato uno solo. Eppure anche un solo caso è troppo: prolungando fino a qui le misure di clustering fatte su scale più grandi, ce ne si aspetterebbe da cento a mille volte di meno.
+Gli astronomi misurano questa tendenza a stare vicini con il **clustering**: quanto spesso un quasar ha un compagno accanto, rispetto a quanto accadrebbe per puro caso. Attorno ai 199 quasar del programma Aether, a una distanza così piccola, di compagni ne è spuntato uno solo. Anche un solo caso, però, è troppo: prolungando fino a qui le misure di clustering fatte su scale più grandi, ce ne si aspetterebbe da cento a mille volte di meno.
 
 Ma attenzione: i modelli cosmologici non sono smentiti. Le misure fatte su grandi distanze descrivono come si dispongono quasar che vivono in aloni di materia oscura diversi, ciascuno nel proprio regno. A 18.100 anni luce, invece, i due quasar condividono lo stesso alone, lo stesso regno: e un regno abbastanza grande da sfamare un signore oscuro può ospitarne anche un secondo. Per questo, a distanze così piccole, un eccesso è in parte atteso.
 Il punto è che questo eccesso è così grande che il regno condiviso, da solo, potrebbe non bastare a spiegarlo. Vivere nello stesso alone rende probabile avere un vicino, ma non che quel vicino sia sveglio: la fase di quasar è un momento di frenesia relativamente breve nella vita di un buco nero, e sorprendere due signori oscuri affamati nello stesso istante, così vicini, è un'enorme coincidenza. A meno che non sia stato qualcosa a risvegliarli insieme.

@@ -10,8 +10,6 @@ image_alt: "Digital illustration of the two quasars of Nāpōwawāʻenakaulua, o
 image_caption: "Digital illustration created from Nāpōwawāʻenakaulua (J1602+4228AB). Concept and layout: Redshifted."
 ---
 
-## In the dark, something was feeding
-
 There is an era, at the edge of time, when the universe was still a hostile place with no memory. It was barely 900 million years old. The first galaxies were taking shape among clouds of gas and shells of dark matter, and the first stars were lighting isolated fires in the primordial night.
 But in the dark, something was already feeding.
 Two **supermassive black holes**, two faceless dark lords, were dragging in boundless quantities of gas, like a tribute owed to them. Before vanishing forever, that matter wound around them in an incandescent whirlpool, and in its final spasm it burned until it shone as brightly as hundreds, even thousands, of galaxies like our own. And so, at the margins of the infant universe, two quasars blazed into being: two cosmic beacons fuelled by hunger.
@@ -84,7 +82,7 @@ For now, then, the authors favour a genuine quasar pair, but they warn that grav
 If the two dark lords are real, another question remains, perhaps even more unsettling: why are two such rare sovereigns so close together?
 In the early universe, quasars like these were extremely rare: on average, just one in a cube of space about one and a half billion light-years across, measured at the present-day size of the universe. Finding two of them 18,100 light-years apart is like discovering, in a boundless desert, two exceedingly rare sovereigns ruling over the same territory.
 
-Astronomers measure this tendency to stay close with **clustering**: how often a quasar has a companion nearby, compared with what would happen by pure chance. Around the 199 quasars of the Aether programme, at such a small distance, only one companion turned up. Yet even a single case is too many: extending the clustering measurements made on larger scales down to this one, we would expect one hundred to one thousand times fewer.
+Astronomers measure this tendency to stay close with **clustering**: how often a quasar has a companion nearby, compared with what would happen by pure chance. Around the 199 quasars of the Aether programme, at such a small distance, only one companion turned up. Even a single case, however, is too many: extending the clustering measurements made on larger scales down to this one, we would expect one hundred to one thousand times fewer.
 
 But beware: the cosmological models are not disproved. Measurements made over large distances describe how quasars living in different dark matter haloes are arranged, each in its own kingdom. At 18,100 light-years, instead, the two quasars share the same halo, the same kingdom: and a kingdom large enough to feed one dark lord can also host a second. This is why, at such small distances, an excess is partly expected.
 The point is that this excess is so large that the shared kingdom alone may not be enough to explain it. Living in the same halo makes it likely to have a neighbour, but not that the neighbour is awake: the quasar phase is a relatively brief moment of frenzy in a black hole's life, and catching two hungry dark lords at the same instant, so close together, is a huge coincidence. Unless something woke them up together.
