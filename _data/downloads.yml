@@ -19,6 +19,30 @@
 #     it: "Una breve introduzione agli orizzonti degli eventi."
 #     en: "A short introduction to event horizons."
 
+- ref: napowawaenakaulua-quasar
+  title:
+    it: "Nāpōwawāʻenakaulua"
+    en: "Nāpōwawāʻenakaulua"
+  description:
+    it: "Dall'articolo «Nāpōwawāʻenakaulua – Due oscurità voraci all'alba cosmica». Per uso personale e didattico, con credito a Redshifted. Illustrazione ispirata allo studio di Onorato et al. (2026). Non affiliato agli autori né alle istituzioni dello studio."
+    en: "From the article “Nāpōwawāʻenakaulua – Two ravenous darknesses at cosmic dawn”. For personal and educational use, with credit to Redshifted. Illustration inspired by the study by Onorato et al. (2026). Not affiliated with the authors or the institutions behind the study."
+  files:
+    - kind: poster
+      file: /assets/downloads/redshifted-quasar-poster-1254x1254.jpg
+      thumb: /assets/downloads/anteprima-quasar-poster.jpg
+      dims: "1254 × 1254 px"
+      size: "0,7 MB"
+    - kind: desktop
+      file: /assets/downloads/redshifted-quasar-sfondo-desktop-1896x1468.jpg
+      thumb: /assets/downloads/anteprima-quasar-desktop.jpg
+      dims: "1896 × 1468 px"
+      size: "0,9 MB"
+    - kind: phone
+      file: /assets/downloads/redshifted-quasar-sfondo-telefono-1472x2952.jpg
+      thumb: /assets/downloads/anteprima-quasar-telefono.jpg
+      dims: "1472 × 2952 px"
+      size: "1,0 MB"
+
 - ref: rubin-satelliti-via-lattea
   title:
     it: "I nani nascosti della Via Lattea"
