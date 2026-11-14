@@ -28,3 +28,8 @@ cards:
     name:
       it: "Nāpōwawāʻenakaulua"
       en: "Nāpōwawāʻenakaulua"
+  - id: euclid
+    image: /assets/img/game/carta-euclid.jpg
+    name:
+      it: "Telescopio Euclid"
+      en: "Euclid Telescope"
