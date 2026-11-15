@@ -55,6 +55,7 @@
   <meta name="description" content="{{ meta_desc | strip_html | escape }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {%- if has_translation %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ page.url | absolute_url }}">
   <link rel="alternate" hreflang="{{ other }}" href="{{ alt_url | absolute_url }}">
   {%- endif %}
 
