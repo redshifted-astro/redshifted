@@ -1,0 +1,26 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  Mappa del sito per Google: elenca tutte le pagine vere e tutti gli articoli.
+  Si aggiorna da sola a ogni nuovo articolo: non va mai modificata a mano.
+  Le pagine di reindirizzamento (layout redirect) e la pagina 404 sono escluse.
+{%- endcomment %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages %}
+  {%- if p.layout == 'redirect' or p.sitemap == false or p.url == '/404.html' %}{% continue %}{% endif %}
+  {%- assign last_char = p.url | slice: -1 %}
+  {%- if last_char != '/' %}{% continue %}{% endif %}
+  {%- if p.url == '/' %}{% continue %}{% endif %}
+  <url>
+    <loc>{{ p.url | absolute_url | xml_escape }}</loc>
+  </url>
+{%- endfor %}
+{%- for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+{%- endfor %}
+</urlset>
