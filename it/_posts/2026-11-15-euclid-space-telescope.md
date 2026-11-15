@@ -2,7 +2,7 @@
 author: "Anna Elisabetta Borea"
 title: "Euclid: alla ricerca della geometria dell'universo oscuro"
 description: "Il telescopio spaziale dell'ESA che mappa miliardi di galassie per svelare la natura della materia oscura e dell'energia oscura: obiettivi, strumenti, viaggio verso L2 e primi risultati."
-topic: cosmology
+topic: special-features
 section: missions
 tags: ["telescopio spaziale Euclid", "materia oscura", "energia oscura", "cold dark matter (CDM)", "modello Lambda-CDM", "costante cosmologica", "weak gravitational lensing", "oscillazioni acustiche barioniche (BAO)", "Legacy Science", "L2", "Falcon 9", "VIS", "NISP", "segmento di terra", "Wide Survey", "Deep Survey", "DR1-Foundation"]
 ref: euclid

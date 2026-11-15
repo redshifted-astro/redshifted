@@ -2,7 +2,7 @@
 author: "Anna Elisabetta Borea"
 title: "Euclid: in search of the geometry of the dark universe"
 description: "ESA's space telescope mapping billions of galaxies to uncover the nature of dark matter and dark energy: goals, instruments, the journey to L2 and the first results."
-topic: cosmology
+topic: special-features
 section: missions
 tags: ["Euclid space telescope", "dark matter", "dark energy", "cold dark matter (CDM)", "Lambda-CDM model", "cosmological constant", "weak gravitational lensing", "baryon acoustic oscillations (BAO)", "Legacy Science", "L2", "Falcon 9", "VIS", "NISP", "ground segment", "Wide Survey", "Deep Survey", "DR1-Foundation"]
 ref: euclid
