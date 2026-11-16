@@ -63,7 +63,7 @@ Il secondo strumento di Euclid è lo studio della distribuzione delle galassie s
 
 <figure class="post-fig">
 <img src="/assets/img/posts/euclid-bao.jpg" alt="Il righello cosmico delle BAO applicato alla struttura a grande scala e alla radiazione cosmica di fondo" style="max-width:min(100%,410px)" loading="lazy">
-<figcaption>Il righello cosmico delle BAO: la stessa scala caratteristica, l’orizzonte acustico, è impressa sia nella radiazione cosmica di fondo (*Cosmic Microwave Background*, a destra), la luce più antica dell’universo, sia nella distribuzione su grande scala di galassie e materia (*Large-scale structure*, al centro). Misurandone la lunghezza apparente in epoche diverse, Euclid ricostruisce la geometria e la storia dell’espansione dell’universo. Crediti: ©ESA.</figcaption>
+<figcaption>Il righello cosmico delle BAO: la stessa scala caratteristica, l’orizzonte acustico, è impressa sia nella radiazione cosmica di fondo (<em>Cosmic Microwave Background</em>, a destra), la luce più antica dell’universo, sia nella distribuzione su grande scala di galassie e materia (<em>Large-scale structure</em>, al centro). Misurandone la lunghezza apparente in epoche diverse, Euclid ricostruisce la geometria e la storia dell’espansione dell’universo. Crediti: ©ESA.</figcaption>
 </figure>
 
 ### Oltre la cosmologia: la Legacy Science
