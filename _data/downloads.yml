@@ -21,7 +21,7 @@
 #     en: "A short introduction to event horizons."
 
 - ref: euclid-dr1
-  unlock: 900
+  unlock: 850
   title:
     it: "L'atlante oscuro di Euclid"
     en: "Euclid's dark atlas"
@@ -46,7 +46,7 @@
       size: "0,8 MB"
 
 - ref: euclid
-  unlock: 800
+  unlock: 700
   title:
     it: "Euclid"
     en: "Euclid"
@@ -71,7 +71,7 @@
       size: "0,7 MB"
 
 - ref: napowawaenakaulua-quasar
-  unlock: 700
+  unlock: 550
   title:
     it: "Nāpōwawāʻenakaulua"
     en: "Nāpōwawāʻenakaulua"
@@ -96,7 +96,7 @@
       size: "1,0 MB"
 
 - ref: rubin-satelliti-via-lattea
-  unlock: 500
+  unlock: 400
   title:
     it: "I nani nascosti della Via Lattea"
     en: "The Milky Way's hidden dwarfs"
@@ -121,7 +121,7 @@
       size: "0,7 MB"
 
 - ref: james-webb
-  unlock: 300
+  unlock: 250
   title:
     it: "James Webb Space Telescope"
     en: "James Webb Space Telescope"

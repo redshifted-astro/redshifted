@@ -33,3 +33,8 @@ cards:
     name:
       it: "Telescopio Euclid"
       en: "Euclid Telescope"
+  - id: euclid-dr1
+    image: /assets/img/game/carta-euclid-dr1.jpg
+    name:
+      it: "L'atlante oscuro di Euclid"
+      en: "Euclid's dark atlas"
