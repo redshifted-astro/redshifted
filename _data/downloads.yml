@@ -20,6 +20,31 @@
 #     it: "Una breve introduzione agli orizzonti degli eventi."
 #     en: "A short introduction to event horizons."
 
+- ref: euclid-dr1
+  unlock: 900
+  title:
+    it: "L'atlante oscuro di Euclid"
+    en: "Euclid's dark atlas"
+  description:
+    it: "Dall'articolo «L'atlante oscuro di Euclid». Per uso personale e didattico, con credito a Redshifted. Illustrazione ispirata all'immagine dell'ammasso di galassie Abell 3128 ripresa da Euclid: ESA/Euclid/Euclid Consortium/NASA, elaborazione delle immagini di J.-C. Cuillandre ed E. Bertin, CC BY-SA 3.0 IGO. Non affiliato all'ESA."
+    en: "From the article “Euclid's dark atlas”. For personal and educational use, with credit to Redshifted. Illustration inspired by Euclid's image of the galaxy cluster Abell 3128: ESA/Euclid/Euclid Consortium/NASA, image processing by J.-C. Cuillandre and E. Bertin, CC BY-SA 3.0 IGO. Not affiliated with ESA."
+  files:
+    - kind: poster
+      file: /assets/downloads/redshifted-euclid-dr1-poster-1254x1254.jpg
+      thumb: /assets/downloads/anteprima-euclid-dr1-poster.jpg
+      dims: "1254 × 1254 px"
+      size: "0,8 MB"
+    - kind: desktop
+      file: /assets/downloads/redshifted-euclid-dr1-sfondo-desktop-1672x941.jpg
+      thumb: /assets/downloads/anteprima-euclid-dr1-desktop.jpg
+      dims: "1672 × 941 px"
+      size: "0,7 MB"
+    - kind: phone
+      file: /assets/downloads/redshifted-euclid-dr1-sfondo-telefono-941x1672.jpg
+      thumb: /assets/downloads/anteprima-euclid-dr1-telefono.jpg
+      dims: "941 × 1672 px"
+      size: "0,8 MB"
+
 - ref: euclid
   unlock: 800
   title:
