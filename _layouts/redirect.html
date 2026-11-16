@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Redshifted</title>
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon-logo.png' | relative_url }}">
+  {%- if page.url == '/' or page.url == '/it/' or page.url == '/en/' %}
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "WebSite", "name": "Redshifted", "url": "https://redshifted.it/"}
+  </script>
+  {%- endif %}
   {%- assign rl = page.lang | default: 'it' %}
   <noscript><meta http-equiv="refresh" content="0; url={{ '/' | append: rl | append: '/' | append: page.target | relative_url }}"></noscript>
   <script>
