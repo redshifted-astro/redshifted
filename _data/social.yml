@@ -1,0 +1,17 @@
+# I tuoi profili social. Compaiono nella Home (sezione "Seguimi") e nel footer.
+# Per aggiungerne uno nuovo basta copiare le 3 righe di Facebook sotto,
+# incollarle in fondo e cambiare name, url e icon.
+#   icon = nome dell'icona di Font Awesome, per esempio:
+#          fa-brands fa-instagram, fa-brands fa-youtube, fa-brands fa-tiktok
+
+title:
+  it: "Seguimi"
+  en: "Follow me"
+text:
+  it: "Passa anche tu al lato oscuro del cosmo ed entra a far parte della community di Redshifted."
+  en: "Come over to the dark side of the cosmos and join the Redshifted community."
+
+profiles:
+  - name: Facebook
+    url: "https://www.facebook.com/profile.php?id=61596846383297"
+    icon: "fa-brands fa-facebook-f"

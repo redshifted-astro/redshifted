@@ -52,12 +52,43 @@ layout: default
   {%- endif %}
 </section>
 
-<section class="section topic-strip" aria-label="{{ t.btn_topics }}">
-  <h2 class="section-title">{{ t.btn_topics }}</h2>
-  <div class="chips">
-    {%- for topic in site.data.topics %}
-    <a class="chip" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}"><span class="ico ico-{{ topic.icon }}" aria-hidden="true"></span> {{ topic.name[lang] }}</a>
-    {%- endfor %}
+<section class="community" aria-label="{{ t.btn_topics }} / {{ site.data.social.title[lang] }}">
+  <div class="community-col community-topics">
+    <h2 class="section-title">{{ t.btn_topics }}</h2>
+    <div class="chips-stack">
+      {%- for topic in site.data.topics %}
+      <a class="chip" href="{{ '/' | append: lang | append: '/topics/' | append: topic.id | append: '/' | relative_url }}"><span class="ico ico-{{ topic.icon }}" aria-hidden="true"></span> {{ topic.name[lang] }}</a>
+      {%- endfor %}
+    </div>
+    <p class="center center-tight"><a class="more-link" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.all_topics }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
   </div>
-  <p class="center center-tight"><a class="more-link" href="{{ '/' | append: lang | append: '/topics/' | relative_url }}">{{ t.all_topics }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+  <div class="community-col community-follow">
+    <h2 class="section-title">{{ site.data.social.title[lang] }}</h2>
+    <p>{{ site.data.social.text[lang] }}</p>
+    <div class="follow-buttons">
+      {%- for s in site.data.social.profiles %}
+      <a class="follow-btn" href="{{ s.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ s.name }}" title="{{ s.name }}"><i class="{{ s.icon }} grad-ico" aria-hidden="true"></i></a>
+      {%- endfor %}
+    </div>
+  </div>
 </section>
+
+<style>
+.grad-ico { background: linear-gradient(to right, #FFD36B, #ff7a22, #d6281a); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+.community { display: grid; grid-template-columns: 1fr 1fr; max-width: 1000px; margin: 0 auto; padding: 0.5rem 1.5rem 3rem; }
+.community-col { padding: 0 2rem; }
+.community-topics { border-right: 1px solid var(--border); }
+.chips-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; margin: 1.2rem auto 0; width: max-content; max-width: 100%; }
+.community-topics .more-link { display: block; text-align: center; margin-top: 1rem; }
+.community-follow { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.community-follow p { margin: 1.1rem 0 1.4rem; max-width: 26ch; color: #e0e0e0; line-height: 1.55; }
+.follow-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; }
+.follow-btn { display: inline-flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; border-radius: 50%; border: 2px solid #ff7a22; background: #1e1e1eb3; text-decoration: none; transition: transform 0.2s, border-color 0.2s; }
+.follow-btn:hover, .follow-btn:focus-visible { transform: translateY(-2px); border-color: #ffb02e; }
+.follow-btn i { font-size: 1.7rem; }
+@media (max-width: 800px) {
+  .community { grid-template-columns: 1fr; padding-bottom: 2rem; }
+  .community-col { padding: 0 0.5rem; }
+  .community .community-topics { border-right: 0; border-bottom: 1px solid var(--border); padding-bottom: 2rem; margin-bottom: 2rem; }
+}
+</style>
