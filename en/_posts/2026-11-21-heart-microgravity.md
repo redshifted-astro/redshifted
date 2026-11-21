@@ -12,7 +12,7 @@ image_caption: "Digital illustration inspired by research on astronauts' hearts 
 
 Up there, where nothing weighs anything, the **human heart** changes shape!
 
-Throughout our lives, our heart fights a silent battle against a force we cannot see. Every time we stand up, gravity drags our blood downwards, into the legs, below the level of the heart; and the heart, beat after beat, has to push it back up again, all the way to the brain. But what happens when that force stops making itself felt? When the heart finds itself, for months, with nothing left to fight against?
+Throughout our lives, our heart fights a silent battle against a force we cannot see. Every time we stand up, gravity drags our blood downwards, into the legs, below the level of the heart, and the heart, beat after beat, has to push it back up again, all the way to the brain. But what happens when gravity stops making itself felt? When the heart finds itself, for months, with nothing left to fight against?
 
 ## The invisible enemy
 

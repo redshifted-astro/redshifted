@@ -12,7 +12,7 @@ image_caption: "Illustrazione digitale ispirata alla ricerca sul cuore degli ast
 
 Lassù, dove nulla pesa, il **cuore umano** cambia forma!
 
-Per tutta la vita il nostro cuore combatte una battaglia silenziosa contro una forza che non vediamo. Ogni volta che ci alziamo in piedi, la gravità trascina il sangue verso il basso, nelle gambe, sotto il livello del cuore; e lui, battito dopo battito, deve spingerlo di nuovo in alto, fino al cervello. Ma cosa succede quando quella forza smette di farsi sentire? Quando il cuore si ritrova, per mesi, senza più nulla contro cui lottare?
+Per tutta la vita il nostro cuore combatte una battaglia silenziosa contro una forza che non vediamo. Ogni volta che ci alziamo in piedi, la gravità trascina il sangue verso il basso, nelle gambe, sotto il livello del cuore e lui, battito dopo battito, deve spingerlo di nuovo in alto, fino al cervello. Ma cosa succede quando la forza di gravità smette di farsi sentire? Quando il cuore si ritrova, per mesi, senza più nulla contro cui lottare?
 
 ## Il nemico invisibile
 
