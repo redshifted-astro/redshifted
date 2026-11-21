@@ -1,6 +1,6 @@
 ---
 author: "Anna Elisabetta Borea"
-title: "Up there, the heart changes shape: the metamorphoses caused by microgravity"
+title: "Up there the heart changes shape: the metamorphoses caused by microgravity"
 description: "In space the heart grows rounder and wastes away, but exercise keeps it fit: what happens to a heart without gravity, what it tells us about the journey to Mars and what it teaches medicine on Earth."
 topic: special-features
 tags: ["human heart", "International Space Station", "ISS", "centrifugal force", "microgravity", "stroke volume", "cardiac atrophy", "bed rest", "Doppler echocardiography", "orthostatic intolerance", "postural orthostatic tachycardia syndrome", "POTS", "remotely guided ultrasound"]

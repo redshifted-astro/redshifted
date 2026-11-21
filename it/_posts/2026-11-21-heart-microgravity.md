@@ -1,6 +1,6 @@
 ---
 author: "Anna Elisabetta Borea"
-title: "Lassù, il cuore cambia forma: le metamorfosi causate dalla microgravità"
+title: "Lassù il cuore cambia forma: le metamorfosi causate dalla microgravità"
 description: "Nello spazio il cuore diventa più rotondo e si consuma, ma l'allenamento lo tiene in forma: cosa succede a un cuore senza gravità, cosa dice sul viaggio verso Marte e cosa insegna alla medicina sulla Terra."
 topic: special-features
 tags: ["cuore umano", "Stazione Spaziale Internazionale", "ISS", "forza centrifuga", "microgravità", "gittata sistolica", "atrofia cardiaca", "riposo a letto", "ecocardiografia Doppler", "intolleranza ortostatica", "sindrome da tachicardia posturale ortostatica", "POTS", "ecografia guidata a distanza"]
