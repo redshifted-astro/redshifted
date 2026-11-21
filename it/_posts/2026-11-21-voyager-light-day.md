@@ -1,7 +1,7 @@
 ---
 author: "Anna Elisabetta Borea"
 title: "La voce che arriva dal buio: Voyager 1 a un giorno-luce da casa"
-description: "Il 18 novembre 2026 Voyager 1 è diventata il primo oggetto costruito dall'uomo a un giorno-luce dalla Terra: la storia di due sonde ancora vive dopo quasi cinquant'anni, del loro messaggio d'oro e di un segnale che continua ad attraversare il buio."
+description: "Il 18 novembre 2026 Voyager 1 è arrivata a un giorno-luce dalla Terra: la storia di una sonda che parla ancora dal buio."
 topic: special-features
 section: missions
 tags: ["giorno-luce", "Voyager 1", "Voyager 2", "vento solare", "eliosfera", "eliopausa", "nube di Oort", "Deep Space Network", "Golden Record"]

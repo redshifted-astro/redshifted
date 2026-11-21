@@ -1,7 +1,7 @@
 ---
 author: "Anna Elisabetta Borea"
 title: "The voice from the dark: Voyager 1, one light-day from home"
-description: "On 18 November 2026 Voyager 1 became the first human-made object one light-day from Earth: the story of two probes still alive after almost fifty years, of their golden message and of a signal that keeps crossing the darkness."
+description: "On 18 November 2026 Voyager 1 reached one light-day from Earth: the story of a probe that still speaks from the dark."
 topic: special-features
 section: missions
 tags: ["light-day", "Voyager 1", "Voyager 2", "solar wind", "heliosphere", "heliopause", "Oort Cloud", "Deep Space Network", "Golden Record"]
