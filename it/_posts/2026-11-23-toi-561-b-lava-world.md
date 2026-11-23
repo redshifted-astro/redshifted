@@ -1,7 +1,7 @@
 ---
 author: "Anna Elisabetta Borea"
 title: "Lo specchio dell’inferno: TOI-561 b, il mondo di magma con un cielo ostinato"
-description: "Un oceano di magma, un anno di meno di undici ore, un cielo che respinge tre quarti della luce: TOI-561 b respira dove nulla dovrebbe respirare."
+description: "Un oceano di magma, un anno di meno di undici ore e un cielo che rimanda indietro tre quarti della luce: Webb scopre l'atmosfera dove non doveva esserci."
 topic: exoplanetary-science
 tags: ["James Webb", "TOI-561 b", "super-Terra", "oceano di magma", "pianeti a periodo ultra-breve", "disco spesso", "evaporazione atmosferica", "NIRSpec", "eclisse secondaria", "temperatura di brillanza", "volatili", "curva di luce", "curva di fase", "albedo di Bond", "nubi di silicati"]
 ref: toi-561-b

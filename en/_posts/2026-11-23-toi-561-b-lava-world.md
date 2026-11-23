@@ -1,7 +1,7 @@
 ---
 author: "Anna Elisabetta Borea"
 title: "The mirror of hell: TOI-561 b, the magma world with a stubborn sky"
-description: "An ocean of magma, a year shorter than eleven hours, a sky that turns back three quarters of the light: TOI-561 b breathes where nothing should breathe."
+description: "An ocean of magma, a year shorter than eleven hours and a sky that sends three quarters of the light back: Webb finds an atmosphere where there should be none."
 topic: exoplanetary-science
 tags: ["James Webb", "TOI-561 b", "super-Earth", "magma ocean", "ultra-short-period planets", "thick disc", "atmospheric evaporation", "NIRSpec", "secondary eclipse", "brightness temperature", "volatiles", "light curve", "phase curve", "Bond albedo", "silicate clouds"]
 ref: toi-561-b
