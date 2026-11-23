@@ -133,9 +133,9 @@ As Johanna Teske has said, these data open up more questions than they answer. A
 
 ## References
 
-- Teske, J. K. et al. (2025), *A Thick Volatile Atmosphere on the Ultrahot Super-Earth TOI-561 b*, *The Astrophysical Journal Letters*, 995, L39. DOI: <a href="https://doi.org/10.3847/2041-8213/ae0a4c">10.3847/2041-8213/ae0a4c</a>.
-- Boucher, S. et al. (2026), *A Highly Reflective Atmosphere on the Lava World TOI-561 b Revealed by JWST/NIRSpec Phase Curve*, *The Astronomical Journal*. arXiv: <a href="https://arxiv.org/abs/2608.21519">2608.21519</a>.
+- Teske, J. K. et al. (2025), *A Thick Volatile Atmosphere on the Ultrahot Super-Earth TOI-561 b*, *The Astrophysical Journal Letters*, 995, L39. DOI: <a href="https://doi.org/10.3847/2041-8213/ae0a4c">10.3847/2041-8213/ae0a4c</a>. arXiv: <a href="https://arxiv.org/abs/2509.17231">2509.17231</a>.
+- Boucher, S. et al. (2026), *A Highly Reflective Atmosphere on the Lava World TOI-561 b Revealed by JWST/NIRSpec Phase Curve*, *The Astronomical Journal*. DOI: <a href="https://doi.org/10.3847/1538-3881/ae9763">10.3847/1538-3881/ae9763</a>. arXiv: <a href="https://arxiv.org/abs/2608.21519">2608.21519</a>.
 
 <div class="post-end">
-<p class="post-credits"><strong>Sources and credits:</strong> information and images taken from the website of the Webb mission, <a href="https://science.nasa.gov/mission/webb/">NASA Science &ndash; Webb</a>, and from materials by NASA, ESA, CSA and STScI (Ralf Crawford), as indicated in the individual captions. Redshifted is not affiliated with these organisations and their use does not imply any endorsement.</p>
+<p class="post-credits"><strong>Sources and credits:</strong> information and images taken from the website of the Webb mission, <a href="https://science.nasa.gov/mission/webb/">NASA Science &ndash; Webb</a>, from the press releases of <a href="https://science.nasa.gov/missions/webb/nasas-webb-detects-thick-atmosphere-around-broiling-lava-world/">NASA</a>, <a href="https://carnegiescience.edu/news/ultra-hot-lava-world-has-thick-atmosphere-upending-expectations">Carnegie Science</a> and the <a href="https://www.birmingham.ac.uk/news/2026/shiny-lava-planet-challenges-astronomers-expectations">University of Birmingham</a>, and from materials by NASA, ESA, CSA and STScI (Ralf Crawford), as indicated in the individual captions. Redshifted is not affiliated with these organisations and their use does not imply any endorsement.</p>
 </div>
